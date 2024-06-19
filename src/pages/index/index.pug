@@ -1,0 +1,11 @@
+include ../../components/index/index
+
+block variables
+  - var title = "webpack";
+  - var discription = "Webpack course";
+  - var logo = "logo-grey.svg";
+  - var background = true;
+
+block content
+  - const { index } = require("./index.json")
+  +index(index)
