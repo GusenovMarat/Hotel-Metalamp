@@ -1,13 +1,16 @@
-$dark-shade-100: hex(#1F2041);
-$dark-shade-75: hex(#1F2041);
-$dark-shade-50: hex(#1F2041);
-$dark-shade-25: hex(#1F2041);
-$dark-shade-5: hex(#1F2041);
+$dark-shade-100: rgba(31, 32, 65, 1);
+$dark-shade-75: rgba(31, 32, 65, 0.75);
+$dark-shade-50: rgba(31, 32, 65, 0.50);
+$dark-shade-25: rgba(31, 32, 65, 0.25);
+$dark-shade-10: rgba(31, 32, 65, 0.10);
+$purple: #BC9CFF;
+$green: #6FCF97;
+$purple-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 $h1: 24px;
 $h2: 19px;
 $h3: 12px;
-$body: 24px;
+$body: 14px;
 
 $twit: "\e900";
 $fb: "\e901";

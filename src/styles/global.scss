@@ -1,8 +1,10 @@
 @import '~normalize.css';
-@import "./veriables.scss";
+@import "./variables.scss";
 @import "./fonts.scss";
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 

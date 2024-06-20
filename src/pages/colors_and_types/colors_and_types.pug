@@ -1,0 +1,19 @@
+extends ../../layouts/main/main
+include ../../components/colors/colors
+include ../../components/types/types
+
+block variables
+  - var title = "colors and types";
+  - var discription = "colors and fonts";
+  - var logo = "logo-grey.svg";
+  - var background = false;
+
+block content
+  - const { colors } = require('./colors_and_types.json')
+
+  .content
+    .content__colors
+      each element in colors
+        +colors(element)
+    .content__types
+      +types
