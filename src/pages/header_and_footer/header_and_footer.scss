@@ -1,0 +1,15 @@
+@import '../../layouts/main/main.scss';
+@import '../../components/header/header.scss';
+@import '../../components/footer/footer.scss';
+@import '../../styles/global.scss';
+@import '../../styles/mixins.scss';
+
+.header-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 55px 0 0;
+  gap: 40px;
+  & * {
+    flex-wrap:wrap;
+  }
+}
