@@ -1,25 +1,20 @@
-a {
-  text-decoration: none;
-	
+@import "../nav/nav.scss";
+@import "../logo/logo.scss";
 
-  &__name {
-    @include font-bold($h2);
-  }
-
-  &__code {
-    @include font-normal($h2);
-  }
-
-  &__discription {
+.header {
+  min-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 2px $dark-shade-50;
+  &__nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  &__box {
-    min-width: 70px;
-    height: 70px;
-    gap: 20px;
-    border-radius: 10%;
+    justify-content: space-between;
+    margin: 0 auto; 
+    align-items: center;
+    max-width: 1440px;
+    padding: 0 140px;
+    min-height: 70px;
+    @include media-xxl {
+      padding: 0 30px;
+    }
   }
 }
