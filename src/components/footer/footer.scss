@@ -1,0 +1,13 @@
+@import '../../styles/veriables.scss';
+@import '../footer-head/footer-head.scss';
+@import '../footer-bottom/footer-bottom.scss';
+
+.footer {
+  min-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 2px $dark-shade-50;
+  &__line {
+    height: 1px;
+    background-color:$dark-shade-10;
+  }
+}

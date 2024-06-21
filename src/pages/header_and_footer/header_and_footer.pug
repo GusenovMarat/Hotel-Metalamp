@@ -2,11 +2,13 @@ extends ../../layouts/main/main
 include ../../components/header/header
 
 block variables
-  - var title = "header and footer";
-  - var discription = "header and footer";
-  - var logo = "logo-color.svg";
-  - var background = false;
+  - var title = "Header and footer";
+  - var discription = "Header&Footer page";
+  - var logo = "logo-grey.svg";
+  - var background = true;
 
 block content
-		- const { header } = require('./header_and_footer.json')
-		.header-footer(header)
+  - const { header, headerAccount, footer } = require('./header_and_footer.json')
+  .header-footer
+    +header(header)
+    +header(headerAccount) 

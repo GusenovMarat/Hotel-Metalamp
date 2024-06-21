@@ -1,0 +1,253 @@
+{
+  "header": {
+    "logo": {
+      "src": "assets/img/logo-toxin.svg",
+      "href": "./index.html"
+    },
+    "items": [
+      {
+        "href": "./index.html",
+        "title": "о нас",
+        "active": "true"
+      },
+      {
+        "href": "./index.html",
+        "title": "услуги",
+        "icon": true,
+        "sub": [
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин Константинопольский"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин первый"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин 2"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин третий 3"
+          }
+        ]
+      },
+      {
+        "href": "./index.html",
+        "title": "вакансии"
+      },
+      {
+        "href": "./index.html",
+        "title": "новости"
+      },
+      {
+        "href": "./index.html",
+        "title": "соглашения",
+        "icon": true,
+        "sub": [
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 1"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 2"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 3"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 4"
+          }
+        ]
+      }
+    ],
+    "auth": [
+      {
+        "href": "./index.html",
+        "title": "войти",
+        "theme": false
+      },
+      {
+        "href": "./index.html",
+        "title": "зарегистрироваться",
+        "theme": true
+      }
+    ]
+  },
+  "headerAccount": {
+    "logo": {
+      "src": "assets/img/logo-toxin.svg",
+      "href": "./index.html"
+    },
+    "items": [
+      {
+        "href": "./index.html",
+        "title": "о нас",
+        "active": "true"
+      },
+      {
+        "href": "./index.html",
+        "title": "услуги",
+        "icon": true,
+        "sub": [
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин Константинопольский"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин первый"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин 2"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин третий 3"
+          }
+        ]
+      },
+      {
+        "href": "./index.html",
+        "title": "вакансии"
+      },
+      {
+        "href": "./index.html",
+        "title": "новости"
+      },
+      {
+        "href": "./index.html",
+        "title": "соглашения",
+        "icon": true,
+        "sub": [
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 1"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 2"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 3"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 4"
+          }
+        ]
+      }
+    ],
+    "account": {
+      "href": "./index.html",
+      "name": "Юлий Цезарь"
+    }
+  },
+  "footer": {
+    "head": {
+      "view": {
+        "logo": {
+          "src": "assets/img/logo-toxin.svg",
+          "href": "./index.html"
+        },
+        "discription": "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»"
+      },
+      "nav": [
+        {
+          "title": "навигация",
+          "list": [
+            {
+              "href": "./index.html",
+              "item": "о нас"
+            },
+            {
+              "href": "./index.html",
+              "item": "новости"
+            },
+            {
+              "href": "./index.html",
+              "item": "служба поддержки"
+            },
+            {
+              "href": "./index.html",
+              "item": "услуги"
+            }
+          ]
+        },
+        {
+          "title": "о нас",
+          "list": [
+            {
+              "href": "./index.html",
+              "item": "о сервисе"
+            },
+            {
+              "href": "./index.html",
+              "item": "наша команда"
+            },
+            {
+              "href": "./index.html",
+              "item": "вакансии"
+            },
+            {
+              "href": "./index.html",
+              "item": "инвесторы"
+            }
+          ]
+        },
+        {
+          "title": "служба поддержки",
+          "list": [
+            {
+              "href": "./index.html",
+              "item": "соглашения"
+            },
+            {
+              "href": "./index.html",
+              "item": "сообщества"
+            },
+            {
+              "href": "./index.html",
+              "item": "связь с нами"
+            }
+          ]
+        }
+      ],
+      "subscribe": {
+        "title": "подписка",
+        "text": "получайте специальные предложения и новости сервиса",
+        "field": {
+          "type": "email",
+          "text": "Email",
+          "name": "email",
+          "submit": {
+            "name": "email"
+          }
+        }
+      }
+    },
+    "bottom": {
+      "copyright": "Copyright © 2018 Toxin отель. Все права защищены.",
+      "social": [
+        {
+          "name": "twit",
+          "ilnk": "./index.html"
+        },
+        {
+          "name": "fb",
+          "ilnk": "./index.html"
+        },
+        {
+          "name": "inst",
+          "ilnk": "./index.html"
+        }
+      ]
+    }
+  }
+}
