@@ -1,0 +1,13 @@
+extends ../../layouts/main/main
+include ../../components/field/field
+
+block variables
+  - var title = "Form elements";
+  - var discription = "website components";
+  - var logo = "logo-grey.svg";
+  - var background = false;
+
+block content
+  - const { field} = require('./form_elements.json')
+  .components
+		.components_column

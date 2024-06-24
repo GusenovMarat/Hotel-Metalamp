@@ -1,0 +1,15 @@
+@import '../../layouts/main/main.scss';
+@import '../../styles/global.scss';
+@import '../../styles/mixins.scss';
+
+.components {
+	display: flex;
+	flex-direction: row;
+	gap: 100px;
+	width: 100%;
+	&__column {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
