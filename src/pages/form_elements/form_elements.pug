@@ -9,9 +9,11 @@ block variables
   - var background = false;
 
 block content
-  - const { fields, checkbox } = require('./form_elements.json')
+  - const { fields, checkboxes } = require('./form_elements.json')
   .components
     .components__column
       each field in fields
         +field(field)
+    .components__column
+      each checkbox in checkboxes
         +checkbox(checkbox)
