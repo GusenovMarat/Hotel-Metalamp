@@ -8,6 +8,8 @@ block variables
   - var background = false;
 
 block content
-  - const { field} = require('./form_elements.json')
+  - const { fields } = require('./form_elements.json')
   .components
-		.components_column
+    .components__column
+      each field in fields
+        +field(field)
