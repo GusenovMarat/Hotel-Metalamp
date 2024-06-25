@@ -1,0 +1,15 @@
+@import "../../styles/global.scss";
+@import "../../styles/variables.scss";
+
+.checkbox {
+  &_custom {
+    display: inline-block;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $dark-shade-25;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: sub;
+  }
+}
