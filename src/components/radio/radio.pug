@@ -1,8 +1,8 @@
 mixin radio({items, title})
 	.radio 
 		if title 
-			.radio__title=title
-		.radio__wrap	
+			.radio__title=title	
+		.radio__wrap
 			each item in items
 				- const { type, name, text } = item
 					label.radio__label  
