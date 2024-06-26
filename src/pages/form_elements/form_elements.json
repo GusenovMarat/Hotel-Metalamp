@@ -32,5 +32,22 @@
         }
       ]
     }
+  ],
+	"radios": [
+    {
+      "title": "radio buttons",
+      "items": [
+        {
+          "type": "radio",
+          "name": "radio-1",
+          "text": "мужчина"
+        },
+        {
+          "type": "radio",
+          "name": "radio-2",
+          "text": "женщина"
+        }
+      ]
+    }
   ]
 }
