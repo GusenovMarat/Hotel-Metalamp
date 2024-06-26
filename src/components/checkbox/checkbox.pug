@@ -5,9 +5,9 @@ mixin checkbox({items, title})
     each item in items
       - const { type, name, text } = item
         label.checkbox__label  
-          input.checkbox__real(
+          input.checkbox__input(
             type=type,
             name=name
           )
-          span.checkbox__custom
+          span.checkbox__box
           span.checkbox__text=text
