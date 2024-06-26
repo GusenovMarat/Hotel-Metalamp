@@ -4,20 +4,20 @@ include ../../components/checkbox/checkbox
 include ../../components/radio/radio
 
 block variables
-  - var title = "Form elements";
-  - var discription = "website components";
-  - var logo = "logo-grey.svg";
-  - var background = false;
+	- var title = "Form elements";
+	- var discription = "website components";
+	- var logo = "logo-grey.svg";
+	- var background = false;
 
 block content
-  - const { fields, checkboxes, radios } = require('./form_elements.json')
-  .components
-    .components__column
-      each field in fields
-        +field(field)
-    .components__column
-      each checkbox in checkboxes
-        +checkbox(checkbox)
+	- const { fields, checkboxes, radios } = require('./form_elements.json')
+	.components
 		.components__column
-      each radio in radios
-        +radio(radio)
+			each field in fields
+				+field(field)
+		.components__column
+			each checkbox in checkboxes
+				+checkbox(checkbox)
+		.components__column
+			each radio in radios
+				+radio(radio)

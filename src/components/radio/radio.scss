@@ -1,4 +1,11 @@
+@import "../../styles/global.scss";
+@import "../../styles/variables.scss";
+
 .radio {
 	display: flex;
 	flex-direction: column;
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+	}
 }
