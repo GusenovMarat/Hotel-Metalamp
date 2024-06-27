@@ -14,7 +14,7 @@
   "checkboxes": [
     {
       "title": "ckeckbox buttons",
-      "items": [
+      "button": [
         {
           "type": "checkbox",
           "name": "checkbox-1",
