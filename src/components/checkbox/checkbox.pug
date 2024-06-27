@@ -4,7 +4,6 @@ mixin checkbox({title, button})
 	.checkbox 
 		if title 
 			.checkbox__title=title
-		label.checkbox__label
-			if button 
-				each item in button 
-					+checkbox-button(item)
+		if button 
+			each item in button 
+				+checkbox-button(item)

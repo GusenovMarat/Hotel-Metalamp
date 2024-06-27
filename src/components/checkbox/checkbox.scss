@@ -10,9 +10,4 @@
 		@include font-bold($h3, $dark-shade-100, 15px);
 		text-transform: uppercase;
 	}
-
-	&__label {
-		display: flex;
-		flex-direction: row; 
-	}
 }
