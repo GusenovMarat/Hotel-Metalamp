@@ -12,9 +12,9 @@ a.button {
   text-decoration: none;
   @include font-bold($h3,$purple, 14px);
   text-transform: uppercase;
+	position: relative;
   &_theme {
     &-filled {
-      position: relative;
       text-align: center;
       &:before {
         content: "";
@@ -32,8 +32,6 @@ a.button {
       }
     }
     &-bordered {
-      position: relative;
-      z-index: 0;
       &:before {
         content: "";
         position: absolute;
@@ -44,7 +42,6 @@ a.button {
         border: 2px solid transparent;
         border-radius: 22px;
         background: linear-gradient(white, white) padding-box, $purple-gradient border-box;
-        border-image-slice: 1;
       }
       &:hover:before {
         opacity: 0.5;
@@ -59,11 +56,12 @@ a.button {
   &_color {
     &-white {
       color: #fff;
-      z-index: 1;
     }
     &-purple {
       color: $purple;
-      z-index: 1;
+			&:hover {
+				color: $dark-shade-50;
+			}
     }
   }
 }

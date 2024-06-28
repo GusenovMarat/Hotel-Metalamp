@@ -64,5 +64,24 @@
         }
       ]
     }
-  ]
+  ],
+	"buttons": [
+		{
+			"theme": "filled",
+			"title": "click on",
+			"href": "#",
+			"type": "button"
+		},
+		{
+			"title": "click on",
+			"href": "#",
+			"type": "button"
+		},
+		{
+			"theme": "bordered",
+			"title": "click on",
+			"href": "#",
+			"type": "button"
+		}
+	] 
 }

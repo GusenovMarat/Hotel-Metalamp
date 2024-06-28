@@ -2,8 +2,8 @@ mixin button({href, title, theme, long, type})
   - 
     let classArray = []
 
-    if (theme) classArray.push("button_theme-filled") 
-      else classArray.push("button_theme-bordered")
+    if (theme) classArray.push(`button_theme-${theme}`) 
+      else classArray.push("button_theme")
 
     if (long) classArray.push("button_size-long") 
       else classArray.push("button_size-short")
