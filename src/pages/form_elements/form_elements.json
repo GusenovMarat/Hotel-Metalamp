@@ -17,18 +17,33 @@
       "button": [
         {
           "type": "checkbox",
-          "name": "checkbox-1",
+          "name": "checkbox-button-1",
           "text": "можно курить"
         },
         {
           "type": "checkbox",
-          "name": "checkbox-2",
+          "name": "checkbox-button-2",
           "text": "можно с питомцами"
         },
         {
           "type": "checkbox",
-          "name": "checkbox-3",
+          "name": "checkbox-button-3",
           "text": "можно пригласить гостей (до 10 человек)"
+        }
+      ]
+    },
+		{
+      "title": "toggle",
+      "toggle": [
+        {
+          "type": "checkbox",
+          "name": "checkbox-toggle-1",
+          "text": "получать спецпредложения"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkbox-toggle-2",
+          "text": "получать спецпредложения"
         }
       ]
     }

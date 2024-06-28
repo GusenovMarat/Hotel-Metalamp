@@ -1,11 +1,12 @@
 @import "../../styles/variables.scss";
 @import "../checkbox-button/checkbox-button.scss";
+@import "../checkbox-toggle/checkbox-toggle.scss";
 
 .checkbox {
 	display: flex;
 	flex-direction: column;
 	gap: 14px;
-	max-width: 222px;
+	min-width: 260px;
 	&__title {
 		@include font-bold($h3, $dark-shade-100, 15px);
 		text-transform: uppercase;

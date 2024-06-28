@@ -1,0 +1,55 @@
+.checkbox-toggle {
+	
+	&__label {
+		display: flex;
+		flex-direction: row;
+		cursor: pointer;
+	}
+
+	&__custom {
+		position: relative;
+		display: block;
+		flex: none;
+		height: 20px;
+		width: 40px;
+		border: 1px solid $dark-shade-25;
+		border-radius: 10px;
+		position: relative;
+		transition-duration: 0.5s;
+		&:before {
+			content: "";
+			display: block;
+			border-radius: 50%;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 1px;
+			height: 12px;
+			width: 12px;
+			background: $dark-shade-25;
+			position: absolute;
+			transition-duration: 0.5s;
+		}
+	}
+	
+	&__real {
+		-webkit-appearance: none;
+		-moz-appearancee: none;
+		appearance: none;
+
+		&:checked + .checkbox-toggle__custom {
+			border: 1px solid $purple;
+		}
+
+		&:checked + .checkbox-toggle__custom:before {
+			transform: translate(200%,-50%);
+			background: $purple-gradient;
+			top: 50%;
+		}
+	}
+	
+	&__text {
+		@include font-normal($body, $dark-shade-50, 18px);
+		padding-left: 10px;
+	}
+}
+

@@ -1,0 +1,8 @@
+mixin checkbox-toggle({type,name,text})
+	label.checkbox-toggle__label
+		input.checkbox-toggle__real(
+			type=type, 
+			name=name
+		)
+		span.checkbox-toggle__custom
+		span.checkbox-toggle__text=text

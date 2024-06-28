@@ -1,9 +1,13 @@
 include ../checkbox-button/checkbox-button
+include ../checkbox-toggle/checkbox-toggle
 
-mixin checkbox({title, button})
+mixin checkbox({title, button, toggle})
 	.checkbox 
 		if title 
 			.checkbox__title=title
 		if button 
 			each item in button 
 				+checkbox-button(item)
+		if toggle
+			each item in toggle
+				+checkbox-toggle(item)
