@@ -56,9 +56,11 @@ a.button {
   &_color {
     &-white {
       color: #fff;
+			z-index: 100;
     }
     &-purple {
       color: $purple;
+			z-index: 100;
 			&:hover {
 				color: $dark-shade-50;
 			}
