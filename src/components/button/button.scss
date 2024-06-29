@@ -2,20 +2,22 @@
 @import "../../styles/variables.scss";
 
 a.button {
-  height: 34px;
-  display: inline-flex;
+  min-height: 44px;
+  display: flex;
   align-items: center;
   padding: 9px 20px 10px 19px;
 }
 
 .button {
-  text-decoration: none;
   @include font-bold($h3,$purple, 14px);
+	text-decoration: none;
   text-transform: uppercase;
 	position: relative;
+	
   &_theme {
     &-filled {
       text-align: center;
+			color: white;
       &:before {
         content: "";
         position: absolute;
@@ -32,6 +34,7 @@ a.button {
       }
     }
     &-bordered {
+			color: purple;
       &:before {
         content: "";
         position: absolute;
@@ -50,20 +53,24 @@ a.button {
   }
   &_size {
     &-short {
-      
+      max-width: 100px;
     }
+		&-long {
+			min-width: 320px;
+			position: relative;
+		}
   }
-  &_color {
-    &-white {
-      color: #fff;
-			z-index: 100;
-    }
-    &-purple {
-      color: $purple;
-			z-index: 100;
-			&:hover {
-				color: $dark-shade-50;
-			}
-    }
-  }
+  &__text {
+
+	}
+	&__icon-arrow {
+		position: absolute;
+		content: "";
+		@include material-icon(24px, transparent);
+		vertical-align: middle;
+		background: rgb(255, 255, 255);
+		background-clip: text;
+		text-align: center;
+		z-index: 100;
+	}	
 }

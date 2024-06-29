@@ -1,22 +1,20 @@
-mixin button({href, title, theme, long, type})
+mixin button({href, text, theme, long, type})
 	- 
 		let classArray = []
 
 		if (theme) classArray.push(`button_theme-${theme}`) 
-			else classArray.push("button_theme")
+			else classArray.push("button_theme-casual")
 
 		if (long) classArray.push("button_size-long") 
 			else classArray.push("button_size-short")
 
 	if href
 		a.button(class=classArray href=href)
-			span( class = (theme === "filled") ? "button_color-white" 
-			: "button_color-purple")=title
+			span.button__text=text
 			if long
-				span.button__arrow 
+				span.button__icon-arrow arrow_forward
 	else 
 		button.button(class=classArray type=type)
-			span( class = (theme === "filled") ? "button_color-white" 
-			: "button_color-purple")=title
+			span.button__text=text
 			if long
-				span.button__arrow 
+				span.button__icon-arrow arrow_forward

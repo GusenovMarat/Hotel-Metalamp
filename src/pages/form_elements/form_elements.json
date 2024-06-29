@@ -9,6 +9,12 @@
       "title": "masked text field",
       "type": "text",
       "text": "ДД.ММ.ГГГГ"
+    },
+		{
+      "title": "subscrition text field",
+      "type": "text",
+      "text": "e-mail",
+			"submit": "arrow-1"
     }
   ],
   "checkboxes": [
@@ -68,20 +74,27 @@
 	"buttons": [
 		{
 			"theme": "filled",
-			"title": "click on",
+			"text": "click on",
 			"href": "#",
 			"type": "button"
 		},
 		{
-			"title": "click on",
+			"text": "click on",
 			"href": "#",
 			"type": "button"
 		},
 		{
 			"theme": "bordered",
-			"title": "click on",
+			"text": "click on",
 			"href": "#",
 			"type": "button"
+		},
+		{
+			"theme": "filled",
+			"text": "перейти к оплате",
+			"href": "#",
+			"type": "button",
+			"long": "true"
 		}
 	] 
 }
