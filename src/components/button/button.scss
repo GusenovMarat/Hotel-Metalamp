@@ -1,76 +1,41 @@
 @import "../../styles/global.scss";
 @import "../../styles/variables.scss";
 
-a.button {
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  padding: 9px 20px 10px 19px;
-}
-
 .button {
-  @include font-bold($h3,$purple, 14px);
+	@include font-bold($body);
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: 44px;
+	border-radius: 22px;
+	align-items: center;
 	text-decoration: none;
-  text-transform: uppercase;
-	position: relative;
-	
-  &_theme {
-    &-filled {
-      text-align: center;
-			color: white;
-      &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: $purple-gradient;
-        border-radius: 22px;
-        max-width: 320px;
-      }
-      &:hover:before {
-        opacity: 0.5;
-      }
-    }
-    &-bordered {
-			color: purple;
-      &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border: 2px solid transparent;
-        border-radius: 22px;
-        background: linear-gradient(white, white) padding-box, $purple-gradient border-box;
-      }
-      &:hover:before {
-        opacity: 0.5;
-      }
-    }
-  }
-  &_size {
-    &-short {
-      max-width: 100px;
-    }
-		&-long {
-			min-width: 320px;
-			position: relative;
-		}
-  }
-  &__text {
+	text-transform: uppercase;
+	flex-wrap: nowrap;
 
+	&__theme {
+
+		&-filled {
+			color: white;
+			background: $purple-gradient;
+		}
+
+		&-bordered {
+			color: $purple;
+			border: 2px solid;
+			border-image: $purple-gradient 2px;
+		}	
+
+		&-casual {
+			color: $purple;
+		}	
 	}
-	&__icon-arrow {
-		position: absolute;
-		content: "";
-		@include material-icon(24px, transparent);
-		vertical-align: middle;
-		background: rgb(255, 255, 255);
-		background-clip: text;
-		text-align: center;
-		z-index: 100;
+	&__size {
+		&-short {
+			max-width: 99px;
+		}
+		&-long {
+			max-width: 320px;
+		}
 	}	
 }

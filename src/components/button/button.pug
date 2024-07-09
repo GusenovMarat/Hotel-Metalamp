@@ -2,11 +2,11 @@ mixin button({href, text, theme, long, type})
 	- 
 		let classArray = []
 
-		if (theme) classArray.push(`button_theme-${theme}`) 
-			else classArray.push("button_theme-casual")
+		if (theme) classArray.push(`button__theme-${theme}`) 
+			else classArray.push("button__theme-casual")
 
-		if (long) classArray.push("button_size-long") 
-			else classArray.push("button_size-short")
+		if (long) classArray.push("button__size-long") 
+			else classArray.push("button__size-short")
 
 	if href
 		a.button(class=classArray href=href)
