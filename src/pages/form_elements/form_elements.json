@@ -10,11 +10,11 @@
       "type": "text",
       "text": "ДД.ММ.ГГГГ"
     },
-		{
+    {
       "title": "subscrition text field",
       "type": "text",
       "text": "e-mail",
-			"submit": "arrow-1"
+      "submit": "arrow-1"
     }
   ],
   "checkboxes": [
@@ -38,7 +38,7 @@
         }
       ]
     },
-		{
+    {
       "title": "toggle",
       "toggle": [
         {
@@ -54,7 +54,7 @@
       ]
     }
   ],
-	"radios": [
+  "radios": [
     {
       "title": "radio buttons",
       "items": [
@@ -71,30 +71,36 @@
       ]
     }
   ],
-	"buttons": [
-		{
-			"theme": "filled",
-			"text": "click on",
-			"href": "#",
-			"type": "button"
-		},
-		{
-			"text": "click on",
-			"href": "#",
-			"type": "button"
-		},
-		{
-			"theme": "bordered",
-			"text": "click on",
-			"href": "#",
-			"type": "button"
-		},
-		{
-			"theme": "filled",
-			"text": "перейти к оплате",
-			"href": "#",
-			"type": "button",
-			"long": "true"
-		}
-	] 
+  "buttons": [
+    {
+      "theme": "filled",
+      "text": "click on",
+      "href": "#",
+      "type": "button"
+    },
+    {
+      "text": "click on",
+      "href": "#",
+      "type": "button"
+    },
+    {
+      "theme": "bordered",
+      "text": "click on",
+      "href": "#",
+      "type": "button"
+    },
+    {
+      "theme": "filled",
+      "text": "перейти к оплате",
+      "href": "#",
+      "type": "button",
+      "long": "true"
+    }
+  ],
+  "buttonsLike": [
+    {
+      "type": "button",
+      "count": 0
+    }
+  ]
 }

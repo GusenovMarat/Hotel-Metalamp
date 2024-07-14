@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+
+.button-like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid $dark-shade-25;
+  border-radius: 10px;
+  max-width: 40px;
+  max-height: 20px;
+  background: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    color: $purple;
+  }
+
+  &__icon {
+    @include material-icon(10px, $dark-shade-25);
+  }
+
+  &__counter {
+    @include font-normal(10px, $dark-shade-25);
+  }
+}

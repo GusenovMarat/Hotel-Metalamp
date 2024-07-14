@@ -3,24 +3,29 @@ include ../../components/field/field
 include ../../components/checkbox/checkbox
 include ../../components/radio/radio
 include ../../components/button/button
+include ../../components/button-like/button-like
 
 block variables
-	- var title = "Form elements";
-	- var discription = "website components";
-	- var logo = "logo-grey.svg";
-	- var background = false;
+  - var title = "Form elements";
+  - var discription = "website components";
+  - var logo = "logo-grey.svg";
+  - var background = false;
 
 block content
-	- const { fields, checkboxes, radios, buttons } = require('./form_elements.json')
-	.components
-		.components__column
-			each field in fields
-				+field(field)
-		.components__column
-			each checkbox in checkboxes
-				+checkbox(checkbox)
-			each radio in radios
-				+radio(radio)
-		.components__column
-			each button in buttons
-				+button(button)
+  - const { fields, checkboxes, radios, buttons, buttonsLike } = require('./form_elements.json')
+  .components
+    .components__column
+      each field in fields
+        +field(field)
+    .components__column
+      each checkbox in checkboxes
+        +checkbox(checkbox)
+      each radio in radios
+        +radio(radio)
+    .components__column
+      each button in buttons
+        +button(button)
+    .components__column
+      .compunents__title like button
+      each buttonLike in buttonsLike
+        +button-like(buttonLike)

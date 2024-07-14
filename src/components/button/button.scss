@@ -1,70 +1,77 @@
-@import "../../styles/global.scss";
 @import "../../styles/variables.scss";
 
 .button {
-	@include font-bold($h3);
-	display: flex;
-	justify-content: center;
-	height: 44px;
-	border-radius: 22px;
-	align-items: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	flex-wrap: nowrap;
+  @include font-bold($h3);
+  display: flex;
+  justify-content: center;
+  height: 44px;
+  border-radius: 22px;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  flex-wrap: nowrap;
 
-	&__theme {
+  &__theme {
 
-		&-filled {
-			color: white;
-			background: $purple-gradient;
-			&:hover {
+    &-filled {
+      color: white;
+      background: $purple-gradient;
+
+      &:hover {
         opacity: 0.5;
       }
-		}
+    }
 
-		&-bordered {
-			color: $purple;
-			position: relative;
-			&:before {
-				content: "";
-				position: absolute;
+    &-bordered {
+      color: $purple;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         border-radius: 22px;
         mask:
-          linear-gradient(90deg, #fff, #fff)  content-box,
+          linear-gradient(90deg, #fff, #fff) content-box,
           linear-gradient(90deg, #fff, #fff);
         mask-composite: exclude;
         border-radius: 24px;
         padding: 2px;
         background: $purple-gradient;
-			}
-			&:hover:before {
+      }
+
+      &:hover:before {
         opacity: 0.5;
       }
-		}
-		&-casual {
-			color: $purple;
-			&:hover {
-				color: $dark-shade-50;
-			}
-		}	
-	}
-	&__size {
-		&-short {
-			max-width: 99px;
-		}
-		&-long {
-			min-width: 320px;
-		}
-	}
-	&__icon-arrow {
-		position: absolute;
-		@include material-icon(24px);
-		width: 320px;
-		text-align: right;
-		padding: 10px;
-	}
+    }
+
+    &-casual {
+      color: $purple;
+
+      &:hover {
+        color: $dark-shade-50;
+      }
+    }
+  }
+
+  &__size {
+    &-short {
+      max-width: 99px;
+    }
+
+    &-long {
+      max-width: 320px;
+    }
+  }
+
+  &__icon-arrow {
+    position: absolute;
+    @include material-icon(24px);
+    width: 320px;
+    text-align: right;
+    padding: 10px;
+  }
 }
