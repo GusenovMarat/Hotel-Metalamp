@@ -8,3 +8,28 @@
 		}
 	}
 	
+	@mixin font-bold ($fs: $body,
+  $cl: $dark-shade-100,
+  $lh: 1.714,
+  $fstl: normal,
+  $fw: bold) {
+  font-family: 'Montserrat-bold';
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+  font-style: $fstl;
+  font-weight: $fw;
+}
+
+@mixin font-normal ($fs: $h3,
+  $cl: $dark-shade-100,
+  $lh: 1,
+  $fstl: normal,
+  $fw: normal) {
+  font-family: 'Montserrat-normal';
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+  font-style: $fstl;
+  font-weight: $fw;
+}
