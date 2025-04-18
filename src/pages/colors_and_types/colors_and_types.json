@@ -1,0 +1,36 @@
+{
+  "colors": [
+    {
+      "code": "#1F2041",
+      "name": "Dark Shade 100%"
+    },
+    {
+      "code": "#1F2041",
+      "name": "Dark Shade 75%",
+      "opacity": 75
+    },
+    {
+      "code": "#1F2041",
+      "name": "Dark Shade 50%",
+      "opacity": 5
+    },
+    {
+      "code": "#1F2041",
+      "name": "Dark Shade 25%",
+      "opacity": 25
+    },
+    {
+      "code": "#1F2041",
+      "name": "Dark Shade 5%",
+      "opacity": 5
+    },
+    {
+      "code": "#BC9CFF",
+      "name": "Purple"
+    },
+    {
+      "code": "#6FCF97",
+      "name": "Green"
+    }
+  ]
+}

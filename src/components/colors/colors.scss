@@ -1,0 +1,15 @@
+.color {
+	display: flex;
+	gap: 40px;
+	&_name {
+		@include font-bold($h2)
+	}
+	&_code {
+		@include font-normal($h2)
+	}
+	&_box {
+		width: 70px;
+		height: 70px;
+	}
+	
+}
