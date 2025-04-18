@@ -1,4 +1,4 @@
-block head
+block variables
 
 doctype html 
 html(lang="ru")
@@ -8,6 +8,6 @@ html(lang="ru")
 		meta(name="discription", content=discription)
 		title #{title}
 	body(class=background ? 'main main__background_grey' : 'main')
-    img.main__link(src="assets/img/"+ logo alt="logo")
-    .block
-    block content
+		img.main__link(src="assets/img/"+ logo alt="logo")
+		.block
+		block content

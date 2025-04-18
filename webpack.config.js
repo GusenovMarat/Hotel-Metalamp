@@ -144,9 +144,19 @@ module.exports = {
           },
         },
         {
-          test: /\.pug$/,
-          use: "pug-loader",
-        },
+					test: /\.pug$/,
+					use: [
+						{
+							loader: 'pug-loader',
+							options: {
+								pretty: true,
+								self: true,
+								doctype: 'html',
+								compileDebug: true,
+							}
+						}
+					]
+				}
       ],
   },
 }
