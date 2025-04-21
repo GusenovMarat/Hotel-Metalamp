@@ -1,0 +1,14 @@
+extends ../../layouts/main/main
+include ../../components/header/header
+
+block variables
+	- var title = "H&F";
+	- var discription = "Header and Footer";
+	- var logo = "logo-grey.svg";
+	- var background = true;
+
+block content
+	- const { header } = require("./header_and_footer.json")
+
+	.header-footer 
+		+header
