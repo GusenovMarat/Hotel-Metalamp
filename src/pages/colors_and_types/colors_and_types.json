@@ -7,22 +7,22 @@
     {
       "code": "#1F2041",
       "name": "Dark Shade 75%",
-      "opacity": 75
+      "opacity": 0.75
     },
     {
       "code": "#1F2041",
       "name": "Dark Shade 50%",
-      "opacity": 5
+      "opacity": 0.5
     },
     {
       "code": "#1F2041",
       "name": "Dark Shade 25%",
-      "opacity": 25
+      "opacity": 0.25
     },
     {
       "code": "#1F2041",
       "name": "Dark Shade 5%",
-      "opacity": 5
+      "opacity": 0.05
     },
     {
       "code": "#BC9CFF",

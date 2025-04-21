@@ -1,14 +1,27 @@
+@import "../../styles/global.scss";
+
 .color {
-	display: flex;
-	gap: 40px;
-	&_name {
-		@include font-bold($h2)
-	}
-	&_code {
-		@include font-normal($h2)
-	}
-	&_box {
-		width: 70px;
-		height: 70px;
-	}	
+  display: flex;
+  gap: 40px;
+
+  &__name {
+    @include font-bold($h2);
+  }
+
+  &__code {
+    @include font-normal($h2);
+  }
+
+  &__discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__box {
+    min-width: 70px;
+    height: 70px;
+    gap: 20px;
+    border-radius: 10%;
+  }
 }

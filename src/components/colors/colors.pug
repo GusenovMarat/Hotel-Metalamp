@@ -1,6 +1,6 @@
-mixin colors({opacity, name, code})
-	.color
-		.color_box(class= opacity ? `color_box_${opacity}`: "")
-		.color_discription
-			.color_name= name
-			.color_code= code
+mixin colors({code , name , opacity = 1})
+    .color
+      .color__box(style={"background-color":code, opacity})
+      .color__discription
+        .color__name= name
+        .color__code= code
