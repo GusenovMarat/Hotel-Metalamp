@@ -60,7 +60,7 @@ const plugins = () => {
       });
     }),
 		new WebpackBar(),
-		new FriendlyErrorsPlugin()
+		new FriendlyErrorsPlugin({clearConsole: true})
   ];
   return base;
 };
@@ -83,7 +83,7 @@ module.exports = {
 	},
 	devtool: isDev ? 'inline-source-map' : false,
   devServer: isDev ? {
-    port: 5000,
+		port: 5000,
 		open: true
   } : undefined,
   optimization: {
