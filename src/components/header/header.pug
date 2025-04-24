@@ -1,6 +1,8 @@
 include ../logo/logo
+include ../nav/nav
 
-mixin header({logo})
+mixin header({logo, nav})
 	.header
 		.header__container
 			+logo(logo)
+			+nav(nav)

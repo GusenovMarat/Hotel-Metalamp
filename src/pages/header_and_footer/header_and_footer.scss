@@ -1,3 +1,12 @@
+@import '../../components/header/header.scss';
+@import '../../components/nav/nav.scss';
+@import '../../components/logo/logo.scss';
+@import '../../layouts/main/main.scss';
+@import '../../styles/global.scss';
+@import '../../styles/mixins.scss';
+
+
+
 .header-footer {
 	display: flex;
 	flex-direction: column;

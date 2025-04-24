@@ -1,18 +1,18 @@
-mixin nav(items, auth, account)
+mixin nav({items, auth, account})
 	nav.nav
 		ul.nav__list
 			if items
 				each item in items
-				- const {	href, active, sub, icon }
-					li.nav__item(class=active ? "item__nav_active": "")
-						a.nav__link(href=href || "./index.html")
-					if icon 
-						span.nav__icon expand_more
-					if sub
-						ul.nav__sub
-							each subitem in sub
-								li.nav__sub-item
-									a.nav__sub-link(href=href || "./index.html")
+					- const {	active, href, title, icon, sub } = item
+						li.nav__item(class=active ? "item__nav_active": "")
+							a.nav__link(href=href || "./index.html")=title
+						if icon 
+							span.nav__icon expand_more
+						if sub
+							ul.nav__sub
+								each subitem in sub
+									li.nav__sub-item
+										a.nav__sub-link(href=href || "./index.html")
 			if auth 
 				each button in auth 
 					li.nav__item 

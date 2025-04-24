@@ -2,6 +2,12 @@
 
 .header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
+
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 }

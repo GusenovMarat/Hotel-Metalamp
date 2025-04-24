@@ -3,6 +3,31 @@
     "logo": {
       "src": "assets/img/logo-toxin.svg",
       "href": "./index.html"
+		},
+		"nav": {
+			"items": [
+				{
+					"active": true,
+					"href": "./index.html",
+					"title": "о нас"
+				},
+				{
+					"href": "./index.html",
+					"title": "услуги"
+				},
+				{
+					"href":"./index.html",
+					"title": "вакансии"
+				},
+				{
+					"href":"./index.html",
+					"title": "новости"
+				},
+				{
+					"href":"./index.html",
+					"title": "соглашения"
+				}
+			]
 		}
 	}
 }

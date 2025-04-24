@@ -2,8 +2,6 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const WebpackBar = require('webpackbar');
-const FriendlyErrorsPlugin = require('@soda/friendly-errors-webpack-plugin');
 const fs = require('fs');
 
 const isDev = process.env.NODE_ENV === "development"
@@ -59,8 +57,6 @@ const plugins = () => {
         chunks: [`${page}`],
       });
     }),
-		new WebpackBar(),
-		new FriendlyErrorsPlugin({clearConsole: true})
   ];
   return base;
 };
@@ -75,8 +71,6 @@ module.exports = {
     assetModuleFilename: "assets/[hash][ext][query]",
 		clean: true,
   },
-	stats: 'errors-only',
-
 	performance: {
 		maxEntrypointSize: 512000,
 		maxAssetSize: 512000
