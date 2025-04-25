@@ -2,28 +2,18 @@
 @import "./variables.scss";
 @import "./fonts.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  list-style: none;
+*,
+::after,
+::before {
   box-sizing: border-box;
-
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
 }
 
-img {
-	display: block;
-	max-width: 100%;
+html {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: $fs-normal;
+  line-height: 24px;
+  color: $dark-shade-100;
+  background-color: white;
 }
-
-input, 
-textarea,
-select,
-button {
-	font: inherit;
-}
-

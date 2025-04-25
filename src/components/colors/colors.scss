@@ -5,11 +5,11 @@
   gap: 40px;
 
   &__name {
-    @include font-bold($h2);
+    @include font-bold($fs-medium);
   }
 
   &__code {
-    @include font-normal($h2);
+    @include font-normal($fs-medium);
   }
 
   &__discription {

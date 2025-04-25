@@ -5,19 +5,19 @@
   display: row;
 
   &_size_h1 {
-    @include font-bold($h1)
+    @include font-bold($fs-large)
   }
 
   &_size_h2 {
-    @include font-bold($h2)
+    @include font-bold($fs-medium)
   }
 
   &_size_h3 {
-    @include font-bold($h3)
+    @include font-bold($fs-minimum)
   }
 
   &_size_body {
-    @include font-normal($body, $dark-shade-75)
+    @include font-normal($fs-normal, $dark-shade-75)
   }
 
   &__tag {
