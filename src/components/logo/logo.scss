@@ -1,11 +1,13 @@
 @import "../../styles/global.scss";
 
 .logo {
-	vertical-align: middle;
 	&__link {
 		max-height: 100%;
+		display: flex;
+		align-items: center;
 	}
 }
 .img {
-	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
 }
