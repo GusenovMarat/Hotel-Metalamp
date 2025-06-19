@@ -1,5 +1,5 @@
 extends ../../layouts/main/main
-include ../../components/form_elements/form_elements
+include ../../components/button/button
 
 block variables
 	- var title = "Form elements";
@@ -8,7 +8,7 @@ block variables
 	- var background = true;
 
 block content
-	- const { } = require("./form_elements.json")
+	- const { buttons } = require("./form_elements.json")
 
 	.header-footer 
-		+header(header)
+		+buttons(button)

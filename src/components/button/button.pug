@@ -1,0 +1,23 @@
+mixin button({href, text, theme, border,	long, type})
+	-	let classArray[]
+
+			if (theme) classArray.push(`button__theme_${theme}`)
+				else (border) classArray.push(`button__theme_no-bg`)
+
+			if (long) classArray.push(`button__size-long`)
+					else classArray.push(`button__size-short`)
+
+			if (border) classArray.push(`button__bordered`)
+	
+	if href 
+		a.button(class=classArray href=href)
+			span.button__text=text
+			if long
+				span.button__arrow arrow_forward
+
+	if type
+		a.button(class=classArray type=type)
+			span.button__text=text
+			if long
+				span.button__arrow arrow_forward
+	
