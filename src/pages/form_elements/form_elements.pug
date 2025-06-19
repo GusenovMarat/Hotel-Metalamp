@@ -10,5 +10,7 @@ block variables
 block content
 	- const { buttons } = require("./form_elements.json")
 
-	.header-footer 
-		+buttons(button)
+	.container
+		.container__column
+			each button in buttons
+				+button(button)

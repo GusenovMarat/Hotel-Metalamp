@@ -8,6 +8,10 @@
 			{
         "link": "./header_and_footer.html",
         "title": "header-footer"
+      },
+			{
+        "link": "./form_elements.html",
+        "title": "form_elements"
       }
     ]
   }

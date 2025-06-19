@@ -1,0 +1,23 @@
+{
+	"buttons": [
+		{
+			"theme": "filled",
+			"text": "click me",
+			"type": "button"
+		},
+		{
+			"border": "true",
+			"text": "click me",
+			"type": "button"
+		},
+		{
+			"text": "click me",
+			"type": "button"
+		},
+		{
+			"theme": "filled",
+			"long": "true",
+			"href": "#"
+		}
+	]
+}
