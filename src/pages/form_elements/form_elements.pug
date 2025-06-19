@@ -1,0 +1,14 @@
+extends ../../layouts/main/main
+include ../../components/form_elements/form_elements
+
+block variables
+	- var title = "Form elements";
+	- var discription = "Form elements";
+	- var logo = "logo-grey.svg";
+	- var background = true;
+
+block content
+	- const { } = require("./form_elements.json")
+
+	.header-footer 
+		+header(header)
