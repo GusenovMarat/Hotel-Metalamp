@@ -1,0 +1,28 @@
+@import "../../styles/global.scss";
+
+.button {
+	display: flex;
+	max-width: 87px;
+	max-height: 44px;
+	text-decoration: none;
+	flex-wrap: nowrap;
+	position: relative;
+	&__theme_filled {
+		background-image: linear-gradient(#BC9CFF, #8BA4F9);
+	}
+	&__text {
+		display: flex;
+		justify-content: center;
+		color: white;
+	}
+	&__size-long {
+		max-width: 320px;
+	}
+	&__arrow {
+    position: absolute;
+    @include Material-icons(24px);
+    width: 320px;
+    text-align: right;
+    padding: 10px;
+  }
+}

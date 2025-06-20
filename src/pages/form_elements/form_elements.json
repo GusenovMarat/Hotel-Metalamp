@@ -16,6 +16,7 @@
 		},
 		{
 			"theme": "filled",
+			"text": "click me",
 			"long": "true",
 			"href": "#"
 		}
