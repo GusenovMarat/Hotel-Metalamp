@@ -1,5 +1,6 @@
 @import "./mixins.scss";
 
-@include font-face('Montserrat-Regular','Montserrat-Regular', normal);
-@include font-face('Montserrat-Bold','Montserrat-Bold', bold);
-@include font-face('Material-icons','Material-icons', bold);
+@include font-face('Montserrat','Montserrat-regular', normal);
+@include font-face('Montserrat','Montserrat-bold', bold);
+@include font-face('Material-icons','Material-icons');
+@include font-face('Font-awesome','Font-awesome');

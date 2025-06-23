@@ -13,11 +13,11 @@ mixin button({href, text, theme, border,	long, type})
 		a.button(class=classArray href=href)
 			span.button__text=text
 			if long
-				span.button__arrow arrow_forward
+				span.button__icon-arrow arrow_forward
 
 	if type
 		button.button(class=classArray type=type)
 			span.button__text=text
 			if long
-				span.button__arrow arrow_forward
+				span.button__icon-arrow arrow_forward
 	

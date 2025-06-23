@@ -1,6 +1,7 @@
 @import '~normalize.css';
 @import "./variables.scss";
 @import "./fonts.scss";
+@import "./mixins.scss";
 
 *,
 ::after,
@@ -9,7 +10,7 @@
 }
 
 html {
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: 'Montserrat-regular', 'Arial', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: $fs-normal;
