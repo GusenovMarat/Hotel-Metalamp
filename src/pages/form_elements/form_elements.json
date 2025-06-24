@@ -12,11 +12,12 @@
 		},
 		{
 			"text": "click me",
-			"type": "button"
+			"type": "button",
+			"href": "#"
 		},
 		{
 			"theme": "filled",
-			"text": "click me",
+			"text": "перейти к оплате",
 			"long": "true",
 			"href": "#"
 		}

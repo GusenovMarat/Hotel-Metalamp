@@ -2,28 +2,51 @@
 @import "../../styles/mixins.scss";
 
 .button {
+	@include font-bold($fs-minimum);
+	position: relative;
 	display: flex;
-	max-width: 87px;
-	height: 100px;
+	max-width: 99px;
+	height: 44px;
 	text-decoration: none;
 	flex-wrap: nowrap;
 	position: relative;
-	&__theme_filled {
-		background-image: linear-gradient(#BC9CFF, #8BA4F9);
-	}
+	border-radius: 22px;
+	cursor: pointer;
+	color: $purple;
+	background: white;
+	border: none;
 	&__text {
 		display: flex;
 		justify-content: center;
+		align-items: center;
+		width: 100%;
+		text-transform: uppercase;
+	}
+	&__bordered {
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			mask:
+        linear-gradient(90deg, #fff, #fff) content-box,
+        linear-gradient(90deg, #fff, #fff);
+      mask-composite: exclude;
+			padding: 2px;
+			border-radius: 22px;
+			background: $purple-gradient;
+		}
+	}
+	&__theme_filled {
+		background-image: $purple-gradient;
+		border: none;
 		color: white;
 	}
 	&__size-long {
 		max-width: 320px;
 	}
 	&__icon-arrow {
-    position: absolute;
     @include material-icon(24px);
-    width: 320px;
-    text-align: right;
     padding: 10px;
   }
 }
