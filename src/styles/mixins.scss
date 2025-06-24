@@ -50,13 +50,12 @@
   $fw: normal,
 ) {
   display: inline-block;
-  font-family: 'Material-icons';
+  font-family: 'Material-icons','Arial', sans-serif;
   speak: never;
   color: $fc;
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;
-  text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
@@ -73,7 +72,7 @@
   $fv: normal,
   $lh: 1) {
   display: inline-block;
-  font-family: 'Awesome-font', 'Arial', sans-serif;
+  font-family: 'Font-awesome', 'Arial', sans-serif;
   speak: never;
   font-style: $fs;
   color: $fc;

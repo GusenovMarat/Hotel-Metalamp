@@ -2,14 +2,12 @@
 
 .nav {
 	&__list {
-		@include font-normal($fs-normal, $dark-shade-50);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		gap: 20px;
 	&__item{
 		&-active {
-			@include font-bold($fs-normal, $dark-shade-100)
 		}
 	}
 	& a {
@@ -24,5 +22,9 @@
 	}
 	&__link {
 		@include font-normal($fs-normal, $dark-shade-50, 18px);
+	}
+	&__icon {
+			@include material-icon(24px, inherit);
+    	cursor: pointer;
 	}
 }

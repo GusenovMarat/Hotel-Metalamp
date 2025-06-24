@@ -25,7 +25,8 @@
 				},
 				{
 					"href":"./index.html",
-					"title": "соглашения"
+					"title": "соглашения",
+					"icon": true
 				}
 			]
 		}
