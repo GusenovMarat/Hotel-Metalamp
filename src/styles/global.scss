@@ -10,11 +10,10 @@
 }
 
 html {
-  font-family: 'Montserrat-regular', 'Arial', sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: $fs-normal;
-  line-height: 24px;
   color: $dark-shade-100;
   background-color: white;
+}
+
+body {
+	@include font-normal($fs-normal, $dark-shade-50, 24px);
 }

@@ -18,7 +18,7 @@
 	}
 }
 	
-@mixin font-bold ($fs: $body,
+@mixin font-bold ($fs: $fs-normal,
   $cl: $dark-shade-100,
   $lh: 1.714,
   $fstl: normal,
