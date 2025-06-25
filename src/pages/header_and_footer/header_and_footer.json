@@ -28,6 +28,19 @@
 					"title": "соглашения",
 					"icon": true
 				}
+			],
+			"auth": [
+				{
+					"border": "true",
+					"text": "войти",
+					"type": "button"
+				},
+				{
+					"theme": "filled",
+					"text": "зарегистрироваться",
+					"long": "true",
+					"href": "#"
+				}
 			]
 		}
 	}

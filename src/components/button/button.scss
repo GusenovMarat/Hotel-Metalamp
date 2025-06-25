@@ -3,14 +3,13 @@
 
 .button {
 	@include font-bold($fs-minimum);
-	position: relative;
 	display: flex;
 	max-width: 99px;
 	height: 44px;
 	text-decoration: none;
 	flex-wrap: nowrap;
-	position: relative;
 	border-radius: 22px;
+	padding: 10px 20px;
 	cursor: pointer;
 	color: $purple;
 	background: white;
@@ -19,6 +18,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		white-space: nowrap;
 		width: 100%;
 		text-transform: uppercase;
 	}
@@ -39,7 +39,6 @@
 	}
 	&__theme_filled {
 		background-image: $purple-gradient;
-		border: none;
 		color: white;
 	}
 	&__size-long {
@@ -47,6 +46,5 @@
 	}
 	&__icon-arrow {
     @include material-icon(24px);
-    padding: 10px;
   }
 }

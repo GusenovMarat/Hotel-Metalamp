@@ -19,7 +19,8 @@
 			"theme": "filled",
 			"text": "перейти к оплате",
 			"long": "true",
-			"href": "#"
+			"href": "#",
+			"icon": "true"
 		}
 	]
 }
