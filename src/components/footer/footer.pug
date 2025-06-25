@@ -1,8 +1,8 @@
-include ../logo/logo
-include ../nav/nav
+include ../footer-nav/footer-nav
 
-mixin footer({logo, nav})
-	.footer
+mixin footer({about, nav, sub})
+	footer.footer
 		.footer__container
-			+logo(logo)
+			+footer-about(about)
 			+footer-nav(nav)
+			+footer-subscribe(sub)
