@@ -1,3 +1,10 @@
 @import "../../styles/global.scss";
-@import "../footer-head/footer-head.scss"
+@import "../footer-head/footer-head.scss";
 
+.footer {
+	padding: 100px 140px;
+	background-color: white;
+	&__container {
+		max-width: 1440px;
+	}
+}
