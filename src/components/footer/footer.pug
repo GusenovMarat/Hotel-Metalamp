@@ -1,8 +1,6 @@
-include ../footer-nav/footer-nav
+include ../footer-info/footer-info
 
-mixin footer({about, nav, sub})
+mixin footer({info})
 	footer.footer
 		.footer__container
-			+footer-about(about)
-			+footer-nav(nav)
-			+footer-subscribe(sub)
+			+footer-info(info)
