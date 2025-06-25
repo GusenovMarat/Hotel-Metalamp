@@ -1,0 +1,8 @@
+include ../logo/logo
+include ../nav/nav
+
+mixin footer({logo, nav})
+	.footer
+		.footer__container
+			+logo(logo)
+			+footer-nav(nav)

@@ -26,7 +26,25 @@
 				{
 					"href":"./index.html",
 					"title": "соглашения",
-					"icon": true
+					"icon": true,
+					"sub": [
+						{
+							"subhref": "./index.html",
+							"subtitle": "sub 1"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "sub 2"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "sub 3"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "sub 4"
+						}
+					]
 				}
 			],
 			"auth": [
@@ -42,6 +60,42 @@
 					"href": "#"
 				}
 			]
+		}
+	},
+	"headerAccount": {
+    "logo": {
+      "src": "assets/img/logo-toxin.svg",
+      "href": "./index.html"
+		},
+		"nav": {
+			"items": [
+				{
+					"active": true,
+					"href": "./index.html",
+					"title": "о нас"
+				},
+				{
+					"href": "./index.html",
+					"title": "услуги"
+				},
+				{
+					"href":"./index.html",
+					"title": "вакансии"
+				},
+				{
+					"href":"./index.html",
+					"title": "новости"
+				},
+				{
+					"href":"./index.html",
+					"title": "соглашения",
+					"icon": true
+				}
+			],
+			"account": {
+				"href": "./index.html",
+				"name": "Юлий Цезарь"
+    	}
 		}
 	}
 }

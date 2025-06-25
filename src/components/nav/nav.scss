@@ -7,14 +7,36 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
+		white-space: nowrap;
 		gap: 20px;
 	}
 	&__item {
 		position: relative;
     display: flex;
-    align-items: center;
 		&_active {
 			@include font-bold($fs-normal, $dark-shade-100);
+		}
+		&:hover ul {
+      display: inline-block;
+      background-color: white;
+      outline: none;
+      border: 1px solid $dark-shade-10;
+      border-radius: 4px;
+      white-space: normal;
+      z-index: 99;
+    }
+	}
+	&__sub {
+		position: absolute;
+		display: none;
+    position: absolute;
+    flex-direction: column;
+    top: calc(10px + 100%);
+    left: 0;
+    padding: 0;
+		&__item {
+
 		}
 	}
 	&__link {
@@ -30,5 +52,10 @@
 	&__icon {
 		@include material-icon(24px, inherit);
     cursor: pointer;
+	}
+	&__acc {
+		display: flex;
+		padding-left: 20px;
+		border-left: 1px solid $dark-shade-10;
 	}
 }
