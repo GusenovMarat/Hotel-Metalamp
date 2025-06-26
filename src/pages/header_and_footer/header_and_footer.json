@@ -30,19 +30,19 @@
 					"sub": [
 						{
 							"subhref": "./index.html",
-							"subtitle": "sub 1"
+							"subtitle": "константин константинопольский 1"
 						},
 						{
 							"subhref": "./index.html",
-							"subtitle": "sub 2"
+							"subtitle": "константин константинопольский 2"
 						},
 						{
 							"subhref": "./index.html",
-							"subtitle": "sub 3"
+							"subtitle": "константин константинопольский 3"
 						},
 						{
 							"subhref": "./index.html",
-							"subtitle": "sub 4"
+							"subtitle": "константин константинопольский 4"
 						}
 					]
 				}
@@ -89,7 +89,25 @@
 				{
 					"href":"./index.html",
 					"title": "соглашения",
-					"icon": true
+					"icon": true,
+					"sub": [
+						{
+							"subhref": "./index.html",
+							"subtitle": "константин константинопольский 1"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "константин константинопольский 2"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "константин константинопольский 3"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "константин константинопольский 4"
+						}
+					]
 				}
 			],
 			"account": {

@@ -14,39 +14,54 @@
 	&__item {
 		position: relative;
     display: flex;
-		&_active {
-			@include font-bold($fs-normal, $dark-shade-100);
-		}
 		&:hover ul {
       display: inline-block;
       background-color: white;
       outline: none;
       border: 1px solid $dark-shade-10;
       border-radius: 4px;
-      white-space: normal;
-      z-index: 99;
+      z-index: 101;
+			visibility: visible;
     }
 	}
 	&__sub {
 		position: absolute;
-		display: none;
-    position: absolute;
-    flex-direction: column;
-    top: calc(10px + 100%);
+		display: inline-block;
+		list-style-type: none;
+		white-space: nowrap;	
+		min-width: 100px;
+    top: 100%;
     left: 0;
-    padding: 0;
-		&__item {
-
+    padding: 10px 0;
+		transition: all 0.3 ease;
+		visibility: hidden;
+		
+		&-item {
+			display: block;
+			&::first-letter{
+					text-transform: uppercase;
+			}		
 		}
-	}
+		&-link{
+				padding: 5px 20px;
+				color: $dark-shade-50;
+				text-decoration: none;
+				&:hover {
+					color: $dark-shade-100;
+				}
+			}
+		}
 	&__link {
-		color: $dark-shade-100;
+		color: $dark-shade-50;
 		text-decoration: none;
+		&_active {
+			@include font-bold($fs-normal, $dark-shade-75);
+		}
 		&::first-letter {
 			text-transform: uppercase;
 		}
 		&:hover {
-      border-bottom: 1px solid $dark-shade-50;
+      color: $dark-shade-100;
     }
 	}
 	&__icon {
