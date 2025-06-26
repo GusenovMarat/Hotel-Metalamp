@@ -1,5 +1,33 @@
 @import "../../styles/global.scss";
 
 .footer-nav {
-	
+	display: flex;
+	flex-direction: column;
+	line-height: normal;
+	&__title {
+		@include font-bold($fs-normal, $dark-shade-100);
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		white-space: nowrap;
+		gap: 20px;
+ 		padding: 0;
+ 	 	list-style: none
+	}
+	&__item {
+		
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+	&__link {
+		color: $dark-shade-50;
+		text-decoration: none;
+		&:hover {
+			color: $dark-shade-100;
+		}
+	}
 }

@@ -20,7 +20,7 @@
 	
 @mixin font-bold ($fs: $fs-normal,
   $cl: $dark-shade-100,
-  $lh: 1.714,
+  $lh: normal,
   $fstl: normal,
   $fw: bold) {
   font-family: 'Montserrat', 'Arial', sans-serif;
@@ -33,7 +33,7 @@
 
 @mixin font-normal ($fs: $h3,
   $cl: $dark-shade-100,
-  $lh: 1,
+  $lh: normal,
   $fstl: normal,
   $fw: normal) {
   font-family: 'Montserrat', 'Arial', sans-serif;

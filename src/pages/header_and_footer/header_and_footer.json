@@ -125,9 +125,67 @@
 				},
 				"description": "бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»"
 			},
-			"footer-nav": {
-				
-			} 
+			"nav": [
+				{
+					"title": "навигация",
+					"list": [
+						{
+							"href": "./index.html",
+							"text": "о нас"
+						},
+						{
+							"href": "./index.html",
+							"text": "новости"
+						},
+						{
+							"href": "./index.html",
+							"text": "служба поддержки"
+						},
+						{
+							"href": "./index.html",
+							"text": "услуги"
+						}
+					] 
+				},
+				{
+					"title": "о нас",
+					"list": [
+						{
+							"href": "./index.html",
+							"text": "о сервисе"
+						},
+						{
+							"href": "./index.html",
+							"text": "наша компания"
+						},
+						{
+							"href": "./index.html",
+							"text": "вакансии"
+						},
+						{
+							"href": "./index.html",
+							"text": "инвесторы"
+						}
+					] 
+				},
+				{
+					"title": "служба поддержки",
+					"list": [
+						{
+							"href": "./index.html",
+							"text": "соглашения"
+						},
+						{
+							"href": "./index.html",
+							"text": "сообщества"
+						},
+						{
+							"href": "./index.html",
+							"text": "связь с нами"
+						}
+					] 
+				}
+			]
 		} 
 	}
 }

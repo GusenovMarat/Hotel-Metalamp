@@ -1,7 +1,9 @@
 @import "../../styles/global.scss";
 @import "../footer-info/footer-info.scss";
+@import "../footer-nav/footer-nav.scss";
 
 .footer-head {
 	display: flex;
 	flex-direction: row;
+	gap: 40px;
 }
