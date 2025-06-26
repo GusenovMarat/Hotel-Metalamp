@@ -4,4 +4,12 @@
 .footer-info {
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
+	max-width: 260px;
+	.footer-info__about {
+		color: $dark-shade-75;
+		&::first-letter{
+			text-transform: uppercase;
+		}
+	}
 }

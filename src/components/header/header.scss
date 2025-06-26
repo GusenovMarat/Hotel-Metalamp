@@ -5,6 +5,8 @@
 .header {
 	padding: 0 140px;
 	background-color: white;
+	min-width: 100%;
+	box-shadow: 0 0 2px $dark-shade-50;
 	&__container {
 		display: flex;
 		flex-direction: row;
