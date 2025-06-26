@@ -1,5 +1,7 @@
 include ../footer-info/footer-info
+include ../footer-nav/footer-nav
 
-mixin footer-head({info})
+mixin footer-head({ info,nav })
 	.footer-head
 		+footer-info(info)
+		+footer-nav(nav)
