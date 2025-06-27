@@ -1,8 +1,10 @@
 include ../footer-info/footer-info
 include ../footer-nav/footer-nav
+include ../footer-newsletter/footer-newsletter
 
-mixin footer-head({ info, nav })
+mixin footer-head({ info, nav, newsletter})
 	.footer-head
 		+footer-info(info)
 		each item in nav
 			+footer-nav(item)
+		+footer-newsletter(newsletter)

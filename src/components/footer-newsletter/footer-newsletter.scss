@@ -1,0 +1,22 @@
+@import "../../styles/global.scss";
+
+.footer-newsletter {
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+	max-width: 260px;
+	padding-left: 10px;
+	gap: 20px;
+
+	&__title {
+		@include font-bold($fs-normal, $dark-shade-100);
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+	&__text {
+		color: $dark-shade-75;
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+}
