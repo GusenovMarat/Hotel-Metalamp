@@ -1,0 +1,6 @@
+mixin footer-newsletter({title, about, field})
+	.footer-newsletter
+		span.footer-newsletter__title=title
+		.footer-newsletter__about=about
+		if field
+			+field(field)
