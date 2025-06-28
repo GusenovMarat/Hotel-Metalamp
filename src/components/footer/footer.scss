@@ -5,7 +5,11 @@
 	padding: 100px 140px;
 	background-color: white;
 	box-shadow: 0 0 2px $dark-shade-50;
+	
 	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		max-width: 1440px;
 	}
 }
