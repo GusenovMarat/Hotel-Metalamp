@@ -1,6 +1,8 @@
 include ../footer-head/footer-head
+include ../footer-bottom/footer-bottom
 
-mixin footer({head})
+mixin footer({head, bottom})
 	footer.footer
 		.footer__container
 			+footer-head(head)
+			+footer-bottom(bottom)
