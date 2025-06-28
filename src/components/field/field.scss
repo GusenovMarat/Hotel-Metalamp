@@ -1,2 +1,59 @@
 @import "../../styles/global.scss";
 
+.field {
+	display: flex;
+	max-width: 320px;
+	min-height: 44px;
+	background: #fff;
+	border: 1px solid $dark-shade-25;
+	border-radius: 4px;
+	padding-left: 15px;
+	&:hover {
+		border-color: $dark-shade-50;
+	}
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+	&__title {
+
+	}
+	&__label {
+		&::first-letter {
+			text-transform: uppercase
+		}
+	}
+	&__input-form {
+		flex-grow: 1;
+		&::placeholder {
+			text-transform: capitalize;
+			color: $dark-shade-25;
+		}
+		&:hover::placeholder {
+			color: $dark-shade-50;
+		}
+		&:focus::placeholder {
+			color: transparent;
+		}
+	}
+	&__block {
+		display: flex;
+		flex-direction: row;
+	}
+	&__submit {
+		display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 44px;
+		min-height: 44px;
+    cursor: pointer; 
+    background: $purple-gradient;
+    background-clip: text;
+		padding: 0;		
+	}
+	&__icon-arrow {
+    @include material-icon(24px, transparent);
+  }
+}	
+	

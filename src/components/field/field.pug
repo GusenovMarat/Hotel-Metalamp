@@ -1,21 +1,23 @@
-mixin field({ title, type, placeholder, name, label, form=false })
-  if form 
-    form.field
-      span.field__title= title 
-      .field__block
-        input.field__input-form(
-          type= type || "text",
-          placeholder= placeholder,
-          name= name
-        )
-        button.field__submit(type="submit", name= name)
-          span.field__icon-arrow arrow-forward
+mixin field({ title, type, placeholder, name, form=false })
+	if form
+		form.field
+			if title
+				span.field__title= title 
+			.field__block
+				input.field__input-form(
+					type= type || "text",
+					placeholder= placeholder,
+					name= name
+				)
+				button.field__submit(type="submit", name= name)
+					span.field__icon-arrow arrow_forward
+	
 	else
-    .field
-      label.field__label= title 
-        input.field__input(
-          type= type || "text",
-          placeholder= placeholder,
-          name= name
-        )
-      	
+		.field
+			label.field__label= title 
+			input.field__input(
+				type= type || "text",
+				placeholder= placeholder,
+				name= name
+			)
+				
