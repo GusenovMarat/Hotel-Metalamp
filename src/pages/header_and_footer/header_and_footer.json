@@ -196,6 +196,23 @@
 					"name": "sendmail"
 				}
 			}
-		}
+		},
+		"bottom": {
+      "copyright": "Copyright © 2018 Toxin отель. Все права защищены.",
+      "social": [
+        {
+          "name": "twit",
+          "ilnk": "https://x.com/twitter"
+        },
+        {
+          "name": "fb",
+          "ilnk": "https://facebook.com/"
+        },
+        {
+          "name": "inst",
+          "ilnk": "https://www.instagram.com/"
+        }
+      ]
+    }
 	}
 }
