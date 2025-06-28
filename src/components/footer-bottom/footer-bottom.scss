@@ -2,6 +2,25 @@
 
 .footer-bottom {
 	display: flex;
-	min-height: 70px;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
+	min-height: 70px;
+	max-width: 1440px;
+	width: 100%;
+	&__social {
+		display: flex;
+    background-image: $purple-gradient;
+		background-clip: text;
+		justify-content: space-between;
+		&_twit {
+			@include awesome-icon($twit, 24px)
+		}
+		&_fb {
+			@include awesome-icon($fb, 24px)
+		}
+		&_inst {
+			@include awesome-icon($inst, 24px)
+		}
+  }
 }
