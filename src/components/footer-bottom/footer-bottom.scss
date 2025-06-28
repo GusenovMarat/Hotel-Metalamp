@@ -1,2 +1,7 @@
 @import "../../styles/global.scss";
 
+.footer-bottom {
+	display: flex;
+	min-height: 70px;
+	align-items: center;
+}

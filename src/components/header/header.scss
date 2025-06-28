@@ -3,7 +3,7 @@
 @import '../../components/logo/logo.scss';
 
 .header {
-	padding: 0 140px;
+	padding: 0 30px;
 	background-color: white;
 	min-width: 100%;
 	box-shadow: 0 0 2px $dark-shade-50;
@@ -14,5 +14,7 @@
 		align-items: center;
 		min-height: 70px;
 		max-width: 1440px;
+		margin: 0 auto;
+		padding: 0 110px;
 	}
 }

@@ -3,6 +3,6 @@ mixin footer-bottom({text, social })
 		.footer-bottom__credits= text 
 		.footer-bottom__social
 			each item in social
-				- const {name, href} = item
-					a(class= "footer-bottom__social" + name
-						href= href || "./index.html")
+				- const {name, link} = item
+					a(class= "footer-bottom__social_" + name
+						href= link|| "./index.html")
