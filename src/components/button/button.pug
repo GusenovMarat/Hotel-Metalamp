@@ -1,4 +1,4 @@
-mixin button({href, text, theme, border,	long, type, icon})
+mixin button({href, text, theme, border,	long, small, type, icon})
 	-	
 			let classArray = []
 
@@ -6,7 +6,10 @@ mixin button({href, text, theme, border,	long, type, icon})
 
 			if (long) classArray.push(`button__size-long`)
 
+			if (small) classArray.push('button__size-small')
+
 			if (border) classArray.push(`button__bordered`)
+
 	
 	if href 
 		a.button(class=classArray href=href)

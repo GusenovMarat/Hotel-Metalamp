@@ -12,10 +12,10 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		min-height: 70px;
+		max-height: 70px;
 		max-width: 1440px;
 		margin: 0 auto;
-		padding: 0 110px;
+		padding: 18px 110px;
 		@include media-xxl {
       padding: 0 30px;
     }
