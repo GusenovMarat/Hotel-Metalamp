@@ -12,8 +12,7 @@
 		},
 		{
 			"text": "click me",
-			"type": "button",
-			"href": "#"
+			"type": "button"
 		},
 		{
 			"theme": "filled",
@@ -21,6 +20,15 @@
 			"long": "true",
 			"href": "#",
 			"icon": "true"
+		}
+	],
+	
+	"fields": [
+		{
+			"title": "text field",
+			"type": "text",
+			"name": "email",
+			"placeholder": "email"
 		}
 	]
 }

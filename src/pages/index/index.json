@@ -2,16 +2,16 @@
   "index": {
     "items": [
       {
-        "link": "./colors_and_types.html",
-        "title": "colors-and-types"
+        "link": "./colors-types.html",
+        "title": "colors and types"
       },
 			{
-        "link": "./header_and_footer.html",
-        "title": "header-footer"
+        "link": "./header-footer.html",
+        "title": "header and footer"
       },
 			{
-        "link": "./form_elements.html",
-        "title": "form_elements"
+        "link": "./form-elements.html",
+        "title": "form elements"
       }
     ]
   }

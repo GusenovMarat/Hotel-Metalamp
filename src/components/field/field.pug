@@ -14,7 +14,7 @@ mixin field({ title, type, placeholder, name, form=false })
 	
 	else
 		.field
-			label.field__label= title 
+			span.field__title= title 
 			input.field__input(
 				type= type || "text",
 				placeholder= placeholder,

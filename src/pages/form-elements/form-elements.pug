@@ -1,0 +1,25 @@
+extends ../../layouts/main/main
+include ../../components/button/button
+include ../../components/field/field
+
+block variables
+	- var title = "Form elements";
+	- var discription = "Form elements";
+	- var logo = "logo-grey.svg";
+	- var background = false;
+
+block content
+	- const { buttons, fields } = require("./form-elements.json")
+
+
+		.form-el
+			.form-el__container
+				.form-el__column
+					each field in fields
+						+field(field)
+				.form-el__column
+				.form-el__column
+					.form-el__items
+						.form-el__items_title buttons
+						each button in buttons
+								+button(button)
