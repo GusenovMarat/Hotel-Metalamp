@@ -4,6 +4,12 @@
   }
 }
 
+@mixin media-lg {
+  @media (max-width: 932px) {
+    @content;
+  }
+}
+
 @mixin font-face($font-name, $path, $fw: normal, $fs: normal)  {
 	@font-face {
 		font-family: $font-name;
