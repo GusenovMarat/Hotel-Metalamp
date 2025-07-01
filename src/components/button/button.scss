@@ -27,6 +27,10 @@
 
   &__theme_no-bg {
     align-self: flex-start;
+
+    &:hover {
+      color: $dark-shade-50;
+    }
   }
 
   &__bordered {
@@ -44,11 +48,19 @@
       border-radius: 22px;
       background: $purple-gradient;
     }
+
+    &:hover:before {
+      opacity: 50%;
+    }
   }
 
   &__theme_filled {
     background-image: $purple-gradient;
     color: white;
+
+    &:hover {
+      opacity: 50%;
+    }
   }
 
   &__size-long {
