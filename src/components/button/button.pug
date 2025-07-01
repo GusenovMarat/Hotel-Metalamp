@@ -1,10 +1,12 @@
+//- theme "filled" or "no-bg"
+
 mixin button({href, text, theme, border,	long, small, type, icon})
 	-	
 			let classArray = []
 
 			if (theme) classArray.push(`button__theme_${theme}`)
 
-			if (long) classArray.push(`button__size-long`)
+			if (long) classArray.push('button__size-long')
 
 			if (small) classArray.push('button__size-small')
 

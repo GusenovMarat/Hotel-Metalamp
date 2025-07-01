@@ -1,57 +1,69 @@
 @import "../../styles/global.scss";
 
 .button {
-	@include font-bold($fs-minimum, transparent, 100%);
-	position: relative;
-	display: flex;
-	justify-content: center;
+  @include font-bold($fs-minimum, transparent, 100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
   align-items: center;
-	text-decoration: none;
-	text-wrap: nowrap;
-	border-radius: 22px;
-	cursor: pointer;
-	color: $purple;
-	background: white;
-	border: none;
-	&__text {
-		display: inline-block;
-		text-transform: uppercase;
-	}
-	&__bordered, &__theme_filled {
-		padding: 16px 20px;
-		max-width: 99px;
-		max-height: 44px;
-	}
-	&__bordered {
-		position: relative;
-		&:before {
-			content: "";
-			position: absolute;
-			inset: 0;
-			mask:
+  text-decoration: none;
+  text-wrap: nowrap;
+  border-radius: 22px;
+  cursor: pointer;
+  color: $purple;
+  background: white;
+  border: none;
+
+  &__text {
+    text-transform: uppercase;
+  }
+
+  &__bordered,
+  &__theme_filled {
+    padding: 16px 20px;
+    max-width: 99px;
+    max-height: 44px;
+  }
+
+  &__theme_no-bg {
+    align-self: flex-start;
+  }
+
+  &__bordered {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      mask:
         linear-gradient(90deg, #fff, #fff) content-box,
         linear-gradient(90deg, #fff, #fff);
       mask-composite: exclude;
-			padding: 2px;
-			border-radius: 22px;
-			background: $purple-gradient;
-		}
-	}
-	&__theme_filled {
-		background-image: $purple-gradient;
-		color: white;
-	}
-	&__size-long {
-		max-width: 320px;
-	}
-	&__size-small {
-		max-height: 34px;
-	}
-	&__icon-arrow {
-		position: absolute;
+      padding: 2px;
+      border-radius: 22px;
+      background: $purple-gradient;
+    }
+  }
+
+  &__theme_filled {
+    background-image: $purple-gradient;
+    color: white;
+  }
+
+  &__size-long {
+    max-width: 320px;
+  }
+
+  &__size-small {
+    max-height: 34px;
+  }
+
+  &__icon-arrow {
+    position: absolute;
     @include material-icon(24px);
-		right: 10px;
-		top: 50%;
-		transform: translateY(-50%);
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

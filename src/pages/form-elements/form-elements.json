@@ -1,34 +1,34 @@
 {
-	"buttons": [
-		{
-			"theme": "filled",
-			"text": "click me",
-			"type": "button"
-		},
-		{
-			"border": "true",
-			"text": "click me",
-			"type": "button"
-		},
-		{
-			"text": "click me",
-			"type": "button"
-		},
-		{
-			"theme": "filled",
-			"text": "перейти к оплате",
-			"long": "true",
-			"href": "#",
-			"icon": "true"
-		}
-	],
-	
-	"fields": [
-		{
-			"title": "text field",
-			"type": "text",
-			"name": "email",
-			"placeholder": "email"
-		}
-	]
+  "buttons": [
+    {
+      "theme": "filled",
+      "text": "click me",
+      "type": "button"
+    },
+    {
+      "border": "true",
+      "text": "click me",
+      "type": "button"
+    },
+    {
+      "text": "click me",
+      "type": "button",
+      "theme": "no-bg"
+    },
+    {
+      "theme": "filled",
+      "text": "перейти к оплате",
+      "long": "true",
+      "href": "#",
+      "icon": "true"
+    }
+  ],
+  "fields": [
+    {
+      "title": "text field",
+      "type": "text",
+      "name": "email",
+      "placeholder": "email"
+    }
+  ]
 }
