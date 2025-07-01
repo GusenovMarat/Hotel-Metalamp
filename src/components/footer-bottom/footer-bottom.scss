@@ -8,20 +8,7 @@
 	align-items: center;
 	min-height: 70px;
 	max-width: 1440px;
-	width: 100%;
 	list-style-type: none;
-
-	&::before {
-		position: absolute;
-		content: "";
-    left: -100vmax;
-    right: -100vmax;
-    top: 0;
-    overflow: hidden;
-    margin: 0 auto;
-    height: 1px;
-    box-shadow: 0 2px 0 0 $dark-shade-05;
-	}
 	&__social {
 		display: flex;
     background-image: $purple-gradient;

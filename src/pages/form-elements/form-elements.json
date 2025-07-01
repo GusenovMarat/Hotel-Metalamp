@@ -3,12 +3,14 @@
 		{
 			"theme": "filled",
 			"text": "click me",
-			"type": "button"
+			"type": "button",
+			"high": true
 		},
 		{
 			"border": "true",
 			"text": "click me",
-			"type": "button"
+			"type": "button",
+			"high": true
 		},
 		{
 			"text": "click me",
@@ -19,7 +21,8 @@
 			"text": "перейти к оплате",
 			"long": "true",
 			"href": "#",
-			"icon": "true"
+			"icon": "true",
+			"high": true
 		}
 	],
 	

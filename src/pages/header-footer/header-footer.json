@@ -51,14 +51,12 @@
 				{
 					"border": "true",
 					"text": "войти",
-					"type": "button",
-					"small": true
+					"type": "button"
 				},
 				{
 					"theme": "filled",
 					"text": "зарегистрироваться",
 					"long": true,
-					"small": true,
 					"href": "#"
 				}
 			]
