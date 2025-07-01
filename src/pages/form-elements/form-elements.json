@@ -65,5 +65,15 @@
         "lable": "можно пригласить гостей (до 10 человек)"
       }
     ]
+  },
+  "toggle": {
+    "title": "toggle",
+    "toggleInput": [
+      {
+        "id": "toggle1",
+        "name": "toggle",
+        "lable": "получать спецпредложения"
+      }
+    ]
   }
 }

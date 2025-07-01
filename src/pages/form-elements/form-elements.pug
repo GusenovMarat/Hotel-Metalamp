@@ -3,6 +3,7 @@ include ../../components/button/button
 include ../../components/field/field
 include ../../components/radio/radio
 include ../../components/checkbox/checkbox
+include ../../components/toggle/toggle
 
 block variables
 	- var title = "Form elements";
@@ -11,8 +12,8 @@ block variables
 	- var background = false;
 
 block content
-	- const { buttons, fields, radio, checkbox } = require("./form-elements.json")
-	
+	- const { buttons, fields, radio, checkbox, toggle } = require("./form-elements.json")
+
 		.form-el
 			.form-el__container
 				.form-el__column
@@ -22,6 +23,7 @@ block content
 					.form-el__items
 						+checkbox(checkbox)
 						+radio(radio)
+						+toggle(toggle)
 				.form-el__column
 					.form-el__items
 						.form-el__items_title buttons

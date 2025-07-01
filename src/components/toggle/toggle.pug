@@ -1,0 +1,10 @@
+mixin toggle({title, toggleInput})
+	.toggle
+		if title
+			.toggle__title= title
+		fieldset.toggle__block
+			each item in toggleInput
+				- const { id, name, lable } = item
+				.toggle__item
+					input.toggle__input(type="checkbox" id= id name= name)
+					lable.toggle__lable(for= id)= lable
