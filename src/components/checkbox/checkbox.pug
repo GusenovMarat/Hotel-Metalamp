@@ -1,9 +1,10 @@
-mixin checkbox({title, checkinput})
-	form.checkbox
-		fieldset.checkbox__fset
-			if title
-				.checkbox__title= title
-			each item in checkinput
+mixin checkbox({title, checkboxInput})
+	.checkbox
+		if title
+			.checkbox__title= title
+		fieldset.checkbox__block
+			each item in checkboxInput
 				- const { id, name, lable } = item
-				input.checkbox__input(type="checkbox" id= id name= name)
-				lable.checkbox__lable(for= id)= lable
+				.checkbox__item
+					input.checkbox__input(type="checkbox" id= id name= name)
+					lable.checkbox__lable(for= id)= lable

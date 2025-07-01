@@ -1,9 +1,10 @@
-mixin radio({title, radioinput})
-	form.radio
-		fieldset.radio__fset
-			if title
-				.radio__title= title
-			each item in radioinput
-				- const { id, name, lable } = item
-				input.radio__input(type="radio" id= id name= name)
-				lable.radio__lable(for= id)= lable
+mixin radio({title, radioInput})
+  .radio
+    if title
+      .radio__title= title
+    fieldset.radio__block
+      each item in radioInput
+        - const { id, name, lable } = item
+        .radio__item
+          input.radio__input(type="radio" id= id name= name)
+          lable.radio__lable(for= id)= lable

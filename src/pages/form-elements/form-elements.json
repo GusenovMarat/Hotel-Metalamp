@@ -33,7 +33,7 @@
   ],
   "radio": {
     "title": "radio buttons",
-    "radioinput": [
+    "radioInput": [
       {
         "id": "radio1",
         "name": "radio",
@@ -43,6 +43,26 @@
         "id": "radio2",
         "name": "radio",
         "lable": "женщина"
+      }
+    ]
+  },
+  "checkbox": {
+    "title": "checkbox buttons",
+    "checkboxInput": [
+      {
+        "id": "checkbox1",
+        "name": "checkbox",
+        "lable": "можно курить"
+      },
+      {
+        "id": "checkbox2",
+        "name": "checkbox",
+        "lable": "можно с питомцами"
+      },
+      {
+        "id": "checkbox2",
+        "name": "checkbox",
+        "lable": "можно пригласить гостей (до 10 человек)"
       }
     ]
   }
