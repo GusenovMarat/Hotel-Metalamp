@@ -30,5 +30,20 @@
       "name": "email",
       "placeholder": "email"
     }
-  ]
+  ],
+  "radio": {
+    "title": "radio buttons",
+    "radioinput": [
+      {
+        "id": "radio1",
+        "name": "radio",
+        "lable": "мужчина"
+      },
+      {
+        "id": "radio2",
+        "name": "radio",
+        "lable": "женщина"
+      }
+    ]
+  }
 }
