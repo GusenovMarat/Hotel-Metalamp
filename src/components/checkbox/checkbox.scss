@@ -18,17 +18,9 @@
   }
 
   &__input {
-    position: relative;
     appearance: none;
-    padding-right: 30px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      height: 20px;
-      width: 20px;
-      background-color: black;
-    }
+    &:checked {}
   }
 
   &__item {
@@ -37,7 +29,12 @@
   }
 
   &__lable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     color: $dark-shade-50;
+    cursor: pointer;
 
     &::first-letter {
       text-transform: uppercase;

@@ -4,7 +4,6 @@ mixin checkbox({title, checkboxInput})
 			.checkbox__title= title
 		fieldset.checkbox__block
 			each item in checkboxInput
-				- const { id, name, lable } = item
-				.checkbox__item
-					input.checkbox__input(type="checkbox" id= id name= name)
-					lable.checkbox__lable(for= id)= lable
+				- const { name, text } = item
+				lable.checkbox__lable= text
+					input.checkbox__input(type="checkbox" name= name)
