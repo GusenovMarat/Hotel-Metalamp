@@ -8,21 +8,37 @@
 	align-items: center;
 	min-height: 70px;
 	max-width: 1440px;
+	width: 100%;
 	list-style-type: none;
+
+	&::before {
+		position: absolute;
+		content: "";
+    left: -100vmax;
+    right: -100vmax;
+    top: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 1px;
+    box-shadow: 0 2px 0 0 $dark-shade-05;
+	}
 	&__social {
 		display: flex;
     background-image: $purple-gradient;
-		background-clip: text;
-		justify-content: space-between;
-		gap: 20px;
-		&_twit {
-			@include awesome-icon($twit,transparent, 24px)
-		}
-		&_fb {
-			@include awesome-icon($fb, transparent, 24px)
-		}
-		&_inst {
-			@include awesome-icon($inst, transparent, 24px)
-		}
+    background-clip: text;
+    justify-content: space-between;
+    gap: 20px;
+
+    &_twit {
+      @include awesome-icon($twit, transparent, 24px)
+    }
+
+    &_fb {
+      @include awesome-icon($fb, transparent, 24px)
+    }
+
+    &_inst {
+      @include awesome-icon($inst, transparent, 24px)
+    }
   }
 }

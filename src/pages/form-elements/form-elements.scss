@@ -1,35 +1,40 @@
 @import '../../components/button/button.scss';
 @import '../../components/field/field.scss';
+@import '../../components/radio/radio.scss';
 @import '../../layouts/main/main.scss';
 
 .form-el {
-	padding: 30px;
-	&__container {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		gap: 100px;
-		max-width: 1440px;
-		margin: 0 auto;
-		padding: 0 110px;
-	}
-	&__column {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		gap: 20px;
-		min-width: 320px;
-		height: 700px;
-		border: 1px solid black;
-	}
-	&__items {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		gap: 30px;
-		&_title {
-			@include font-bold($fs-minimum, $dark-shade-100, 100%);
-			text-transform: uppercase;
-		}
-	}
+  padding: 30px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    min-width: 320px;
+    height: 700px;
+    border: 1px solid black;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+
+    &_title {
+      @include font-bold($fs-minimum, $dark-shade-100, 100%);
+      text-transform: uppercase;
+    }
+  }
 }

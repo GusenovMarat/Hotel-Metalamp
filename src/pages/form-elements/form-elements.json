@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"buttons": [
 		{
 			"theme": "filled",
@@ -34,4 +35,53 @@
 			"placeholder": "email"
 		}
 	]
+=======
+  "buttons": [
+    {
+      "theme": "filled",
+      "text": "click me",
+      "type": "button"
+    },
+    {
+      "border": "true",
+      "text": "click me",
+      "type": "button"
+    },
+    {
+      "text": "click me",
+      "type": "button",
+      "theme": "no-bg"
+    },
+    {
+      "theme": "filled",
+      "text": "перейти к оплате",
+      "long": "true",
+      "href": "#",
+      "icon": "true"
+    }
+  ],
+  "fields": [
+    {
+      "title": "text field",
+      "type": "text",
+      "name": "email",
+      "placeholder": "email"
+    }
+  ],
+  "radio": {
+    "title": "radio buttons",
+    "radioinput": [
+      {
+        "id": "radio1",
+        "name": "radio",
+        "lable": "мужчина"
+      },
+      {
+        "id": "radio2",
+        "name": "radio",
+        "lable": "женщина"
+      }
+    ]
+  }
+>>>>>>> ba2f9117cc15039562c2718cde34236415ca4a37
 }
