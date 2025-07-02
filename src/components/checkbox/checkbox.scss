@@ -1,0 +1,40 @@
+@import "../../styles/global.scss";
+
+.checkbox {
+  max-width: 222px;
+  line-height: 18px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  &__title {
+    @include font-bold($fs-minimum, $dark-shade-100);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    position: relative;
+    appearance: none;
+
+    &::after {}
+  }
+
+  &__item {
+    display: flex;
+
+  }
+
+  &__lable {
+    padding-left: 10px;
+    color: $dark-shade-50;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
