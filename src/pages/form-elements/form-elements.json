@@ -48,15 +48,15 @@
     "title": "checkbox buttons",
     "checkboxInput": [
       {
-        "name": "checkbox",
+        "name": "checkbox1",
         "text": "можно курить"
       },
       {
-        "name": "checkbox",
+        "name": "checkbox2",
         "text": "можно с питомцами"
       },
       {
-        "name": "checkbox",
+        "name": "checkbox3",
         "text": "можно пригласить гостей (до 10 человек)"
       }
     ]
