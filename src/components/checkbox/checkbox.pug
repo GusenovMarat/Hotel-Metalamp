@@ -5,5 +5,7 @@ mixin checkbox({title, checkboxInput})
 		fieldset.checkbox__block
 			each item in checkboxInput
 				- const { name, text } = item
-				lable.checkbox__lable= text
-					input.checkbox__input(type="checkbox" name= name)
+				lable.checkbox__item
+					input.checkbox__fake(type="checkbox" name= name)
+					span.checkbox__real
+					span.checkbox__text= text

@@ -35,14 +35,12 @@
     "title": "radio buttons",
     "radioInput": [
       {
-        "id": "radio1",
         "name": "radio",
-        "lable": "мужчина"
+        "text": "мужчина"
       },
       {
-        "id": "radio2",
         "name": "radio",
-        "lable": "женщина"
+        "text": "женщина"
       }
     ]
   },
