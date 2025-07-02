@@ -1,1 +1,83 @@
 @import "../../styles/global.scss";
+
+.radio {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include font-bold($fs-minimum, $dark-shade-100);
+    padding-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__fake {
+    appearance: none;
+
+    &:checked+.radio__real::before {
+      display: block;
+    }
+
+    &:checked+.radio__real::after {
+      display: block;
+    }
+  }
+
+  &__real {
+    position: relative;
+    flex: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid $dark-shade-25;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 20px;
+      width: 20px;
+      border: 1px solid $purple;
+      border-radius: 50%;
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 12px;
+      width: 12px;
+      background-color: $purple;
+      border-radius: 50%;
+      display: none;
+    }
+  }
+
+  &__text {
+    padding-left: 10px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

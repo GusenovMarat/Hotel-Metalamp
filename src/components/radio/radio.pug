@@ -5,7 +5,7 @@ mixin radio({title, radioInput})
 		fieldset.radio__block
 			each item in radioInput
 				- const { name, text } = item
-				lable.radio__item
-					input.radio__fake(type="checkbox" name= name)
+				label.radio__item
+					input.radio__fake(type="radio" name= name)
 					span.radio__real
 					span.radio__text= text
