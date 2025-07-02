@@ -3,21 +3,6 @@
 @import "../footer-bottom/footer-bottom.scss";
 
 .footer {
-<<<<<<< HEAD
-	background-color: white;
-	box-shadow: 0 0 2px $dark-shade-50;
-	padding: 100px 30px 0;
-	&__container {
-		margin: 0 auto;
-		max-width: 1440px;
-		padding: 0 110px;
-	}
-	&__line {
-		box-shadow: 0 1px 1px $dark-shade-50;
-		height: 1px;
-		background-color: transparent;
-	}
-=======
   background-color: white;
   box-shadow: 0 0 2px $dark-shade-50;
   padding: 100px 30px 0;
@@ -45,5 +30,4 @@
     filter:
       drop-shadow(0 0 1px $dark-shade-05 );
   }
->>>>>>> ba2f9117cc15039562c2718cde34236415ca4a37
 }
