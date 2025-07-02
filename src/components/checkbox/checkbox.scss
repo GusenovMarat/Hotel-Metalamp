@@ -20,8 +20,15 @@
   &__input {
     position: relative;
     appearance: none;
+    padding-right: 30px;
 
-    &::after {}
+    &::before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      background-color: black;
+    }
   }
 
   &__item {
@@ -30,7 +37,6 @@
   }
 
   &__lable {
-    padding-left: 10px;
     color: $dark-shade-50;
 
     &::first-letter {
