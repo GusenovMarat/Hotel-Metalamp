@@ -1,7 +1,9 @@
 @import "../../styles/global.scss";
 
 .checkbox {
-  max-width: 222px;
+	display: flex;
+	flex-direction: column;
+  max-width: 260px;
 
   &__block {
     display: flex;

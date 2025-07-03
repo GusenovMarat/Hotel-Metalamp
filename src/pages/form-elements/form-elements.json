@@ -65,5 +65,10 @@
     "title": "toggle",
 		"name": "toggle",
 		"text": "получать спецпредложения"
-  }
+  },
+	"likeButton": {
+		"title": "like button",
+		"name": "like-button",
+		"count": "12"
+	}
 }

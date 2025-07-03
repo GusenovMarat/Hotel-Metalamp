@@ -3,6 +3,8 @@
 .radio {
   display: flex;
   flex-direction: column;
+	max-width: 260px;
+	width: fit-content;
 
   &__title {
     @include font-bold($fs-minimum, $dark-shade-100);
