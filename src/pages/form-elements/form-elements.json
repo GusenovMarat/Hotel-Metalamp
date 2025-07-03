@@ -63,12 +63,7 @@
   },
   "toggle": {
     "title": "toggle",
-    "toggleInput": [
-      {
-        "id": "toggle1",
-        "name": "toggle",
-        "lable": "получать спецпредложения"
-      }
-    ]
+		"name": "toggle",
+		"text": "получать спецпредложения"
   }
 }

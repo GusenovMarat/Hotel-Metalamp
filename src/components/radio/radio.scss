@@ -32,8 +32,8 @@
       display: block;
     }
 
-    &:checked+.radio__real::after {
-      display: block;
+    &:checked+.radio__real {
+      border-color: $purple;
     }
   }
 
@@ -42,24 +42,11 @@
     flex: none;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 10px;
     background-color: transparent;
     border: 1px solid $dark-shade-25;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 20px;
-      width: 20px;
-      border: 1px solid $purple;
-      border-radius: 50%;
-      display: none;
-    }
-
-    &::after {
       content: "";
       position: absolute;
       top: 50%;
