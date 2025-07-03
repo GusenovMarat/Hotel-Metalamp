@@ -12,35 +12,40 @@
 		text-transform: uppercase;
 	}
 	&__label {
-		display: inline-flex;
+		display: flex;
 		flex-direction: row;
 		align-items: center;
+		justify-content: flex-start;
 		min-height: 20px;
 		min-width: 40px;
 		border: 1px solid $dark-shade-25;
 		border-radius: 10px;
-		padding: 0 5px;
-
+		padding: 0 4px;
+		&:has(> .like-button__fake:checked) {
+			border-color: $purple;
+		}
 	}
 	&__fake {
 		appearance: none;
-		&:checked + .like-button__real +.like-button__text {
+		&:checked + .like-button__real {
 			color: $purple;
+			-webkit-text-stroke: 1px $purple;
+		}
+		&:checked ~ .like-button__count {
+			color: $purple;
+			
 		}
 	}
 	&__real {
 		@include material-icon(10px, transparent, 85%);
 		-webkit-text-stroke: 1px $dark-shade-25;
-		vertical-align: middle;
-		text-align: center;
 	}
 	&__count {
 		display: inline-block;
-		padding-left: 5px;
-		font-size: 10px;
-		line-height: 100%;
-		vertical-align: middle;
 		text-align: center;
+		font-size: 10px;
+		min-width: 20px;
+		line-height: 100%;
 		color: $dark-shade-25;
 	}
 }
