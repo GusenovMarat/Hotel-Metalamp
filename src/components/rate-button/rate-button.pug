@@ -1,8 +1,7 @@
-mixin.rate-button({star})
+mixin rateButton({star})
 	form.rate-button
 		each item in star
-			- const { name, text } = item
+			- const { name } = item
 			label.rate-button__item
-				input.rate-button__fake(type="checkbox" name= name)
+				input.rate-button__fake(type="radio" name= name)
 				i.rate-button__real
-				span.rate-button__text= text

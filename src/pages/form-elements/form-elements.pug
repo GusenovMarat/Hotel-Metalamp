@@ -5,6 +5,7 @@ include ../../components/radio/radio
 include ../../components/checkbox/checkbox
 include ../../components/toggle/toggle
 include ../../components/like-button/like-button
+include ../../components/rate-button/rate-button
 
 block variables
 	- var title = "Form elements";
@@ -13,29 +14,33 @@ block variables
 	- var background = false;
 
 block content
-	- const { buttons, fields, radio, checkbox, toggle, likeButton } = require("./form-elements.json")
+	- const { buttons, fields, radio, checkbox, toggle, likeButton, rateButton } = require("./form-elements.json")
 
 		.form-el
 			.form-el__container
 				.form-el__column
-					each field in fields
-						+field(field)
-				.form-el__column
-					.form-el__sections
-						.form-el__section
-							.form-el__title checkbox buttons
-							+checkbox(checkbox)
-						.form-el__section
-							.form-el__title radio buttons
-							+radio(radio)
-						.form-el__section
-							.form-el__title toggle 
-							+toggle(toggle)
-						.form-el__section
-							.form-el__title likeButton
-							+likeButton(likeButton)
+					.form-el__section
+						each field in fields
+							+field(field)
 				.form-el__column
 					.form-el__section
-						.form-el__section_title buttons
-						each button in buttons
-							+button(button)
+						.form-el__title checkbox buttons
+						+checkbox(checkbox)
+					.form-el__section
+						.form-el__title radio buttons
+						+radio(radio)
+					.form-el__section
+						.form-el__title toggle 
+						+toggle(toggle)
+					.form-el__section
+						.form-el__title like button
+						+likeButton(likeButton)
+					.form-el__section
+						.form-el__title rate button
+						+rateButton(rateButton)
+				.form-el__column
+					.form-el__section
+						.form-el__title buttons
+						.form-el__items
+							each button in buttons
+								+button(button)

@@ -25,6 +25,7 @@
   ],
   "fields": [
     {
+			"title": "text field",
       "type": "text",
       "name": "email",
       "placeholder": "email"
@@ -65,5 +66,24 @@
 	"likeButton": {
 		"name": "like-button",
 		"count": "12"
+	},
+	"rateButton": {
+		"star": [
+			{
+				"name": "starButton"
+			},
+			{
+				"name": "starButton"
+			},
+			{
+				"name": "starButton"
+			},
+			{
+				"name": "starButton"
+			},
+			{
+				"name": "starButton"
+			}
+		]
 	}
 }
