@@ -20,13 +20,28 @@
   }
 
   &__column {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
     min-width: 320px;
     height: 700px;
     border: 1px solid black;
+  }
+
+	&__sections {
+		display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+		
+    gap: 20px;
+	}
+	&__section {
+    display: flex;
+		flex-direction: column;
+  }
+
+
+	&__title {
+    @include font-bold($fs-minimum, $dark-shade-100);
+    text-transform: uppercase;
+    margin-bottom: 15px;
   }
 
   &__items {

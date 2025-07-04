@@ -1,11 +1,8 @@
-mixin radio({title, radioInput})
-	.radio
-		if title
-			.radio__title= title
-		fieldset.radio__block
-			each item in radioInput
-				- const { name, text } = item
-				label.radio__item
-					input.radio__fake(type="radio" name= name)
-					span.radio__real
-					span.radio__text= text
+mixin radio({radioInput})
+	fieldset.radio
+		each item in radioInput
+			- const { name, text } = item
+			label.radio__item
+				input.radio__fake(type="radio" name= name)
+				i.radio__real
+				span.radio__text= text

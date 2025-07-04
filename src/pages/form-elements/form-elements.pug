@@ -21,13 +21,21 @@ block content
 					each field in fields
 						+field(field)
 				.form-el__column
-					.form-el__items
-						+checkbox(checkbox)
-						+radio(radio)
-						+toggle(toggle)
-						+likeButton(likeButton)
+					.form-el__sections
+						.form-el__section
+							.form-el__title checkbox buttons
+							+checkbox(checkbox)
+						.form-el__section
+							.form-el__title radio buttons
+							+radio(radio)
+						.form-el__section
+							.form-el__title toggle 
+							+toggle(toggle)
+						.form-el__section
+							.form-el__title likeButton
+							+likeButton(likeButton)
 				.form-el__column
-					.form-el__items
-						.form-el__items_title buttons
+					.form-el__section
+						.form-el__section_title buttons
 						each button in buttons
 							+button(button)

@@ -1,8 +1,6 @@
 mixin toggle({title, name, text})
 	.toggle
-		if title
-			.toggle__title= title
-			label.toggle__label
-				input.toggle__fake(type="checkbox" name= name)
-				span.toggle__real
-				span.toggle__text= text
+		label.toggle__label
+			input.toggle__fake(type="checkbox" name= name)
+			i.toggle__real
+			span.toggle__text= text

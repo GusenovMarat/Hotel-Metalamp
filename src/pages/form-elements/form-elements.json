@@ -25,14 +25,12 @@
   ],
   "fields": [
     {
-      "title": "text field",
       "type": "text",
       "name": "email",
       "placeholder": "email"
     }
   ],
   "radio": {
-    "title": "radio buttons",
     "radioInput": [
       {
         "name": "radio",
@@ -45,7 +43,6 @@
     ]
   },
   "checkbox": {
-    "title": "checkbox buttons",
     "checkboxInput": [
       {
         "name": "checkbox1",
@@ -62,12 +59,10 @@
     ]
   },
   "toggle": {
-    "title": "toggle",
 		"name": "toggle",
 		"text": "получать спецпредложения"
   },
 	"likeButton": {
-		"title": "like button",
 		"name": "like-button",
 		"count": "12"
 	}

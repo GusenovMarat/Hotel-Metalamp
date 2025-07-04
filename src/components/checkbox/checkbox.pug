@@ -1,11 +1,8 @@
-mixin checkbox({title, checkboxInput})
-	.checkbox
-		if title
-			.checkbox__title= title
-		fieldset.checkbox__block
-			each item in checkboxInput
-				- const { name, text } = item
-				label.checkbox__item
-					input.checkbox__fake(type="checkbox" name= name)
-					span.checkbox__real
-					span.checkbox__text= text
+mixin checkbox({checkboxInput})
+	fieldset.checkbox
+		each item in checkboxInput
+			- const { name, text } = item
+			label.checkbox__item
+				input.checkbox__fake(type="checkbox" name= name)
+				i.checkbox__real
+				span.checkbox__text= text
