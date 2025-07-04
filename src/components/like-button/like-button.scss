@@ -21,24 +21,33 @@
 		border: 1px solid $dark-shade-25;
 		border-radius: 10px;
 		padding: 0 4px;
+		user-select: none;
 		&:has(> .like-button__fake:checked) {
-			border-color: $purple;
+      border-color: $purple;
 		}
 	}
 	&__fake {
 		appearance: none;
-		&:checked + .like-button__real {
-			color: $purple;
-			-webkit-text-stroke: 1px $purple;
+		&:checked + .like-button__real::before {
+			content: "favorite";
+			background: $purple-gradient;
+			background-clip: text;
+			transition: none;
+			
 		}
 		&:checked ~ .like-button__count {
 			color: $purple;
-			
+			transition: none;
 		}
 	}
 	&__real {
 		@include material-icon(10px, transparent, 85%);
-		-webkit-text-stroke: 1px $dark-shade-25;
+		&::before {
+			content: "favorite_border";
+			background: $dark-shade-25;
+			background-clip: text;
+			transition: all 0.3s ease;
+		}
 	}
 	&__count {
 		display: inline-block;
@@ -47,5 +56,6 @@
 		min-width: 20px;
 		line-height: 100%;
 		color: $dark-shade-25;
+		transition: all 0.3s ease;
 	}
 }

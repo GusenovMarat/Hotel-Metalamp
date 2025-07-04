@@ -31,11 +31,17 @@
     appearance: none;
 
     &:checked+.radio__real::before {
-      display: block;
+      opacity: 1;
+			transition: all 0.3s ease;
     }
 
     &:checked+.radio__real {
       border-color: $purple;
+			transition: all 0.3s ease;
+    }
+		&:checked ~ .radio__text {
+      color: $dark-shade-75;
+			transition: all 0.3s ease;
     }
   }
 
@@ -56,9 +62,10 @@
       transform: translate(-50%, -50%);
       height: 12px;
       width: 12px;
-      background-color: $purple;
+      background: $purple-gradient;
       border-radius: 50%;
-      display: none;
+			transition: all 1 ease;
+			opacity: 0;
     }
   }
 

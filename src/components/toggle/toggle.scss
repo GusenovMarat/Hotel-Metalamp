@@ -19,7 +19,7 @@
 	&__fake {
 		appearance: none;
 		&:checked + .toggle__real::before {
-			background-color: $purple;
+			background-image: $purple-gradient;
 			left: calc(100% - 12px - 4px);
 		}
 		&:checked + .toggle__real {
@@ -49,6 +49,7 @@
 	}
 	&__text {
 		padding-left: 10px;
+		color: $dark-shade-75;
 		&::first-letter {
 			text-transform: uppercase;
 		}

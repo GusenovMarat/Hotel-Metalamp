@@ -41,8 +41,8 @@
       position: absolute;
       inset: 0;
       mask:
-        linear-gradient(90deg, #fff, #fff) content-box,
-        linear-gradient(90deg, #fff, #fff);
+        linear-gradient(white, white) content-box,
+        linear-gradient(white, white) padding-box;
       mask-composite: exclude;
       padding: 2px;
       border-radius: 22px;
