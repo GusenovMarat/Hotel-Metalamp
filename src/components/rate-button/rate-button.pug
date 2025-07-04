@@ -1,7 +1,7 @@
-mixin rateButton({star})
+mixin rateButton()
+	- const valueRate = [1,2,3,4,5]
 	form.rate-button
-		each item in star
-			- const { name } = item
+		each key, aria in valueRate
 			label.rate-button__item
-				input.rate-button__fake(type="radio" name= name)
+				input.rate-button__fake(type="radio" value= key name= "rait" aria-label= aria)
 				i.rate-button__real

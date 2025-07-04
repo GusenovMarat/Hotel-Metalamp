@@ -8,6 +8,9 @@
 	justify-content: space-between;
 	&__fake {
 		appearance: none;
+		&:checked + .rate-button__real::before {
+			content: "star"
+		}
 	}
 	&__real {
 		@include material-icon(24px, transparent, 100%);

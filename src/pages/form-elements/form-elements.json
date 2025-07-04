@@ -66,24 +66,5 @@
 	"likeButton": {
 		"name": "like-button",
 		"count": "12"
-	},
-	"rateButton": {
-		"star": [
-			{
-				"name": "starButton"
-			},
-			{
-				"name": "starButton"
-			},
-			{
-				"name": "starButton"
-			},
-			{
-				"name": "starButton"
-			},
-			{
-				"name": "starButton"
-			}
-		]
 	}
 }
