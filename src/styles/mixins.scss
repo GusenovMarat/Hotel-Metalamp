@@ -54,11 +54,13 @@
   $fc: white,
   $lh: normal,
   $fw: normal,
+	$fstl: normal,
 ) {
   display: inline-block;
   font-family: 'Material-icons','Arial', sans-serif;
   speak: never;
   color: $fc;
+	font-style: $fstl;
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;
