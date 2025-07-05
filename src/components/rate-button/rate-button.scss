@@ -14,6 +14,7 @@
 	}
 	&__real {
 		@include material-icon(24px, transparent, 100%);
+		cursor: pointer;
 		&::before {
 			content: "star_border";
 			background: $purple-gradient;

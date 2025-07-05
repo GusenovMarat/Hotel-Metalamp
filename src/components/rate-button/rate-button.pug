@@ -1,7 +1,12 @@
 mixin rateButton()
 	- const valueRate = [1,2,3,4,5]
 	form.rate-button
-		each key, aria in valueRate
+		each key, index in valueRate
 			label.rate-button__item
-				input.rate-button__fake(type="radio" value= key name= "rait" aria-label= aria)
+				input.rate-button__fake(
+					type="radio" 
+					name="rating" 
+					value=key
+					aria-label=`Оценка ${key} из 5`
+				)
 				i.rate-button__real

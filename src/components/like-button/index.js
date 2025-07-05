@@ -1,5 +1,5 @@
 import { countLikeButton } from '@/components/like-button/like-button';
 
-$(document).ready(() => {
+document.addEventListener('DOMContentLoaded', () => {
   countLikeButton();
 });
