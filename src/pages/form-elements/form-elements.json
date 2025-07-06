@@ -44,6 +44,7 @@
     ]
   },
   "checkbox": {
+    "title": "checkbox buttons",
     "checkboxInput": [
       {
         "name": "checkbox1",
@@ -66,5 +67,39 @@
 	"likeButton": {
 		"name": "like-button",
 		"count": "12"
-	}
+	},
+  "expandCheckbox": {
+    "expand": true,
+    "title": "expandable checkbox list",
+    "checkboxInput": [
+      {
+        "name": "checkbox1",
+        "text": "можно курить"
+      },
+      {
+        "name": "checkbox2",
+        "text": "можно с питомцами"
+      },
+      {
+        "name": "checkbox3",
+        "text": "можно пригласить гостей (до 10 человек)"
+      }
+    ]
+  },
+  "richCheckbox": {
+    "rich": true,
+    "title": "rich сheckbox buttons",
+    "checkboxInput": [
+      {
+        "name": "checkbox1",
+        "caption": "широкий коридор",
+        "text": "ширина коридоров в номере не менее 91 см."
+      },
+      {
+        "name": "checkbox2",
+        "caption": "помощник для инвалидов",
+        "text": "на 1 этаже вас встретит специалист  и проводит до номера."
+      }
+    ]
+  }
 }

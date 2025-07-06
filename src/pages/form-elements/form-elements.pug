@@ -14,7 +14,7 @@ block variables
 	- var background = false;
 
 block content
-	- const { buttons, fields, radio, checkbox, toggle, likeButton, rateButton } = require("./form-elements.json")
+	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton } = require("./form-elements.json")
 
 		.form-el
 			.form-el__container
@@ -24,7 +24,6 @@ block content
 							+field(field)
 				.form-el__column
 					.form-el__section
-						.form-el__title checkbox buttons
 						+checkbox(checkbox)
 					.form-el__section
 						.form-el__title radio buttons
@@ -44,3 +43,9 @@ block content
 						.form-el__items
 							each button in buttons
 								+button(button)
+				.form-el__column
+					.form-el__section
+						+checkbox(expandCheckbox)
+				.form-el__column
+					.form-el__section
+						+checkbox(richCheckbox)

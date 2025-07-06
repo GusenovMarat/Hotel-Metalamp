@@ -18,6 +18,7 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 110px;
+    flex-wrap: wrap;
   }
 
   &__column {
@@ -25,7 +26,6 @@
     flex-direction: column;
     justify-content: flex-start;
     min-width: 320px;
-		
   }
 
 	&__section {
