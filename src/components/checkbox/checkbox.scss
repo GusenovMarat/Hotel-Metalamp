@@ -55,7 +55,7 @@
     -moz-appearancee: none;
     appearance: none;
 
-    &:checked+.checkbox__real {
+    &:checked +.checkbox__real {
       background:
         url('../../assets/img/check.svg') center no-repeat,
         linear-gradient(white, white) padding-box,

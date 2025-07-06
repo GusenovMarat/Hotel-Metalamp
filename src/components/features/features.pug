@@ -1,0 +1,10 @@
+mixin features({list})
+  .features
+    each item in list
+      - const { icon, caption, text } = item
+      .features__item
+        i.features__icon= icon
+        .features__info
+          span.features__caption= caption
+          span.features__text= text
+      .features__line
