@@ -1,0 +1,45 @@
+@import "../../styles/global.scss";
+@import "../like-button/like-button.scss";
+
+.review {
+  display: flex;
+  flex-direction: column;
+  max-width: 711px;
+  &__user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__user {
+    &-avatar {
+
+    }
+    &-img {
+      height: 48px;
+    }
+    &-meta {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+    }
+    &-name {
+      @include font-bold($fs-normal, $dark-shade-75, 24px);
+      text-transform: capitalize;
+    }
+    &-viewdate {
+      font-size: $fs-normal;
+      color: $dark-shade-75;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &__text {
+    padding-left: 14.3px;
+    font-size: $fs-normal;
+    color: $dark-shade-75;
+  }
+}

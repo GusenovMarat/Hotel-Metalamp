@@ -1,4 +1,4 @@
-mixin logo({href, name, alt})
+mixin logo({href, src, alt})
 	.logo
 		a.logo__link(href=href || "./index.html")
-			img.logo__img(src="assets/img/general/"+ name alt=alt || "logo")
+			img.logo__img(src="assets/img/general/"+ src alt=alt || "logo")

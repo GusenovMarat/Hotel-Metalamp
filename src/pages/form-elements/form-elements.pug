@@ -8,6 +8,7 @@ include ../../components/like-button/like-button
 include ../../components/rate-button/rate-button
 include ../../components/bullet-list/bullet-list
 include ../../components/features/features
+include ../../components/review/review
 
 block variables
 	- var title = "Form elements";
@@ -16,7 +17,7 @@ block variables
 	- var background = false;
 
 block content
-	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton, bulletList, features } = require("./form-elements.json")
+	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton, bulletList, features, review } = require("./form-elements.json")
 
 		.form-el
 			.form-el__container
@@ -57,3 +58,6 @@ block content
 				.form-el__column
 					.form-el__section
 						+features(features)
+				.form-el__column
+					.form-el__section
+						+review(review)
