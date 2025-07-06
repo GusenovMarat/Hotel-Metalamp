@@ -1,1 +1,35 @@
 @import "../../styles/global.scss";
+
+.bullet-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  &__title {
+  @include font-bold($fs-minimum, $dark-shade-100, 100% );
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+  }
+  &__item {
+    position: relative;
+    padding-left: 20px;
+    line-height: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      transform: translateY(-50%);
+      left: 0;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: $dark-shade-25;
+    }
+  }
+}

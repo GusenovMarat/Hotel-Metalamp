@@ -87,6 +87,7 @@
   &__text {
     line-height: 18px;
     max-width: 200px;
+    color: $dark-shade-50;
     cursor: pointer;
     &::first-letter {
       text-transform: uppercase;
