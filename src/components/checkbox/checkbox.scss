@@ -57,7 +57,7 @@
 
     &:checked +.checkbox__real {
       background:
-        url('../../assets/img/check.svg') center no-repeat,
+        url('../../assets/img/general/check.svg') center no-repeat,
         linear-gradient(white, white) padding-box,
         $purple-gradient border-box;
       border: 1px solid transparent;
