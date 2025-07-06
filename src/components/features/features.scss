@@ -1,1 +1,44 @@
 @import "../../styles/global.scss";
+
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 280px;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+  }
+  &__caption {
+    @include font-bold($fs-normal, $dark-shade-75, 24px);
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    color: $dark-shade-75;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__icon {
+    @include material-icon(48px, transparent, 85%);
+    background-image: $purple-gradient;
+    background-clip: text;
+  }
+  &__line {
+    height: 1px;
+    width: 100%;
+    background-color: $dark-shade-10;
+    filter:
+      drop-shadow(0 0 1px $dark-shade-10 );
+  }
+}
