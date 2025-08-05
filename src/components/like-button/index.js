@@ -1,1 +1,3 @@
-import '@/components/like-button/like-button';
+import { countLikeButtons} from './likeButton.js';
+
+document.addEventListener('DOMContentLoaded', () => countLikeButtons());

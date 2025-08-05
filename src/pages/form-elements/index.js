@@ -1,3 +1,4 @@
 import './form-elements.scss';
 
-import '@/components/like-button';
+import '@/components/like-button/index';
+
