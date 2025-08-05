@@ -1,5 +1,5 @@
-export function countLikeButtons(container = document) {
-  container.querySelectorAll('.like-button').forEach(likeButton => {
+export function countLikeButtons() {
+  document.querySelectorAll('.like-button').forEach(likeButton => {
     const checkbox = likeButton.querySelector('.like-button__fake');
     const counter = likeButton.querySelector('.like-button__count');
     

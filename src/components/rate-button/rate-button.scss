@@ -8,18 +8,13 @@
 	justify-content: space-between;
 	&__fake {
 		appearance: none;
-		&:checked + .rate-button__real::before {
-			content: "star"
-		}
+		opacity: 0;
 	}
 	&__real {
 		@include material-icon(24px, transparent, 100%);
 		cursor: pointer;
-		&::before {
-			content: "star_border";
-			background: $purple-gradient;
-			background-clip: text;
-			transition: all 0.3s ease;
-		}
+		background: $purple-gradient;
+		background-clip: text;
+		transition: all 0.3s ease;
 	}
 }

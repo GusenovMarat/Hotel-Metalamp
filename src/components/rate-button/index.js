@@ -1,5 +1,3 @@
-import { countLikeButton } from '@/components/rate-button/rate-button';
+import { rateButtons } from '@/components/rate-button/rate-button';
 
-$(document).ready(() => {
-  countLikeButton();
-});
+document.addEventListener('DOMContentLoaded', () => rateButtons());

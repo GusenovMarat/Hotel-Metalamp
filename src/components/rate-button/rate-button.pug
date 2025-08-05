@@ -1,12 +1,13 @@
 mixin rateButton()
-	- const valueRate = [1,2,3,4,5]
-	form.rate-button
-		each key, index in valueRate
-			label.rate-button__item
-				input.rate-button__fake(
-					type="radio" 
-					name="rating" 
-					value=key
-					aria-label=`Оценка ${key} из 5`
-				)
-				i.rate-button__real
+  - const valueRate = [1,2,3,4,5]
+  form.rate-button(role="radiogroup" 
+	aria-label="Оцените от 1 до 5 звёзд")
+    each key in valueRate
+      label.rate-button__item
+        input.rate-button__fake(
+          type="radio" 
+          name="rating" 
+          value=key
+          aria-label=`Оценка ${key} из 5`
+        )
+        i.rate-button__real star_border
