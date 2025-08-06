@@ -4,7 +4,7 @@ export function countLikeButtons() {
     const counter = likeButton.querySelector('.like-button__count');
     
     checkbox.addEventListener('change', () => {
-      let count = +counter.textContent || 0;
+      let count = parseInt(counter.textContent) || 0;
       counter.textContent = checkbox.checked ? count + 1 : count - 1;
     });
   });

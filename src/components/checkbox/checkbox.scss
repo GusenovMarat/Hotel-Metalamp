@@ -9,13 +9,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+		min-width: 266px;
     cursor: pointer;
-    & + .checkbox__block {
-      display: none;
-    }
-    &:active + .checkbox__block {
-      display: flex;
-    }
   }
   &__expand-icon {
     @include material-icon(24px, inherit);

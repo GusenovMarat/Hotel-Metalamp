@@ -1,7 +1,7 @@
 mixin checkbox({expand= false, title, rich= false, caption, checkboxInput})
 	.checkbox
 		if expand
-			.checkbox__expand(tabindex= "0")
+			.checkbox__expand.js-checkbox__expand
 				.checkbox__title= title
 				.checkbox__expand-icon expand_more
 		else 
