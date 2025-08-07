@@ -1,16 +1,22 @@
-mixin checkbox({expand= false, title, rich= false, caption, checkboxInput})
-	.checkbox
+mixin checkbox({expand = false, title, rich = false, caption, checkboxInput})
+	- const checkboxClasses = expand ? 'js-checkbox' : ''
+	- const expandClasses = expand ? 'js-checkbox-expand' : ''
+	- const blockClasses = expand ? 'js-checkbox-block' : ''
+	- const toggleClasses = expand ? 'js-checkbox-toggle' : ''
+	
+	.checkbox(class=checkboxClasses)
 		if expand
-			.checkbox__expand.js-checkbox__expand
+			.checkbox__expand(class=expandClasses)
 				.checkbox__title= title
-				.checkbox__expand-icon expand_more
+				.checkbox__expand-icon(class=toggleClasses) expand_more
 		else 
 			.checkbox__title= title
-		fieldset.checkbox__block
+		
+		fieldset.checkbox__block(class=blockClasses)
 			each item in checkboxInput
 				- const { name, text, caption } = item
 				label.checkbox__item
-					input.checkbox__fake(type="checkbox" name= name)
+					input.checkbox__fake(type="checkbox" name=name)
 					i.checkbox__real
 					if rich 
 						.checkbox__info
