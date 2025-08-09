@@ -1,4 +1,4 @@
-import CheckboxList from "./checkbox";
+import CheckboxList from "./checkboxList";
 
 document.addEventListener("DOMContentLoaded",() => {
   const checkboxList  = new CheckboxList();
