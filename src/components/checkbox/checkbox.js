@@ -15,6 +15,17 @@ class CheckboxList {
 		this.checkbox = document.querySelectorAll(this.checkboxSelector);
 	}
 
+	init() {
+		this.checkbox.forEach(item => {
+			const expand = item.querySelector(this.checkboxExpand);
+			const block = item.querySelector(this.checkboxBlock);
+			const toggle = item.querySelector(this.checkboxToggle);
+			this.initStyles(block);
+
+			expand.addEventListener('click', () => this.toggleHandler(block, toggle));
+		});
+	}
+
 	initStyles(element) {
 		if (element) {
 				Object.assign(element.style, {
@@ -25,12 +36,16 @@ class CheckboxList {
 			})
 		}
 	}
+	
+	toggleHandler (block, toggle) {
+		const isHidden = block.style.maxHeight === '0px';
+		
+		block.style.maxHeight = (isHidden) ? `${block.scrollHeight}px` 
+		: '0px';
 
-	init() {
-		this.checkbox.forEach(item => {
-			const block = item.querySelector(this.checkboxBlock);
-			this.initStyles(block);
-		})
+		toggle.style.transition = 'transform 0.3s ease';
+    toggle.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0)'
+		
 	}
 };
 
