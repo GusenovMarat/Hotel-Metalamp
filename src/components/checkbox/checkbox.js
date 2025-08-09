@@ -20,6 +20,7 @@ class CheckboxList {
 			const expand = item.querySelector(this.checkboxExpand);
 			const block = item.querySelector(this.checkboxBlock);
 			const toggle = item.querySelector(this.checkboxToggle);
+
 			block.style.maxHeight = '0px'
 			expand.addEventListener('click', () => this.toggleHandler(block, toggle));
 		});
@@ -27,8 +28,7 @@ class CheckboxList {
 
 	toggleHandler (block, toggle) {
 		const isHidden = block.style.maxHeight === '0px';
-		block.style.maxHeight = (isHidden) ? `${block.scrollHeight}px` 
-		: '0px';
+		block.style.maxHeight = isHidden ? `${block.scrollHeight}px` : '0px';
     toggle.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0)'
 		
 	}

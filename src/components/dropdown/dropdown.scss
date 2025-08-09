@@ -1,0 +1,68 @@
+@import "../../styles/global.scss";
+
+.dropdown {
+	display: flex;
+	flex-direction: column;
+	max-width: 266px;
+	@include font-bold(12px);
+	&__title {
+		text-transform: uppercase;
+		padding-bottom: 5px;
+	}
+	&__block {
+		border: 1px solid $dark-shade-25;
+		border-radius: 4px;
+	}
+	&__select {
+		display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+		min-width: 266px;
+		min-height: 44px;
+		border: 1px solid $dark-shade-25;
+		border-radius: 4px;
+		padding-left: 15px;
+	}
+	&__select-items {
+		@include font-normal(12px, $dark-shade-75);
+	}
+	&__toggle {
+		@include material-icon(24px, inherit);
+		min-width: 44px;
+		line-height: 44px;
+		text-align: center;
+    cursor: pointer;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+		padding: 7px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__controls {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+	}
+	&__button {
+		color: $dark-shade-50;
+		font-size: 18px;
+		min-width: 30px;
+		min-height: 30px;
+		border: 1px $dark-shade-25 solid;
+		border-radius: 50%;
+		background-color: white;
+	}
+	&__caption {
+		padding-left: 15px;
+	}
+}
