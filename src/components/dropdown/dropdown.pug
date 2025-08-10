@@ -11,8 +11,8 @@ mixin dropdown({title, items})
 					.dropdown__item.js-dropdown__item
 						span.dropdown__caption.js-dropdown__caption= caption
 						.dropdown__controls.js-dropdown__controls
-							button.dropdown__button(data-action="decrement" 
+							button.dropdown__button.js-dropdown__button(data-action="decrement" 
 							data-target=target) -
-							span.dropdown__counter 0
-							button.dropdown__button(data-action="increment" 
+							span.dropdown__counter.js-dropdown__counter 0
+							button.dropdown__button.js-dropdown__button(data-action="increment" 
 							data-target=target) +
