@@ -33,23 +33,26 @@ class DropDown {
 
 			items.forEach(item => {
 			const buttons = item.querySelectorAll(this.DropDownButton);
-			const counter = item.querySelector(this.DropDownCounter);
-			let value = parseInt(counter.textContent) || 0;
+			const count = item.querySelector(this.DropDownCounter);
 			buttons.forEach(btn => {
-				btn.addEventListener('click', () => {
-					const action = btn.dataset.action;
-						if (action === "increment") {
-							value++;
-						}
-						if (action === "decrement") {
-							value = Math.max(0, value - 1)
-						}
-						counter.textContent = value;
-					})
+					btn.addEventListener('click', () => this.handleCounter(btn, count))
 				})
 			});
 		})
 	}
+
+	handleCounter(element, counter) {
+		let value = parseInt(counter.textContent) || 0;
+		const action = element.dataset.action;
+		if (action === "increment") {
+			value++;
+		}
+		if (action === "decrement") {
+			value = Math.max(0, value - 1)
+		}
+		counter.textContent = value;
+	}
+
 }
 
 export default DropDown
