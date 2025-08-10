@@ -1,9 +1,9 @@
 mixin dropdown({title, items})
 	.dropdown.js-dropdown
 		.dropdown__title= title
-		.dropdown__block
-			.dropdown__select.js-dropdown__select
-				.dropdown__select-items.js-dropdown__select-items 2 спальни, 2 кровати...
+		.dropdown__block.js-dropdown__block
+			.dropdown__current.js-dropdown__current
+				.dropdown__current-text.js-dropdown__current-text 2 спальни, 2 кровати...
 				.dropdown__toggle.js-dropdown__toggle expand_more
 			.dropdown__list.js-dropdown__list
 				each item in items

@@ -17,8 +17,8 @@ class CheckboxList {
 
 	init() {
 		this.checkbox.forEach(item => {
-			const expand = item.querySelector(this.checkboxExpand);
 			const block = item.querySelector(this.checkboxBlock);
+			const expand = item.querySelector(this.checkboxExpand);
 			const toggle = item.querySelector(this.checkboxToggle);
 
 			block.style.maxHeight = '0px'

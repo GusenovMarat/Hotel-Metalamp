@@ -1,6 +1,6 @@
-import DropDown from "./dropdown";
+import DropDown from "./dropDown";
 
-addEventListener(("DOMContentLoaded",() => {
+document.addEventListener("DOMContentLoaded", () => {
   const dropDownList = new DropDown();
   dropDownList.init();
-}))
+})

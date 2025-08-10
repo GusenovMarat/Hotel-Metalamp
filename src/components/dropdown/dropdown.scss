@@ -12,22 +12,29 @@
 	&__block {
 		border: 1px solid $dark-shade-25;
 		border-radius: 4px;
+		max-height: 44px;
+		overflow: hidden;
+		transition: all 0.3s ease;
+		&-active {
+			max-height: 100%;
+			box-shadow: 0 0 2px $dark-shade-50;
+		}
 	}
-	&__select {
+	&__current {
 		display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 		min-width: 266px;
 		min-height: 44px;
-		border-bottom: 1px solid $dark-shade-25;
 		padding-left: 15px;
-	}
-	&__select-items {
-		@include font-normal(12px, $dark-shade-75);
+		cursor: pointer;
+		&-text {
+			@include font-normal(12px, $dark-shade-75);
+		}
 	}
 	&__toggle {
-		@include material-icon(24px, inherit);
+		@include material-icon(24px, $dark-shade-75);
 		min-width: 44px;
 		line-height: 44px;
 		text-align: center;
@@ -36,8 +43,10 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
+		overflow: hidden;
 		gap: 7px;
 		padding: 7px;
+		border-top: 1px solid $dark-shade-25;
 	}
 	&__item {
 		display: flex;
@@ -53,20 +62,20 @@
 		gap: 5px;
 	}
 	&__button {
-		color: $dark-shade-50;
+		color: $dark-shade-25;
 		font-size: 18px;
 		min-width: 30px;
 		min-height: 30px;
 		border: 1px $dark-shade-25 solid;
 		border-radius: 50%;
 		background-color: white;
+		cursor: pointer;
+		&_active {
+			border-color: $dark-shade-50;;
+		}
 	}
 	&__caption {
 		padding-left: 8px;
 		text-transform: uppercase;
-	}
-	&__hide-items {
-		border: 1px solid $dark-shade-25;
-		border-radius: 4px;
 	}
 }
