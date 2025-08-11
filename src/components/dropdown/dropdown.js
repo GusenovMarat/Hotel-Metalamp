@@ -43,13 +43,13 @@ class DropDown {
 										this.handleCounter(btn, counter);
 										const key = itemCaption.textContent;
 										const count = counter.textContent;
-
-										if (count !== "0") {
-												itemsData.set(key, {
-														"text": key,    
-														"count": count  
-												});
-										} else {
+										
+										itemsData.set(key, {
+												"text":  key,    
+												"count": count  
+										})
+										
+										if (count === "0"){
 												itemsData.delete(key); 
 										}
 
