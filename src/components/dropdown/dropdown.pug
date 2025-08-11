@@ -3,16 +3,16 @@ mixin dropdown({title, items})
 		.dropdown__title= title
 		.dropdown__block.js-dropdown__block
 			.dropdown__current.js-dropdown__current
-				.dropdown__current-text.js-dropdown__current-text 2 спальни, 2 кровати...
+				.dropdown__current-text.js-dropdown__current-text
 				.dropdown__toggle.js-dropdown__toggle expand_more
 			.dropdown__list.js-dropdown__list
 				each item in items
-					- const {caption, target} = item
-					.dropdown__item.js-dropdown__item
+					- const {caption, declensions} = item
+					.dropdown__item.js-dropdown__item(data-declensions = `[${declensions}]`)
 						span.dropdown__caption.js-dropdown__caption= caption
 						.dropdown__controls.js-dropdown__controls
-							button.dropdown__button.js-dropdown__button(data-action="decrement" 
-							data-target=target) -
+							button.dropdown__button.js-dropdown__button(
+								data-action="decrement") -
 							span.dropdown__counter.js-dropdown__counter 0
-							button.dropdown__button.js-dropdown__button(data-action="increment" 
-							data-target=target) +
+							button.dropdown__button.js-dropdown__button(
+								data-action="increment") +

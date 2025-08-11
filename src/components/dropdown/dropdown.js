@@ -43,16 +43,13 @@ class DropDown {
 										this.handleCounter(btn, counter);
 										const key = itemCaption.textContent;
 										const count = counter.textContent;
-										
 										itemsData.set(key, {
 												"text":  key,    
 												"count": count  
 										})
-										
 										if (count === "0"){
 												itemsData.delete(key); 
 										}
-
 										currentText.textContent = (Array.from(itemsData.values()).
 										map(item => item.count + " " + item.text)).
 										join(", ");
