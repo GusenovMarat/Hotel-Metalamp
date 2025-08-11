@@ -18,7 +18,7 @@ block variables
 	- var background = false;
 
 block content
-	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton, bulletList, features, review, dropdown } = require("./form-elements.json")
+	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton, bulletList, features, review, defaultDropdown, guestsDropdown } = require("./form-elements.json")
 
 		.form-el
 			.form-el__container
@@ -64,4 +64,5 @@ block content
 						+review(review)
 				.form-el__column
 					.form-el__section
-						+dropdown(dropdown)
+						+dropdown(defaultDropdown)
+						+dropdown(guestsDropdown)

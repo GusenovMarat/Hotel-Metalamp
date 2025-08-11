@@ -1,6 +1,6 @@
 //- theme "filled" or "no-bg"
 
-mixin button({href, text, theme, border,	long, small, type, icon})
+mixin button({href, text, theme, border,	long, small, type, icon, selector})
 	-	
 			let classArray = []
 
@@ -11,6 +11,8 @@ mixin button({href, text, theme, border,	long, small, type, icon})
 			if (small) classArray.push('button__size-small')
 
 			if (border) classArray.push(`button__bordered`)
+			
+			if (selector) classArray.push(`js-button__${selector}`)
 
 	
 	if href 

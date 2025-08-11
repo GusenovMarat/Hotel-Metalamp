@@ -1,9 +1,9 @@
-mixin dropdown({title, items})
-	.dropdown.js-dropdown
+mixin dropdown({title, items, buttons, wide = false, placeholder= ""})
+	.dropdown.js-dropdown(class= (wide) ? "dropdown__wide" : "")
 		.dropdown__title= title
 		.dropdown__block.js-dropdown__block
 			.dropdown__current.js-dropdown__current
-				.dropdown__current-text.js-dropdown__current-text
+				.dropdown__current-text.js-dropdown__current-text= placeholder
 				.dropdown__toggle.js-dropdown__toggle expand_more
 			.dropdown__list.js-dropdown__list
 				each item in items
@@ -12,8 +12,12 @@ mixin dropdown({title, items})
 						span.dropdown__caption.js-dropdown__caption(
 							data-declensions = declensions)= caption
 						.dropdown__controls.js-dropdown__controls
-							button.dropdown__button.js-dropdown__button(
+							button.dropdown__counter-button.js-dropdown__counter-button(
 								data-action="decrement") -
 							span.dropdown__counter.js-dropdown__counter 0
-							button.dropdown__button.js-dropdown__button(
+							button.dropdown__counter-button.js-dropdown__counter-button(
 								data-action="increment") +
+				if buttons
+					.dropdown__buttons.js-dropdown__buttons
+						each button in buttons
+							+button(button)

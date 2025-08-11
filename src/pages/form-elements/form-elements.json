@@ -129,7 +129,7 @@
     "date": "5",
     "text": "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."
 	},
-	"dropdown": {
+	"defaultDropdown": {
 		"title": "dropdown",
 		"items": 
 		[
@@ -146,5 +146,38 @@
 				"declensions": "ванная комната, ванные комнаты, ванных комнат"
 			}
 		]
+	},
+  	"guestsDropdown": {
+		"title": "dropdown",
+    "wide": true,
+		"items": 
+		[
+			{
+				"caption": "взрослые",
+				"declensions": "гость, гостя, гостей"
+			},
+			{
+				"caption": "дети",
+				"declensions": "гость, гостя, гостей"
+			},
+			{
+				"caption": "младенцы",
+				"declensions": "ребёнок, детей, детей"
+			}
+		],
+    "buttons": [
+      {
+        "text": "очистить",
+        "type": "button",
+        "theme": "no-bg",
+        "selector": "reset"
+      },
+      {
+        "text": "применить",
+        "type": "button",
+        "theme": "no-bg",
+        "selector": "submit"
+      }
+    ]
 	}
 }

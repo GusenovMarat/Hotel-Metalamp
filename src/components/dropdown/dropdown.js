@@ -12,9 +12,10 @@ class DropDown {
 			this.DropDownToggle = '.js-dropdown__toggle';
 			this.DropDownList = '.js-dropdown__list';
 			this.DropDownItem = '.js-dropdown__item';
-			this.DropDownButton = '.js-dropdown__button';
+			this.DropDownCounterButton = '.js-dropdown__counter-button';
 			this.DropDownItemCaption = '.js-dropdown__caption';
 			this.DropDownCounter = '.js-dropdown__counter';
+			this.DropDownButtons = '.js-dropdown__buttons';
 	}
 
 	findDropDown() {
@@ -35,7 +36,7 @@ class DropDown {
 					});
 
 					items.forEach(item => {
-							const buttons = item.querySelectorAll(this.DropDownButton);
+							const buttons = item.querySelectorAll(this.DropDownCounterButton);
 							const counter = item.querySelector(this.DropDownCounter);
 							const itemCaption = item.querySelector(this.DropDownItemCaption)
 							buttons.forEach((btn) => {
@@ -51,9 +52,13 @@ class DropDown {
 										if (count === "0"){
 												itemsData.delete(key); 
 										}
-										currentText.textContent = (Array.from(itemsData.values()).
-										map(item => item.count + " " + item.text)).
+
+										const groupItems = Array.from(itemsData.values())
+
+										currentText.textContent = groupItems.
+										map(item => item.count + " " + item.text).
 										join(", ");
+										console.log(Array.from(itemsData.values()))
 									});
 							});
 					});
