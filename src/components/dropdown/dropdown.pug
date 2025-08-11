@@ -8,8 +8,9 @@ mixin dropdown({title, items})
 			.dropdown__list.js-dropdown__list
 				each item in items
 					- const {caption, declensions} = item
-					.dropdown__item.js-dropdown__item(data-declensions = `[${declensions}]`)
-						span.dropdown__caption.js-dropdown__caption= caption
+					.dropdown__item.js-dropdown__item
+						span.dropdown__caption.js-dropdown__caption(
+							data-declensions = declensions)= caption
 						.dropdown__controls.js-dropdown__controls
 							button.dropdown__button.js-dropdown__button(
 								data-action="decrement") -
