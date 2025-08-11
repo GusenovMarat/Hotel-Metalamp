@@ -15,7 +15,10 @@ class DropDown {
 			this.DropDownCounterButton = '.js-dropdown__counter-button';
 			this.DropDownItemCaption = '.js-dropdown__caption';
 			this.DropDownCounter = '.js-dropdown__counter';
-			this.DropDownButtons = '.js-dropdown__buttons';
+			this.DropDownButtonReset = '.js-button__reset';
+			this.DropDownButtonSubmit = '.js-button__submit';
+			this.HideButton = 'button__hidden';
+			this.DropDownBlockActive = 'dropdown__block-active'
 	}
 
 	findDropDown() {
@@ -29,40 +32,58 @@ class DropDown {
 					const toggle = item.querySelector(this.DropDownCurrent);
 					const items = list.querySelectorAll(this.DropDownItem);
 					const currentText = item.querySelector(this.DropDownCurrentText);
+					const buttonReset = item.querySelector(this.DropDownButtonReset);
 					const itemsData = new Map();
 
 					toggle.addEventListener('click', () => {
-							block.classList.toggle('dropdown__block-active');
+							block.classList.toggle(this.DropDownBlockActive);
 					});
 
 					items.forEach(item => {
 							const buttons = item.querySelectorAll(this.DropDownCounterButton);
 							const counter = item.querySelector(this.DropDownCounter);
 							const itemCaption = item.querySelector(this.DropDownItemCaption)
+							
+
+							if (buttonReset) {
+								buttonReset.classList.add(this.HideButton)
+								buttonReset.addEventListener('click', () => {
+									itemsData.clear();
+									currentText.textContent = '';
+									counter.textContent = '0';
+									buttonReset.classList.add(this.HideButton)
+								});
+							};
+
 							buttons.forEach((btn) => {
-									btn.addEventListener('click', () => {
-										this.handleCounter(btn, counter);
-										const key = itemCaption.textContent;
-										const count = counter.textContent;
-										const declensions = this.declension(count, itemCaption);
-										itemsData.set(key, {
-												"text":  declensions,    
-												"count": count  
-										})
-										if (count === "0"){
-												itemsData.delete(key); 
-										}
+								btn.addEventListener('click', () => {
+									this.handleCounter(btn, counter);
+									const key = itemCaption.textContent;
+									const count = counter.textContent;
+									const declensions = this.declension(count, itemCaption);
+									buttonReset.classList.remove(this.HideButton)
+									itemsData.set(key, {
+											"text":  declensions,    
+											"count": count  
+									})
 
-										const groupItems = Array.from(itemsData.values())
+									const groupItems = Array.from(itemsData.values())
 
-										currentText.textContent = groupItems.
-										map(item => item.count + " " + item.text).
-										join(", ");
-										console.log(Array.from(itemsData.values()))
-									});
-							});
-					});
-			});
+									if (count === "0"){
+											itemsData.delete(key); 
+									}
+
+									if (groupItems.length === 0) {
+										buttonReset.classList.add(this.HideButton)
+									}
+
+									currentText.textContent = groupItems.
+									map(item => item.count + " " + item.text).
+									join(", ");
+								});
+						});
+				});
+		});
 	}
 
 	handleCounter(element, counter) {
