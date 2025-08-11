@@ -61,20 +61,24 @@ class DropDown {
 									const key = itemCaption.textContent;
 									const count = counter.textContent;
 									const declensions = this.declension(count, itemCaption);
-									buttonReset.classList.remove(this.HideButton)
+									if (buttonReset) {
+										buttonReset.classList.remove(this.HideButton)
+									}
 									itemsData.set(key, {
 											"text":  declensions,    
 											"count": count  
 									})
 
-									const groupItems = Array.from(itemsData.values())
-
 									if (count === "0"){
 											itemsData.delete(key); 
 									}
 
+									const groupItems = Array.from(itemsData.values())
 									if (groupItems.length === 0) {
-										buttonReset.classList.add(this.HideButton)
+										if (buttonReset) 
+											{
+												buttonReset.classList.add(this.HideButton)
+											}
 									}
 
 									currentText.textContent = groupItems.
