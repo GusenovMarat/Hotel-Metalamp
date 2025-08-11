@@ -21,17 +21,6 @@ class DropDown {
 			this.DropDown = document.querySelectorAll(this.DropDownSelector);
 	}
 
-	declension(value, item) {
-		const wordDeclensions = item.dataset.declensions;
-		const words = (JSON.parse(JSON.stringify(wordDeclensions))).split(', ')
-		value = value % 100; 
-		const num = value % 10;
-		if(value > 10 && value < 20) return words[2]; 
-		if(num > 1 && num < 5) return words[1];
-		if(num == 1) return words[0]; 
-		return words[2];
-	}
-
 	init() {
 			this.DropDown.forEach(item => {
 					const list = item.querySelector(this.DropDownList);
@@ -81,6 +70,16 @@ class DropDown {
 				value = Math.max(0, value - 1);
 		}
 		counter.textContent = value;
+	}
+	declension(value, item) {
+		const wordDeclensions = item.dataset.declensions;
+		const words = (JSON.parse(JSON.stringify(wordDeclensions))).split(', ')
+		value = value % 100; 
+		const num = value % 10;
+		if(value > 10 && value < 20) return words[2]; 
+		if(num > 1 && num < 5) return words[1];
+		if(num == 1) return words[0]; 
+		return words[2];
 	}
 }
 
