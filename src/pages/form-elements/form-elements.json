@@ -43,6 +43,9 @@
       }
     ]
   },
+	"rangeSlider": {
+		"title": "range-slider"
+	},
   "checkbox": {
     "title": "checkbox buttons",
     "checkboxInput": [

@@ -10,6 +10,7 @@ include ../../components/bullet-list/bullet-list
 include ../../components/features/features
 include ../../components/review/review
 include ../../components/dropdown/dropdown
+include ../../components/range-slider/range-slider
 
 block variables
 	- var title = "Form elements";
@@ -18,7 +19,7 @@ block variables
 	- var background = false;
 
 block content
-	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton, bulletList, features, review, defaultDropdown, guestsDropdown } = require("./form-elements.json")
+	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton, bulletList, features, review, defaultDropdown, guestsDropdown, rangeSlider } = require("./form-elements.json")
 
 		.form-el
 			.form-el__container
@@ -42,6 +43,8 @@ block content
 						.form-el__title rate button
 						+rateButton()
 				.form-el__column
+					.form-el__section
+						+rangeSlider(rangeSlider)
 					.form-el__section
 						.form-el__title buttons
 						.form-el__items
