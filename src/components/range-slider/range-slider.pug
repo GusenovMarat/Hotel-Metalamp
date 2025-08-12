@@ -1,17 +1,23 @@
-mixin rangeSlider({title})
+mixin rangeSlider({title, defaultPrice})
 	.range-slider
 		.range-slider__header
-			.range-slider__title= title 
-			.range-slider__price 
+			.range-slider__title= title
+			.range-slider__prices
+				.range-slider__price(data-limit = "min")= "5000р"
+				.span= "-"
+				.range-slider__price(data-limit = "max")= "10000р"
 		.range-slider__content
-			input.range-slider__fill(type="range"
-			value = "5000"
-			min = "0"
-			max = "15000"
-			step = "100")
-			input.range-slider__fill(type="range"
-			value = "5000"
-			min = "0"
-			max = "15000"
-			step = "100")
+			.range-slider__track
+			input.range-slider__value(type="range"
+				value = "5000"
+				min = "0"
+				max = "15000"
+				step = "100"
+			)
+			input.range-slider__value(type="range"
+				value = "4000"
+				min = "0"
+				max = "15000"
+				step = "100"
+			)
 

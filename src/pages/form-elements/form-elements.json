@@ -44,7 +44,8 @@
     ]
   },
 	"rangeSlider": {
-		"title": "range-slider"
+		"title": "range-slider",
+		"defaultPrice": "5000₽ - 10000₽"
 	},
   "checkbox": {
     "title": "checkbox buttons",
