@@ -24,18 +24,20 @@ class RangeSlider {
    		const rangeValueMax = item.querySelector(`${this.RSValue}[data-value="max"]`);
 
 			this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress);
-			rangeValueMin.addEventListener('input', () => {
-				this.validateRange(rangeValueMin, rangeValueMax);
-				this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress);
-			});
 
 			rangeValueMax.addEventListener('input', () => {
-				this.validateRange(rangeValueMin, rangeValueMax);
+				this.validateMax(rangeValueMin, rangeValueMax);
 				this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress)
 			});
 
-			this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress)
+			
+			rangeValueMin.addEventListener('input', () => {
+				this.validateMin(rangeValueMin, rangeValueMax);
+				this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress)
+			});
 		})
+
+			this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress);
 	}
 
 	updateRange = (valueMin, valueMax, priceMin, priceMax, progress) => {
@@ -52,18 +54,24 @@ class RangeSlider {
     progress.style.right = progressRight;
    };
 
+	validateMin(minInput, maxInput) {
+			const minVal = parseInt(minInput.value);
+			const maxVal = parseInt(maxInput.value);
 
-	validateRange = (minInput, maxInput) => {
+			if (minVal > maxVal) {
+					minInput.value = maxVal;
+			}
+	}
+
+	validateMax(minInput, maxInput) {
 		const minVal = parseInt(minInput.value);
 		const maxVal = parseInt(maxInput.value);
 
-		if (minVal > maxVal) {
-			minInput.value = maxVal;
-		}
 		if (maxVal < minVal) {
-			maxInput.value = minVal;
+				maxInput.value = minVal;
 		}
 	}
+
 }
 
 export default RangeSlider
