@@ -33,6 +33,7 @@ class RangeSlider {
 				this.validateRange(rangeValueMin, rangeValueMax);
 				this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress)
 			});
+
 			this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress)
 		})
 	}
@@ -53,15 +54,16 @@ class RangeSlider {
 
 
 	validateRange = (minInput, maxInput) => {
-  const minVal = parseInt(minInput.value);
-  const maxVal = parseInt(maxInput.value);
+		const minVal = parseInt(minInput.value);
+		const maxVal = parseInt(maxInput.value);
 
-  if (minVal > maxVal) {
-    minInput.value = maxVal;
-  } else if (maxVal < minVal) {
-    maxInput.value = minVal;
-  }
-}
+		if (minVal > maxVal) {
+			minInput.value = maxVal;
+		}
+		if (maxVal < minVal) {
+			maxInput.value = minVal;
+		}
+	}
 }
 
 export default RangeSlider
