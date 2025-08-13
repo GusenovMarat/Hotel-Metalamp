@@ -22,7 +22,18 @@ class RangeSlider {
 			const rangeProgress = item.querySelector(this.RSProgress);
    		const rangeValueMin = item.querySelector(`${this.RSValue}[data-value="min"]`);
    		const rangeValueMax = item.querySelector(`${this.RSValue}[data-value="max"]`);
+
 			this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress);
+			rangeValueMin.addEventListener('input', () => {
+				this.validateRange(rangeValueMin, rangeValueMax);
+				this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress);
+			});
+
+			rangeValueMax.addEventListener('input', () => {
+				this.validateRange(rangeValueMin, rangeValueMax);
+				this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress)
+			});
+			this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress)
 		})
 	}
 
@@ -35,10 +46,22 @@ class RangeSlider {
 
     const progressLeft = ((minVal / valueMin.max) * 100) + "%";
     const progressRight = 100 - ((maxVal / valueMax.max) * 100) + "%";
-		
+
     progress.style.left = progressLeft;
     progress.style.right = progressRight;
    };
+
+
+	validateRange = (minInput, maxInput) => {
+  const minVal = parseInt(minInput.value);
+  const maxVal = parseInt(maxInput.value);
+
+  if (minVal > maxVal) {
+    minInput.value = maxVal;
+  } else if (maxVal < minVal) {
+    maxInput.value = minVal;
+  }
+}
 }
 
 export default RangeSlider
