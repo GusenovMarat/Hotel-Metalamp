@@ -1,22 +1,22 @@
 mixin rangeSlider({title, defaultPrice})
-	.range-slider
+	.range-slider.js-range-slider
 		.range-slider__header
 			.range-slider__title= title
 			.range-slider__prices
-				.range-slider__price(data-limit = "min")= "5000р"
+				.range-slider__price.js-range-slider__price(data-limit = "min")= "5000р"
 				.span= "-"
-				.range-slider__price(data-limit = "max")= "10000р"
+				.range-slider__price.js-range-slider__price(data-limit = "max")= "10000р"
 		.range-slider__content
 			.range-slider__track
-				.range-slider__progress
-			input.range-slider__value(type="range"
+				.range-slider__progress.js-range-slider__progress
+			input.range-slider__value.js-range-slider__value(type="range"
 				value = "5000"
 				min = "0"
 				max = "15000"
 				step = "100"
 				data-value = "min"
 			).js-range-slider__value
-			input.range-slider__value(type="range"
+			input.range-slider__value.js-range-slider__value(type="range"
 				value = "10000"
 				min = "0"
 				max = "15000"
