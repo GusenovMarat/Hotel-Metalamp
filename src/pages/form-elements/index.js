@@ -11,3 +11,5 @@ import '@/components/dropdown';
 import '@/components/range-slider';
 
 import '@/components/calendar';
+
+import '@/libs/datepicker';

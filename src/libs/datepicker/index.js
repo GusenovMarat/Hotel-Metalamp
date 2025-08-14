@@ -8,8 +8,8 @@ class DatePicker {
 	}
 
 	setClasses() {
-			this.DPContainer = ".js-calendar";
-			this.DPinput = ".js-calendar__input";
+		this.DPContainer = ".js-calendar";
+		this.DPPlugin = ".js-calendar__date-picker"
 	}
 
 	findDatePicker() {
@@ -17,9 +17,9 @@ class DatePicker {
 	}
 
 	init() {
-		this.DatePicker.forEach(item => {
-		const inp = item.querySelector(this.DPinput)
-		new AirDatepicker(inp)
+			this.DatePicker.forEach(item => {
+			const plug = item.querySelector(this.DPPlugin)
+			new AirDatepicker(plug)
 		});
 	}
 }

@@ -1,7 +1,25 @@
 @import "../../styles/global.scss";
+@import '~air-datepicker/air-datepicker.css';
 
 .calendar {
-	width: 266px;
-	height: 30px;
-	border: 2px solid black;
+	width: fit-content;
+	height: fit-content;
+	.air-datepicker {
+		display: flex;
+		flex-direction: column;
+		min-width: 320px;
+		min-height: 329px;
+		&--content {
+			flex-grow: 1;
+		};
+		&-body{
+			&--cells {
+			}
+		}
+	}
 }
+
+/* ==========================================================================
+   Переопределение стилей Air Datepicker (стили плагина)
+   ========================================================================== */
+
