@@ -11,6 +11,7 @@ include ../../components/features/features
 include ../../components/review/review
 include ../../components/dropdown/dropdown
 include ../../components/range-slider/range-slider
+include ../../components/calendar/calendar
 
 block variables
 	- var title = "Form elements";
@@ -27,6 +28,7 @@ block content
 					.form-el__section
 						each field in fields
 							+field(field)
+						+calendar
 				.form-el__column
 					.form-el__section
 						+checkbox(checkbox)

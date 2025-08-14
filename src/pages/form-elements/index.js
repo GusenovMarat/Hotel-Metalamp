@@ -9,3 +9,5 @@ import '@/components/checkbox';
 import '@/components/dropdown';
 
 import '@/components/range-slider';
+
+import '@/components/calendar';
