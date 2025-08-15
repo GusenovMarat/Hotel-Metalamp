@@ -10,6 +10,7 @@
 		min-height: 329px;
 		padding: 20px;
 		border: 1px solid $dark-shade-25;
+		box-shadow: 0 0 2px $dark-shade-50;;
 		
 		&__date-picker {
 			height: 100%;
@@ -44,9 +45,16 @@
 				&--action {
 					@include material-icon(24px, $purple);
 					max-width: 24px;
-
+					transition: transform 0.2s ease-in-out;
+					&[data-action='next'] {
+						&:hover {
+							transform: translateX(-3px);
+						}
+					} 
 					&[data-action='prev'] {
-						transform: rotate(180deg);
+						&:hover {
+							transform: translateX(3px);
+						}
 					} 
 				}
 				
@@ -58,9 +66,6 @@
 				};
 			}
 			&-body{
-				&--day-names {
-
-				}
 				&--day-name {
 					font-weight: bold;
 					font-size: 12px;
@@ -68,10 +73,35 @@
 					text-transform: capitalize;
 				}
 				&--cells {
-					align-items: start;
+					&.-days-  {
+						grid-auto-rows: auto;
+					}
 				}
 			}
 			&-cell {
+				&.-focus- {
+					background: $dark-shade-05;
+					border-radius: 50%;
+				}
+				&.-current- {
+					background-image: $green-blue-gradient;
+					font-weight: bold;
+					color: white;
+					border-radius: 50%;
+					&:hover {
+						color: white;
+					}
+				}
+				&.-selected- {
+					background-image: $purple-gradient;
+					font-weight: bold;
+					color: white;
+					border-radius: 50%;
+					&:hover {
+						background-image: $purple-gradient;
+						color: white;
+					}
+				}
 			}
 		}
 }
