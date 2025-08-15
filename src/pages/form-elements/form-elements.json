@@ -151,7 +151,7 @@
 			}
 		]
 	},
-  	"guestsDropdown": {
+  "guestsDropdown": {
 		"title": "dropdown",
     "wide": true,
 		"items": 
@@ -169,6 +169,22 @@
 				"declensions": "ребёнок, детей, детей"
 			}
 		],
+    "buttons": [
+      {
+        "text": "очистить",
+        "type": "button",
+        "theme": "no-bg",
+        "selector": "reset"
+      },
+      {
+        "text": "применить",
+        "type": "button",
+        "theme": "no-bg",
+        "selector": "submit"
+      }
+    ]
+	},
+	"calendar": {
     "buttons": [
       {
         "text": "очистить",

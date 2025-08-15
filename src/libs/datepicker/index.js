@@ -2,9 +2,10 @@ import AirDatepicker from 'air-datepicker';
 import 'air-datepicker/air-datepicker.css';
 
 class DatePicker {
-	constructor() {
+	constructor(options) {
 			this.setClasses();
 			this.findDatePicker();
+			this.options = options;
 	}
 
 	setClasses() {
@@ -19,7 +20,7 @@ class DatePicker {
 	init() {
 			this.DatePicker.forEach(item => {
 			const plug = item.querySelector(this.DPPlugin)
-			new AirDatepicker(plug)
+			new AirDatepicker(plug, this.options)
 		});
 	}
 }

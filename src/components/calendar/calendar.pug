@@ -1,7 +1,9 @@
-mixin calendar
+include ../button/button
+
+mixin calendar({buttons})
 	.calendar.js-calendar
 		.calendar__date-picker.js-calendar__date-picker 
-		//- if buttons
-		//- 	.calendar__actions.js-calendar__actions
-		//- 		each button in buttons
-		//- 			+button(button)
+		if buttons
+			.calendar__actions.js-calendar__actions
+				each button in buttons
+					+button(button)
