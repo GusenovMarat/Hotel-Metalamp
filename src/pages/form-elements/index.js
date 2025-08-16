@@ -12,4 +12,6 @@ import '@/components/range-slider';
 
 import '@/components/calendar';
 
+import '@/components/date-field';
+
 import '@/libs/datepicker';

@@ -183,21 +183,5 @@
         "selector": "submit"
       }
     ]
-	},
-	"calendar": {
-    "buttons": [
-      {
-        "text": "очистить",
-        "type": "button",
-        "theme": "no-bg",
-        "selector": "reset"
-      },
-      {
-        "text": "применить",
-        "type": "button",
-        "theme": "no-bg",
-        "selector": "submit"
-      }
-    ]
 	}
 }
