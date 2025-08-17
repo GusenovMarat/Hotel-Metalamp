@@ -184,11 +184,13 @@
       }
     ]
 	},
-  "datepickerFloat": {
-    "firstTitle": "filter date dropdown"
-  },
-  "datepickerDouble": {
-    "firstTitle": "date dropdown",
-    "secondTitle": "date dropdown"
-  }
+  "datepickers": [
+    {
+      "firstTitle": "filter date dropdown"
+    },
+    {
+      "firstTitle": "date dropdown",
+      "secondTitle": "date dropdown"
+    }
+  ]
 }

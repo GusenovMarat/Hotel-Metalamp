@@ -1,14 +1,11 @@
-// import DatePicker from '@/libs/datepicker';
+import DatePicker from '@/libs/datepicker';
 
-// document.addEventListener("DOMContentLoaded", () => {
-// 		const selector = ".js-calendar";
-// 		const options = {
-// 			// nextHtml: 'arrow_forward',
-// 			// prevHtml: 'arrow_back',
-// 			navTitles: {
-//         days: 'MMMM yyyy'
-//     	}
-// 		}
-//     const datePicker = new DatePicker(options);
-// 		datePicker.init();
-// });
+document.addEventListener("DOMContentLoaded", () => {
+		const options = {
+			navTitles: {
+        days: 'MMMM yyyy'
+    	}
+		}
+    const datePicker = new DatePicker(options);
+		datePicker.init();
+});

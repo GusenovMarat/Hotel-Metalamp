@@ -36,8 +36,6 @@ class RangeSlider {
 				this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress)
 			});
 		})
-
-			this.updateRange(rangeValueMin, rangeValueMax, priceMin, priceMax, rangeProgress);
 	}
 
 	updateRange = (valueMin, valueMax, priceMin, priceMax, progress) => {
