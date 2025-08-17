@@ -1,6 +1,50 @@
 @import "../../styles/global.scss";
 
-.data.field {
-	min-width: 266px;
-	min-height: 40px;
+.date-field {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+
+	&__label {
+		cursor: pointer;
+		max-width: 150px;
+		&_long {
+			max-width: 266px;
+			flex-grow: 1;
+		}
+	}
+	&__title {
+		@include font-bold($fs-minimum, $dark-shade-100, 100%);
+		text-transform: uppercase;
+		padding-bottom: 5px;
+		
+	}
+	&__input-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		min-height: 44px;
+		border: 1px solid $dark-shade-25;
+		border-radius: 4px;
+		padding-left: 15px;
+	}
+	&__input {
+
+		width: 100%;	
+		&::placeholder {
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+	&__icon {
+		@include material-icon(24px, $dark-shade-50, 44px);
+		text-align: center;
+    min-width: 44px;
+		cursor: pointer;
+    transition: transform 0.2s ease-in-out
+	}
 }

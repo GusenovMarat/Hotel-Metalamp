@@ -1,8 +1,22 @@
-include ../calendar/calendar
 include ../button/button
 
-mixin date-field
+mixin date-field({firstTitle, secondTitle})
 	.date-field.js-date-field
-		label.date-field__label
-			input.date-field__input(type="text" placeholder = "ДД ММ - ДД ММ").js-date-field__input
-			span.date-field__arrow
+		if secondTitle
+			label.date-field__label
+				span.date-field__title=firstTitle
+				.date-field__input-container
+					input.date-field__input(type="text" placeholder = "дд.мм.гггг" data-pos = "first").js-date-field__input
+					span.date-field__icon expand_more
+			label.date-field__label
+				span.date-field__title=secondTitle
+				.date-field__input-container
+					input.date-field__input(type="text" placeholder = "дд.мм.гггг" data-pos = "second").js-date-field__input
+					span.date-field__icon expand_more
+		else	
+			label.date-field__label.date-field__label_long
+				span.date-field__title=firstTitle
+				.date-field__input-container
+					input.date-field__input(type="text" placeholder = "дд мм - дд мм").js-date-field__input
+					span.date-field__icon expand_more
+			

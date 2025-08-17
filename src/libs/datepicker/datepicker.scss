@@ -6,6 +6,9 @@
   flex-direction: column;
   min-width: 320px;
   padding: 20px;
+  &.-inline- {
+    position: absolute;
+  }
   & * {
     @include font-normal(12px, $dark-shade-50, 40px);
     margin: 0;
@@ -111,11 +114,13 @@
     background: white;
     border: none;
     &__theme_no-bg {
-    align-self: flex-start;
-
-    &:hover {
-      color: $dark-shade-50;
+      align-self: flex-start;
+    &> span {
+      text-transform: uppercase;
     }
-  }
+    &:hover {
+        color: $dark-shade-50;
+      }
+    }
   }
 }

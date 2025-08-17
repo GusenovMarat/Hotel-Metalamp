@@ -7,13 +7,13 @@ class DatePicker {
 			// this.setClasses();
 			// this.findDatePicker();
 			this.selector = selector;
-			this.setCustomButtons("очистить", "принять")
+			this.setCustomButtons("очистить", "применить")
 
 			this.defaultProps = {
 				nextHtml: 'arrow_forward',
 				prevHtml: 'arrow_back',
 				buttons: this.buttons,
-				inline: true,
+				// inline: true,
 			};
 			this.options = Object.assign(this.defaultProps, options)
 	}

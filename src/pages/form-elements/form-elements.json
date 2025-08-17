@@ -183,5 +183,12 @@
         "selector": "submit"
       }
     ]
-	}
+	},
+  "datepickerFloat": {
+    "firstTitle": "filter date dropdown"
+  },
+  "datepickerDouble": {
+    "firstTitle": "date dropdown",
+    "secondTitle": "date dropdown"
+  }
 }

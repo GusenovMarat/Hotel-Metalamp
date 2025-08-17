@@ -21,7 +21,7 @@ block variables
 	- var background = false;
 
 block content
-	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton, bulletList, features, review, defaultDropdown, guestsDropdown, rangeSlider } = require("./form-elements.json")
+	- const { buttons, fields, radio, checkbox, expandCheckbox, richCheckbox, toggle, likeButton, rateButton, bulletList, features, review, defaultDropdown, guestsDropdown, rangeSlider, datepickerFloat, datepickerDouble } = require("./form-elements.json")
 
 		.form-el
 			.form-el__container
@@ -30,7 +30,8 @@ block content
 						each field in fields
 							+field(field)
 						//- +calendar
-						+date-field
+						+date-field(datepickerFloat)
+						+date-field(datepickerDouble)
 				.form-el__column
 					.form-el__section
 						+checkbox(checkbox)
