@@ -3,115 +3,25 @@
 @import '~air-datepicker/air-datepicker.css';
 
 .calendar {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		min-width: 320px;
-		min-height: 329px;
-		padding: 20px;
-		border: 1px solid $dark-shade-25;
-		box-shadow: 0 0 2px $dark-shade-50;;
-		
-		&__date-picker {
-			height: 100%;
-		}
-		
-		&__actions {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			padding-top: 20px;
-		}
-
-
-  // Переопределение стилей Air Datepicker (стили плагина)
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 320px;
+	min-height: 329px;
+	padding: 20px;
+	border: 1px solid $dark-shade-25;
+	box-shadow: 0 0 2px $dark-shade-50;;
 	
-		.air-datepicker {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			&, & * {
-				@include font-normal(12px, $dark-shade-50, 40px);
-				margin: 0;
-				padding: 0;
-				border: 0;
-				box-sizing: border-box;
-			}
-			&--content {
-				margin-top: 30px;
-				padding: 0;
-			};
-			&-nav {
-				align-items: center;
-				max-height: 24px;
-				padding: 0;
-				&--action {
-					@include material-icon(24px, $purple);
-					max-width: 24px;
-					transition: transform 0.2s ease-in-out;
-					&:hover {
-						border-radius: 50%;
-					}
-
-					&[data-action='next'] {
-						&:hover {
-							transform: translateX(-3px);
-						}
-					}
-					
-					&[data-action='prev'] {
-						&:hover {
-							transform: translateX(3px);
-						}
-					} 
-				}
-				
-				&--title, i {
-					font-size: 19px;
-					line-height: 24px;
-					font-weight: bold;
-					color: $dark-shade-100;
-				};
-			}
-			&-body{
-				&--day-name {
-					font-weight: bold;
-					font-size: 12px;
-					color: $purple;
-					text-transform: capitalize;
-				}
-				&--cells {
-					&.-days-  {
-						grid-auto-rows: auto;
-					}
-				}
-			}
-			&-cell {
-				&.-focus- {
-					background: $dark-shade-05;
-					border-radius: 50%;
-				}
-				&.-current- {
-					background-image: $green-blue-gradient;
-					font-weight: bold;
-					color: white;
-					border-radius: 50%;
-					&:hover {
-						color: white;
-					}
-				}
-				&.-selected- {
-					background-image: $purple-gradient;
-					font-weight: bold;
-					color: white;
-					border-radius: 50%;
-					&:hover {
-						background-image: $purple-gradient;
-						color: white;
-					}
-				}
-			}
-		}
+	&__date-picker {
+		height: 100%;
+	}
+	
+	&__actions {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 20px;
+	}
 }
 
 
