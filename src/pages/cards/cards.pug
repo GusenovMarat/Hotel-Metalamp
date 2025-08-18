@@ -1,0 +1,17 @@
+extends ../../layouts/main/main
+include ../../components/card-search/card-search
+include ../../components/calendar/calendar
+
+block variables 
+	- var title = "cards";
+	- var discription = "cards content";
+	- var logo = "logo-grey.svg";
+	- var background = true;
+
+block content
+	.cards
+		.cards__block
+			+card-search
+		.cards__block 
+		.cards__block
+			+calendar

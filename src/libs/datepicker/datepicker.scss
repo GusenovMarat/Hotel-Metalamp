@@ -6,6 +6,7 @@
   flex-direction: column;
   min-width: 320px;
   padding: 20px;
+	box-shadow: $shadow-light !important;
   &.-inline- {
     position: absolute;
   }

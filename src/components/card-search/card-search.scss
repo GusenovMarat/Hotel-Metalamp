@@ -1,0 +1,12 @@
+@import "../../styles/global.scss";
+@import "../date-field/date-field.scss";
+@import "../dropdown/dropdown.scss";
+@import "../button/button.scss";
+
+.card-search {
+	width: 380px;
+	height: 380px;
+	box-shadow: $shadow-dark;
+	border: 1px solid $dark-shade-100;
+	background-color: $purple;
+}

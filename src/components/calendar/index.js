@@ -1,11 +1,10 @@
 import DatePicker from '@/libs/datepicker';
 
+
 document.addEventListener("DOMContentLoaded", () => {
 		const options = {
-			navTitles: {
-        days: 'MMMM yyyy'
-    	}
+			dateFormat: "dd MMM"
 		}
-    const datePicker = new DatePicker(options);
-		datePicker.init();
+		const datePicker = new DatePicker(options);
+		datePicker.init()
 });

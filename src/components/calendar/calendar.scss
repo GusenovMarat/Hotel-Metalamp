@@ -2,27 +2,4 @@
 @import "../button/button.scss";
 @import '~air-datepicker/air-datepicker.css';
 
-.calendar {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	min-width: 320px;
-	min-height: 329px;
-	padding: 20px;
-	border: 1px solid $dark-shade-25;
-	box-shadow: 0 0 2px $dark-shade-50;;
-	
-	&__date-picker {
-		height: 100%;
-	}
-	
-	&__actions {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding-top: 20px;
-	}
-}
-
-
 

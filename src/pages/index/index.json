@@ -12,6 +12,10 @@
 			{
         "link": "./form-elements.html",
         "title": "form elements"
+      },
+			{
+        "link": "./cards.html",
+        "title": "cards"
       }
     ]
   }

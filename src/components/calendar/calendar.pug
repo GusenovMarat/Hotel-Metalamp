@@ -1,8 +1,4 @@
 include ../button/button
 
 mixin calendar
-	.calendar.js-calendar
-		.calendar__date-picker.js-date-picker 
-		.calendar__actions.js-calendar__actions
-			+button({text:"очистить", type:"button", theme:"no-bg", selector:"reset"})
-			+button({text:"применить", type:"button", theme:"no-bg", selector:"submit"})
+	.calendar.js-date-picker

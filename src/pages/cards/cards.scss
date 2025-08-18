@@ -1,0 +1,15 @@
+@import "../../styles/global.scss";
+@import "../../components/card-search/card-search.scss";
+@import "../../components/calendar/calendar.scss";
+@import "../../layouts/main/main.scss";
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	margin: 72px 140px;
+	&__block {
+		min-width: 380px;
+		min-height: 380px;
+	}
+}
