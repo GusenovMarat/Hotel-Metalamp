@@ -4,9 +4,20 @@
 @import "../button/button.scss";
 
 .card-search {
-	width: 380px;
-	height: 380px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 	box-shadow: $shadow-dark;
-	border: 1px solid $dark-shade-100;
-	background-color: $purple;
+	padding: 40px 40px 30px;
+	background-color: white;
+	max-width: 380px;
+	&__submit {
+		margin-top: 10px;
+	}
+	&__title {
+		@include font-bold(24px, $dark-shade-100);
+		&::first-letter {
+			text-transform: capitalize;
+		}
+	}
 }

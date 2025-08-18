@@ -1,9 +1,34 @@
 include ../date-field/date-field
+include ../dropdown/dropdown
+
 mixin card-search 
 	.card-search
-		.card-search__block 
-			.card-search__title
-			+date-field()
-			+dropdown()
-			+button()
+		.card-search__title найдём номера под ваши пожелания
+		+date-field({firstTitle: "прибытие", secondTitle: "выезд"})
+		+dropdown({
+			title: "dropdown", 
+			wide: true,	
+			items: [
+				{
+					caption: "взрослые", 
+					declensions: "гость, гостя, гостей"
+				},
+				{
+					caption: "дети",
+					declensions: "гость, гостя, гостей"
+				},
+				{
+					caption: "младенцы",
+					declensions: "ребёнок, детей, детей"
+				}
+			]
+		})
+		.card-search__submit
+			+button({
+				theme: "filled", 
+				text: "перейти к оплате", 
+				type: "button", 
+				long: "true", 
+				icon: "true"}
+			)
 

@@ -1,3 +1,3 @@
 import './cards.scss';
 
-import '@/components/calendar';
+import '@/components/card-search';

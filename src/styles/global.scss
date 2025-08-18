@@ -13,11 +13,11 @@
 	border: 0
 }
 
+body {
+	@include font-normal($fs-normal, $dark-shade-50, 24px);
+}
+
 html {
   color: $dark-shade-100;
   background-color: white;
-}
-
-body {
-	@include font-normal($fs-normal, $dark-shade-50, 24px);
 }
