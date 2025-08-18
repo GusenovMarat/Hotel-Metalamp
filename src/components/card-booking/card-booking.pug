@@ -1,0 +1,50 @@
+include ../field/field
+include ../date-field/date-field
+include ../dropdown/dropdown
+
+mixin card-booking
+	.card-booking
+		.card-booking__header найдём номера под ваши пожелания
+			span.card-booking__room-number № 888
+			span.card-booking__room-type люкс
+			span.card-booking__price-per-night 9 990Р в сутки
+		.card-booking__date-picker
+			+date-field({firstTitle: "прибытие", secondTitle: "выезд"})
+		.booking-form__guests
+			+dropdown({
+			title: "dropdown", 
+			wide: true,	
+			items: [
+					{
+						caption: "взрослые", 
+						declensions: "гость, гостя, гостей"
+					},
+					{
+						caption: "дети",
+						declensions: "гость, гостя, гостей"
+					},
+					{
+						caption: "младенцы",
+						declensions: "ребёнок, детей, детей"
+					}
+				]
+			})
+		.card-booking__details
+			.card-booking__details-item
+				.card-booking__details-discription 
+				.card-booking__details-amount
+			.card-booking__details-item
+				.card-booking__details-discription 
+				.card-booking__details-amount
+			.card-booking__details-item
+				.card-booking__details-discription 
+				.card-booking__details-amount
+		.card-booking__submit
+			+button({
+				theme: "filled", 
+				text: "забронировать", 
+				type: "button", 
+				long: "true", 
+				icon: "true"}
+			)
+
