@@ -2,3 +2,22 @@
 @import "../date-field/date-field.scss";
 @import "../dropdown/dropdown.scss";
 @import "../button/button.scss";
+
+.card-booking {
+	display: flex;
+	flex-direction: column;
+	max-width: 380px;
+	background-color: white;
+	padding: 40px 30px 30px;
+	&__header {
+		display: flex;
+		flex-direction: row;
+	}
+	&__room-number {
+		@include font-bold(24px, $dark-shade-100)
+	}
+	&__room-type {
+		color: $purple;
+		font-weight: bold
+	};
+}
