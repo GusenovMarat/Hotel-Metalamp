@@ -1,0 +1,12 @@
+include ../rate-button/rate-button
+
+mixin card-slider
+	.card-slider
+		.card-slider__slide 
+    .card-slider__room-info
+      span.card-slider__number-prefix №&nbsp;
+      span.card-slider__room-number 888
+      span.card-slider__room-type &nbsp;люкс
+    .card-slider__rating 
+      +rate-button({})
+      .card-slider__reviews
