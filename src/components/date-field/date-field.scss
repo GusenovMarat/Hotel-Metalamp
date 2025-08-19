@@ -9,15 +9,18 @@
 	max-width: 320px;
 	
 	&__label {
+		display: flex;
+		flex-direction: column;
 		cursor: pointer;
 		max-width: 150px;
+		height: 100%;
 		&_long {
 			max-width: 266px;
 			flex-grow: 1;
 		}
 	}
 	&__title {
-		@include font-bold($fs-minimum, $dark-shade-100, 100%);
+		@include font-bold($fs-minimum, $dark-shade-100, 15px);
 		text-transform: uppercase;
 		padding-bottom: 5px;
 		

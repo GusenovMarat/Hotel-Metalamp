@@ -5,12 +5,16 @@ include ../dropdown/dropdown
 mixin card-booking
 	.card-booking
 		.card-booking__header
-			span.card-booking__room-number № 888
-			span.card-booking__room-type люкс
-			span.card-booking__price-per-night 9 990Р в сутки
+			.card-booking__room-title 
+				span.card-booking__number-prefix №&nbsp;
+				span.card-booking__room-number 888
+				span.card-booking__room-type &nbsp;люкс
+			span.card-booking__price-per-night
+				span.card-booking__price 9 990₽
+				span.card-booking__price-context &nbsp;в сутки
 		.card-booking__date-picker
 			+date-field({firstTitle: "прибытие", secondTitle: "выезд"})
-		.booking-form__guests
+		.card-booking__guests
 			+dropdown({
 			title: "dropdown", 
 			wide: true,	
@@ -31,20 +35,30 @@ mixin card-booking
 			})
 		.card-booking__details
 			.card-booking__details-item
-				.card-booking__details-discription 
-				.card-booking__details-amount
+				.card-booking__details-info
+					span.card-booking__details-price 9 990₽ х&nbsp;
+					span.card-booking__details-days 4 суток
+				span.card-booking__details-amount 39 960₽
 			.card-booking__details-item
-				.card-booking__details-discription 
-				.card-booking__details-amount
+				.card-booking__details-info
+					span.card-booking__details-text Сбор за услуги: скидка 2 179₽
+					i.card-booking__details-icon(data-description= "Сервисный сбор отеля")
+				span.card-booking__details-amount 0₽
 			.card-booking__details-item
-				.card-booking__details-discription 
-				.card-booking__details-amount
+				span.card-booking__details-info
+					span.card-booking__details-text.card-booking__details-text--narrow Сбор за дополнительные услуги
+					i.card-booking__details-icon(data-description= "Инфраструктура, питание, транспорт и пр.")
+				span.card-booking__details-amount 300₽
+		.card-booking__summary 
+			.card-booking__summary-text Итого
+			.card-booking__summary-amount 38 081₽
 		.card-booking__submit
 			+button({
 				theme: "filled", 
 				text: "забронировать", 
 				type: "button", 
 				long: "true", 
-				icon: "true"}
+				icon: "true"
+				}
 			)
 

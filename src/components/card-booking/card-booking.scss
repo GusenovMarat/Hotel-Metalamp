@@ -6,18 +6,116 @@
 .card-booking {
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 	max-width: 380px;
 	background-color: white;
+	box-shadow: $shadow-dark;
 	padding: 40px 30px 30px;
+	line-height: 100%;
 	&__header {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
+		
+	}
+	&__price-per-night {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		line-height: 18px;
+		color: $dark-shade-50;
+		font-size: $fs-normal;	
+	}
+	&__room-title {
+		@include font-bold(14px, $dark-shade-100);
+		
+	}
+	&__number-prefix {
+		font-size: $fs-normal;
 	}
 	&__room-number {
-		@include font-bold(24px, $dark-shade-100)
+		font-size: $fs-large;
 	}
 	&__room-type {
 		color: $purple;
-		font-weight: bold
-	};
+		font-size: $fs-minimum;
+	}
+	&__details {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		&-item {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+			color: $dark-shade-75;
+			font-size: $fs-normal;
+			line-height: 24px;
+		}
+
+		&-info {
+			position: relative;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			
+		}
+		&-text {
+			width: 214px;
+			&--narrow {
+				line-height: 18px;
+			}
+		}
+		&-icon {			
+			position: relative;
+			display: inline-block;
+			width: 20px;
+			height: 21px;
+			margin: 0 5px;
+			background-image: url(../../assets/img/general/info-icon.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			cursor: pointer;
+			&:hover::after {
+				content: attr(data-description);
+				background-color: #e9e9eb;
+				padding: 5px;
+				border: 1px soid $dark-shade-100;
+				font-style: normal;
+				font-size: $fs-minimum;
+				line-height: 100%;
+				top: 21px;
+				left: 20px;
+				border-radius: 3px;
+				position: absolute;
+			}
+		}
+	}
+
+	&__price {
+		font-weight: bold;
+	}
+	&__summary {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 10px;
+		@include font-bold(19px, $dark-shade-100, 24px);
+		&-text {
+			display: inline-flex;
+			flex-direction: row;
+			width: 100%;
+			&::after {
+				content: "";
+				border-bottom: 1px dashed $dark-shade-25;
+				width: 100%;
+				margin-left: 4px;
+				
+			}
+		}
+		&-amount {
+			white-space: nowrap;
+		}
+	}
 }
