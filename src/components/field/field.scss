@@ -6,9 +6,10 @@
 	max-width: 320px;
 	
 	&__title {
-		@include font-bold($fs-minimum, $dark-shade-100, 100%);
+		@include font-bold($fs-minimum, $dark-shade-100, 15px);
 		text-transform: uppercase;
 		padding-bottom: 5px;
+		cursor: pointer;
 	}
 	&__block {
 		max-width: 260px;
@@ -19,6 +20,7 @@
 		border: 1px solid $dark-shade-25;
 		border-radius: 4px;
 		padding-left: 15px;
+		width: 100%;
 		&:hover {
 			border-color: $dark-shade-50;
 		}

@@ -1,6 +1,7 @@
 @import "../../styles/global.scss";
 @import "../../components/card-search/card-search.scss";
 @import "../../components/card-booking/card-booking.scss";
+@import "../../components/card-signup/card-signup.scss";
 @import "../../components/calendar/calendar.scss";
 @import "../../layouts/main/main.scss";
 
@@ -10,6 +11,8 @@
 	gap: 40px;
 	margin: 72px 140px;
 	&__block {
-
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
 	}
 }

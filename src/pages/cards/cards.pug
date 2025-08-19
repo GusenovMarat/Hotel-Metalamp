@@ -1,7 +1,9 @@
 extends ../../layouts/main/main
 include ../../components/card-search/card-search
 include ../../components/card-booking/card-booking
+include ../../components/card-signup/card-signup
 include ../../components/calendar/calendar
+
 
 block variables 
 	- var title = "cards";
@@ -13,6 +15,7 @@ block content
 	.cards
 		.cards__block
 			+card-search
+			+card-signup
 		.cards__block 
 			+card-booking
 		.cards__block

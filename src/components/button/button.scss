@@ -15,6 +15,7 @@
   border: none;
 	max-width: 99px;
   max-height: 44px;
+  transition: all 0.3s ease;
 
   &__text {
     text-transform: uppercase;
@@ -31,7 +32,6 @@
   &__theme_no-bg {
     align-self: flex-start;
 		background: none;
-
     &:hover {
       color: $dark-shade-50;
     }
