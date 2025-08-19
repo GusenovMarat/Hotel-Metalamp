@@ -3,3 +3,10 @@
 @import '~air-datepicker/air-datepicker.css';
 
 
+.calendar {
+  display: flex;
+  width: fit-content;
+  .air-datepicker.-inline- {
+    position: relative;
+  }
+}

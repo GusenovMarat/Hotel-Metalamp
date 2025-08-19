@@ -2,11 +2,17 @@ include ../rate-button/rate-button
 
 mixin card-slider
 	.card-slider
-		.card-slider__slide 
-    .card-slider__room-info
-      span.card-slider__number-prefix №&nbsp;
-      span.card-slider__room-number 888
-      span.card-slider__room-type &nbsp;люкс
-    .card-slider__rating 
-      +rate-button({})
-      .card-slider__reviews
+		.card-slider__list.js-card-slider__list
+		.card-slider__room-info
+			.card-slider__room-title 
+				span.card-slider__number-prefix №&nbsp;
+				span.card-slider__room-number 888
+				span.card-slider__room-type &nbsp;люкс
+			.card-slider__price-per-night
+				span.card-slider__price 9 990₽
+				span.card-slider__price-context &nbsp;в сутки
+		.card-slider__rating 
+			+rateButton
+			.card-slider__reviews
+				span.card-slider__reviews-count 145
+				span.card-slider__reviews-text &nbsp;отзывов

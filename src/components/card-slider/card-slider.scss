@@ -1,0 +1,46 @@
+@import "../../styles/global.scss";
+@import "../rate-button/rate-button.scss";
+
+.card-slider {
+  display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 380px;
+	background-color: white;
+	box-shadow: $shadow-dark;
+	padding: 40px 30px 30px;
+	line-height: 100%;
+  &__room{
+    &-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &-title {
+      @include font-bold(14px, $dark-shade-100);
+    }
+    &-number {
+      font-size: $fs-large;
+    }
+    &-type {
+      color: $purple;
+      font-size: $fs-minimum;
+    }
+  }
+  &__price-per-night {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		line-height: 18px;
+		color: $dark-shade-50;
+		font-size: $fs-normal;	
+	}
+  &__number-prefix {
+		font-size: $fs-normal;
+	}
+  &__rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

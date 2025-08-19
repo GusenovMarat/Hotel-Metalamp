@@ -28,7 +28,6 @@
 	}
 	&__room-title {
 		@include font-bold(14px, $dark-shade-100);
-		
 	}
 	&__number-prefix {
 		font-size: $fs-normal;

@@ -1,0 +1,11 @@
+mixin swiperSlider({link})
+  .swiper-wrapper
+    each item in link
+      - const { src, alt } = item
+      .swiper-slide
+        img.swiper-slide__img(src=src, alt=alt)
+  .swiper-pagination-img
+  .swiper-button-prev
+    .swiper__icon expand_more
+  .swiper-button-next
+    .swiper__icon expand_more
