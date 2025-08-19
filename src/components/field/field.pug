@@ -12,13 +12,18 @@ mixin field({ title, type, placeholder, name, form=false })
 				button.field__submit(type="submit", name= name)
 					span.field__icon-arrow arrow_forward
 	
-	else
-		.field
-			if title
-				span.field__title= title  
+	else if title
+		label.field
+			span.field__title= title  
 			input.field__input(
 				type= type || "text",
 				placeholder= placeholder,
 				name= name
 			)
+	else
+		input.field__input(
+			type= type || "text",
+			placeholder= placeholder,
+			name= name
+		)
 				
