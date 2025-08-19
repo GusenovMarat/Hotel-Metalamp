@@ -1,10 +1,8 @@
 @import "../../styles/global.scss";
 @import "../field/field.scss";
 @import "../button/button.scss";
-@import "../toggle/toggle.scss";
-@import "../radio/radio.scss";
 
-.card-signup {
+.card-signin {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -14,31 +12,34 @@
 	padding: 40px 30px 30px;
 	line-height: 100%;
 	&__title {
-		@include font-bold(24px, $dark-shade-100)
+		@include font-bold(24px, $dark-shade-100, 30px)
 	}
-	&__form, &__person, &__auth-data, &__submit {
+	&__form,  &__data{
 		display: flex;
 		flex-direction: column;
 	}
 	&__form {
 		gap: 20px;
 	}
-	&__person, &__auth-data {
+	&__data {
 		gap: 10px;
 	}
 	&__submit {
 		gap: 30px;
 	}
-	&__signin {
+	&__signup {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		margin-top: 10px;
 	}
 	&__correct-text {
 		line-height: 18px;
 		font-size: $fs-normal;
 		color: $dark-shade-100;
+	}
+	&__title, &__correct-text {
 		&::first-letter {
 			text-transform: uppercase;
 		}

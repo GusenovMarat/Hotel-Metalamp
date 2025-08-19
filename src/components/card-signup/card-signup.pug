@@ -5,28 +5,25 @@ include ../button/button
 
 mixin card-signup
 	.card-signup
-		.card-signup__title Регистрация аккаунта
+		.card-signup__title регистрация аккаунта
 		form.card-signup__form
 			.card-signup__person
 				+field({type: "text", placeholder: "имя", name: "name"})
 				+field({type: "text", placeholder: "фамилия", name: "surname"})
 				+radio({radioInput: [{name:"gender", text: "мужчина"}, {name: "gender", text: "женщина"}]})
-			.card-signup__birthday
-				+field({title: "дата рождения", type: "text", placeholder: "ДД.ММ.ГГГГ", name: "birthday"})
+			+field({title: "дата рождения", type: "text", placeholder: "ДД.ММ.ГГГГ", name: "birthday"})
 			.card-signup__auth-data
 				+field({title: "данные для входа в сервис", type: "email", placeholder: "email", name: "email"})
 				+field({type: "password", placeholder: "пароль", name: "password"})
-				.card-signup__offers
-					+toggle({name: "offers", text: "получать спецпредложения" }) 
-		.card-signup__submit
+				+toggle({name: "offers", text: "получать спецпредложения" }) 
 			+button({
-				theme: "filled", 
-				text: "перейти к оплате", 
-				type: "button", 
-				long: "true", 
-				icon: "true"
-				}
-			)
+					theme: "filled", 
+					text: "перейти к оплате", 
+					type: "button", 
+					long: "true", 
+					icon: "true"
+					}
+				)
 			.card-signup__signin 
 				span.card-signup__correct-text уже есть аккаунт Toxin
 				+button({

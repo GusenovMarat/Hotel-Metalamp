@@ -1,36 +1,25 @@
 include ../field/field
-include ../toggle/toggle
-include ../radio/radio
 include ../button/button
 
 mixin card-signin
 	.card-signin
-		.card-signin__title Регистрация аккаунта
+		.card-signin__title войти
 		form.card-signin__form
-			.card-signin__person
-				+field({type: "text", placeholder: "имя", name: "name"})
-				+field({type: "text", placeholder: "фамилия", name: "surname"})
-				+radio({radioInput: [{name:"gender", text: "мужчина"}, {name: "gender", text: "женщина"}]})
-			.card-signin__birthday
-				+field({title: "дата рождения", type: "text", placeholder: "ДД.ММ.ГГГГ", name: "birthday"})
-			.card-signin__auth-data
-				+field({title: "данные для входа в сервис", type: "email", placeholder: "email", name: "email"})
+			.card-signin__data
+				+field({type: "email", placeholder: "email", name: "email"})
 				+field({type: "password", placeholder: "пароль", name: "password"})
-				.card-signin__offers
-					+toggle({name: "offers", text: "получать спецпредложения" }) 
-		.card-signin__submit
 			+button({
-				theme: "filled", 
-				text: "перейти к оплате", 
-				type: "button", 
-				long: "true", 
-				icon: "true"
-				}
-			)
-			.card-signin__signin 
-				span.card-signin__correct-text уже есть аккаунт Toxin
-				+button({
-					border: "true",
-					text: "войти",
-					type: "button"
-				})
+					theme: "filled", 
+					text: "войти", 
+					type: "button", 
+					long: "true", 
+					icon: "true"
+					}
+				)
+		.card-signin__signup 
+			span.card-signin__correct-text нет аккаунта на Toxin?
+			+button({
+				border: "true",
+				text: "создать",
+				type: "button"
+			})
