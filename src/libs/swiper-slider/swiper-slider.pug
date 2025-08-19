@@ -1,7 +1,7 @@
-mixin swiperSlider({link})
+mixin swiperSlider({links})
   .swiper-wrapper
-    each item in link
-      - const { src, alt } = item
+    each link in links 
+      - const { src, alt } = link
       .swiper-slide
         img.swiper-slide__img(src=src, alt=alt)
   .swiper-pagination-img
