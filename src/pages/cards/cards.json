@@ -2,19 +2,19 @@
   "slider": {
     "links": [
       {
-        "src": "img/rooms/room-1_1.png",
+        "src": "assets/img/rooms/room-1_1.png",
         "alt": "room-1_1"
       },
       {
-        "src": "img/rooms/room-1_2.png",
+        "src": "assets/img/rooms/room-1_2.png",
         "alt": "room-1_2"
       },
       {
-        "src": "img/rooms/room-1_3.png",
+        "src": "assets/img/rooms/room-1_3.png",
         "alt": "room-1_3"
       },
       {
-        "src": "img/rooms/room-1_4.png",
+        "src": "assets/img/rooms/room-1_4.png",
         "alt": "room-1_4"
       }
     ]

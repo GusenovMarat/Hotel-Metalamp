@@ -1,11 +1,10 @@
 include ../rate-button/rate-button
-include ../../libs/swiper-slider/swiper-slider
 
 mixin card-slider({links})
 	.card-slider
-		.card-slider__list.js-card-slider__list
+		.card-slider__gallery.js-card-slider__gallery
+			+swiperSlider(links)
 		.card-slider__room-info
-		+swiperSlider(links)
 			.card-slider__room-title 
 				span.card-slider__number-prefix №&nbsp;
 				span.card-slider__room-number 888

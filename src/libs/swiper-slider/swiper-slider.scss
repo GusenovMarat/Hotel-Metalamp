@@ -1,0 +1,13 @@
+@import "../../styles/global.scss";
+
+.swiper {
+	position: relative;
+	&-slide {
+		&__img {
+			max-width: 100%;
+		}
+	}
+	&__icon {
+		@include material-icon(24px, $dark-shade-100);
+	}
+}

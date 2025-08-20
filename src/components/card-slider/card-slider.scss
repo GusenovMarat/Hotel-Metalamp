@@ -1,5 +1,6 @@
 @import "../../styles/global.scss";
 @import "../rate-button/rate-button.scss";
+@import "../../libs/swiper-slider/swiper-slider.scss";
 
 .card-slider {
   display: flex;
@@ -10,6 +11,10 @@
 	box-shadow: $shadow-dark;
 	padding: 40px 30px 30px;
 	line-height: 100%;
+	&__swiper {
+		display: flex;
+		flex-direction: row;
+	}
   &__room{
     &-info {
       display: flex;
