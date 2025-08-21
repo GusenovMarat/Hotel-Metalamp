@@ -1,10 +1,8 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Swiper from 'swiper';
 
 import { Navigation, Pagination } from 'swiper/modules';
 
+Swiper.use([Navigation, Pagination]);
 
 class swiperSlider {
   constructor(selector) {
@@ -14,6 +12,8 @@ class swiperSlider {
 
 	setDefaultProps() {
 		this.options = {
+			loop: true,
+      slidesPerView: 1,
 			pagination: {
         el: '.swiper-pagination-img',
         clickable: true,

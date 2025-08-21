@@ -5,31 +5,42 @@
 .card-slider {
   display: flex;
 	flex-direction: column;
-	gap: 20px;
-	max-width: 380px;
+	max-width: 270px;
 	background-color: white;
 	box-shadow: $shadow-dark;
-	padding: 40px 30px 30px;
 	line-height: 100%;
-	&__swiper {
+	border-radius: 4px;
+	&__gallery {
+		max-height: 152px;		
+	}
+	&__details {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
+		gap: 10px;
+		padding: 20px 17px 20px 20px;
+	}
+	&__line {
+		max-height: 1px;
+		border-bottom: 1px solid $dark-shade-10;
 	}
   &__room{
     &-info {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+			align-items: flex-end;
     }
     &-title {
       @include font-bold(14px, $dark-shade-100);
     }
     &-number {
-      font-size: $fs-large;
+      font-size: $fs-medium;
+			line-height: 24px;
     }
     &-type {
       color: $purple;
       font-size: $fs-minimum;
+			text-transform: uppercase;
     }
   }
   &__price-per-night {
@@ -38,7 +49,13 @@
 		align-items: flex-end;
 		line-height: 18px;
 		color: $dark-shade-50;
-		font-size: $fs-normal;	
+		
+	}
+	&__price {
+		font-weight: bold;
+		&-context {
+			font-size: $fs-minimum	
+		}
 	}
   &__number-prefix {
 		font-size: $fs-normal;
@@ -48,4 +65,20 @@
     flex-direction: row;
     justify-content: space-between;
   }
+	&__reviews {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		font-size: $fs-normal;
+		&-count {
+			font-weight: bold;
+		}
+		&-text {
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+	}
 }

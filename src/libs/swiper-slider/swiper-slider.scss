@@ -1,13 +1,92 @@
-@import "../../styles/global.scss";
+@import '../../styles/global.scss';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 
 .swiper {
 	position: relative;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0;
+	&-wrapper {
+	}
 	&-slide {
-		&__img {
-			max-width: 100%;
-		}
+		border-radius: 4px;
+		overflow: hidden;
+	}
+	&-slide__img {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: cover;
 	}
 	&__icon {
-		@include material-icon(24px, $dark-shade-100);
+		@include material-icon(24px, white);
+		transition: all 0.3s ease-in-out;
+		opacity: 0;
+	}
+	&-button-prev, &-button-next {
+		margin: 0;
+		opacity: 0;
+		width: 44px;
+		min-height: 100%;
+		transform: translate(0, -50%);
+		transition: opacity 0.3s ease-in-out;
+		&::after {
+			content: '';
+			display: none;
+		}
+	}
+	&-button {
+		&-prev {
+			left: 0;
+			.swiper__icon {
+				transform: rotate(90deg)
+			}
+			&:hover {
+				opacity: 1;
+				background: linear-gradient(to right, 
+					#00000080 0%,
+					#00000000 100%);
+					.swiper__icon {
+						opacity: 1;
+					}
+				}
+		}
+		&-next {
+			right: 0;
+			.swiper__icon {
+				transform: rotate(-90deg);
+			}
+			&:hover {
+				opacity: 1;
+				background: linear-gradient(to left, 
+				#00000080 0%,
+				#00000000 100%);
+				.swiper__icon {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&-pagination {
+		&-img {
+			position: absolute;
+			display: flex;
+			justify-content: flex-end;
+			z-index: 200;
+			padding: 0 15px 5px 0;
+		}
+		&-bullet {
+			background: transparent;
+			border: 1.5px solid white;
+			width: 7.5px;
+			height: 7.5px;
+			margin: 0 2px !important;
+			opacity: 1;
+			&-active {
+				background-color: white;
+			}
+		}
 	}
 }

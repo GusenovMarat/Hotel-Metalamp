@@ -4,16 +4,18 @@ mixin card-slider({links})
 	.card-slider
 		.card-slider__gallery.js-card-slider__gallery
 			+swiperSlider(links)
-		.card-slider__room-info
-			.card-slider__room-title 
-				span.card-slider__number-prefix №&nbsp;
-				span.card-slider__room-number 888
-				span.card-slider__room-type &nbsp;люкс
-			.card-slider__price-per-night
-				span.card-slider__price 9 990₽
-				span.card-slider__price-context &nbsp;в сутки
-		.card-slider__rating 
-			+rateButton
-			.card-slider__reviews
-				span.card-slider__reviews-count 145
-				span.card-slider__reviews-text &nbsp;отзывов
+		.card-slider__details
+			.card-slider__room-info
+				.card-slider__room-title 
+					span.card-slider__number-prefix №&nbsp;
+					span.card-slider__room-number 888
+					span.card-slider__room-type &nbsp;люкс
+				.card-slider__price-per-night
+					span.card-slider__price 9 990₽
+					span.card-slider__price-context &nbsp;в сутки
+			.card-slider__line
+			.card-slider__rating 
+				+rateButton
+				.card-slider__reviews
+					span.card-slider__reviews-count 145
+					span.card-slider__reviews-text &nbsp;отзывов
