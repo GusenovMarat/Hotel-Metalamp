@@ -37,7 +37,8 @@
 	}
 	&__room-type {
 		color: $purple;
-		font-size: $fs-minimum;
+    font-size: $fs-minimum;
+		text-transform: uppercase;
 	}
 	&__details {
 		display: flex;
@@ -94,6 +95,9 @@
 
 	&__price {
 		font-weight: bold;
+		&-context {
+			font-size: $fs-minimum	
+		}
 	}
 	&__summary {
 		display: flex;
