@@ -24,8 +24,8 @@ class CheckboxList {
 			const toggleIcon = item.querySelector(this.checkboxToggle);
 			
 			expand.addEventListener('click', () => {
-					block.classList.toggle(this.checkboxActive);	
-					toggleIcon.classList.toggle(this.checkboxActiveToggle);		
+				block.classList.toggle(this.checkboxActive);	
+				toggleIcon.classList.toggle(this.checkboxActiveToggle);		
 			});
 		});
 	}
