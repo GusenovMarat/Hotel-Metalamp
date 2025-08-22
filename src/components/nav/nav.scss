@@ -16,8 +16,8 @@
     display: flex;
 		
 		&:hover ul {
-			visibility: visible;
-			top: calc(100% + 10px);
+			top: 100%;
+			
 			padding: 10px 0;
 			transform: scaleY(1);
     }
@@ -42,6 +42,7 @@
 		list-style-type: none;
 		white-space: nowrap;
 		outline: none;
+		margin-top: 10px;
 		background-color: white;
 		min-width: 100px;
     top: 100%;
@@ -51,7 +52,6 @@
 		transition: all 0.3s ease-in-out;
 		transform-origin: top;
 		transform: scaleY(0);
-		visibility: hidden;
 		&-item {
 			display: block;
 			&::first-letter{

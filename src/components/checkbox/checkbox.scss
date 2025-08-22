@@ -12,10 +12,13 @@
 		min-width: 266px;
     cursor: pointer;
   }
-  &__expand-icon {
+  &__toggle {
     @include material-icon(24px, inherit);
-		transition: transform 0.3s ease;
+		transition: transform 0.3s ease-in-out;
     cursor: pointer;
+    &-active {
+      transform: rotate(180deg)
+    }
   }
   &__title {
     @include font-bold($fs-minimum, $dark-shade-100);
@@ -27,9 +30,18 @@
     margin-top: 15px;
     width: 100%;
     gap: 10px;
+    transform-origin: top;
+    
     padding: 0;
 		overflow: hidden;
-		transition: max-height 0.3s ease;
+		transition: transform 0.3s ease-in-out;
+    &-hide {
+      transform-origin: top;
+      transform: scaleY(0);
+    }
+    &-active {
+      transform: scaleY(1);
+    }
   }
 
   &__item {

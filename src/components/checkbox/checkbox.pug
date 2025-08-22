@@ -1,14 +1,14 @@
 mixin checkbox({expand = false, title, rich = false, caption, checkboxInput})
 	- const checkboxClasses = expand ? 'js-checkbox' : ''
 	- const expandClasses = expand ? 'js-checkbox-expand' : ''
-	- const blockClasses = expand ? 'js-checkbox-block' : ''
+	- const blockClasses = expand ? 'checkbox__block-hide js-checkbox-block' : ''
 	- const toggleClasses = expand ? 'js-checkbox-toggle' : ''
 	
 	.checkbox(class=checkboxClasses)
 		if expand
 			.checkbox__expand(class=expandClasses)
 				.checkbox__title= title
-				.checkbox__expand-icon(class=toggleClasses) expand_more
+				.checkbox__toggle(class=toggleClasses) expand_more
 		else 
 			.checkbox__title= title
 		
