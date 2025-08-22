@@ -13,8 +13,27 @@
 				},
 				{
 					"href": "./index.html",
-					"title": "услуги"
-				},
+					"title": "услуги",
+					"icon": true,
+					"sub": [
+							{
+								"subhref": "./index.html",
+								"subtitle": "константин константинопольский 1"
+							},
+							{
+								"subhref": "./index.html",
+								"subtitle": "константин константинопольский 2"
+							},
+							{
+								"subhref": "./index.html",
+								"subtitle": "константин константинопольский 3"
+							},
+							{
+								"subhref": "./index.html",
+								"subtitle": "константин константинопольский 4"
+							}
+						]
+					},
 				{
 					"href":"./index.html",
 					"title": "вакансии"
