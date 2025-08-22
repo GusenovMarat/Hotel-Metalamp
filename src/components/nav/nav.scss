@@ -14,27 +14,44 @@
 	&__item {
 		position: relative;
     display: flex;
+		
 		&:hover ul {
-      display: inline-block;
-      background-color: white;
-      outline: none;
-      border: 1px solid $dark-shade-10;
-      border-radius: 4px;
-      z-index: 101;
 			visibility: visible;
+      opacity: 1;
+			top: calc(100% + 10px);
+			padding: 10px 0;
+			
+    }
+	}
+	&__link {
+		color: $dark-shade-50;
+		text-decoration: none;
+		
+		&_active {
+			@include font-bold($fs-normal, $dark-shade-75);
+		}
+		&::first-letter {
+			text-transform: uppercase;
+		}
+		&:hover {
+      color: $dark-shade-100;
     }
 	}
 	&__sub {
 		position: absolute;
 		display: inline-block;
 		list-style-type: none;
-		white-space: nowrap;	
+		white-space: nowrap;
+		outline: none;
+		background-color: white;
 		min-width: 100px;
     top: 100%;
     left: 0;
-    padding: 10px 0;
-		transition: all 0.3 ease;
+		border: 1px solid $dark-shade-10;
+    border-radius: 4px;
+		transition: all 0.3s ease-in-out;
 		visibility: hidden;
+		opacity: 0;
 		
 		&-item {
 			display: block;
@@ -51,19 +68,6 @@
 				}
 			}
 		}
-	&__link {
-		color: $dark-shade-50;
-		text-decoration: none;
-		&_active {
-			@include font-bold($fs-normal, $dark-shade-75);
-		}
-		&::first-letter {
-			text-transform: uppercase;
-		}
-		&:hover {
-      color: $dark-shade-100;
-    }
-	}
 	&__icon {
 		@include material-icon(24px, inherit);
     cursor: pointer;
