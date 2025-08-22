@@ -15,7 +15,7 @@ block variables
 	- var background = true;
 
 block content
-	- const { slider } = require("./cards.json")
+	- const { sliders } = require("./cards.json")
 	.cards
 		.cards__block
 			+card-search
@@ -25,4 +25,5 @@ block content
 			+card-signin
 		.cards__block
 			+calendar
-			+card-slider(slider)
+			each slider in sliders
+				+card-slider(slider)

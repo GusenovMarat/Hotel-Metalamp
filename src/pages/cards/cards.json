@@ -1,22 +1,51 @@
 {
-  "slider": {
-    "links": [
-      {
-        "src": "assets/img/rooms/room-1_1.png",
-        "alt": "room-1_1"
-      },
-      {
-        "src": "assets/img/rooms/room-1_2.png",
-        "alt": "room-1_2"
-      },
-      {
-        "src": "assets/img/rooms/room-1_3.png",
-        "alt": "room-1_3"
-      },
-      {
-        "src": "assets/img/rooms/room-1_4.png",
-        "alt": "room-1_4"
-      }
-    ]
-  }
+  "sliders": [
+		{
+			"links": [
+				{
+					"src": "assets/img/rooms/room-1_1.png",
+					"alt": "room-1_1"
+				},
+				{
+					"src": "assets/img/rooms/room-1_2.png",
+					"alt": "room-1_2"
+				},
+				{
+					"src": "assets/img/rooms/room-1_3.png",
+					"alt": "room-1_3"
+				},
+				{
+					"src": "assets/img/rooms/room-1_4.png",
+					"alt": "room-1_4"
+				}
+			],
+			"number": "888",
+			"price": "9990",
+			"isLuxe": true,
+			"count": "145"
+		},
+		{
+			"links": [
+				{
+					"src": "assets/img/rooms/room-1_1.png",
+					"alt": "room-1_1"
+				},
+				{
+					"src": "assets/img/rooms/room-1_2.png",
+					"alt": "room-1_2"
+				},
+				{
+					"src": "assets/img/rooms/room-1_3.png",
+					"alt": "room-1_3"
+				},
+				{
+					"src": "assets/img/rooms/room-1_4.png",
+					"alt": "room-1_4"
+				}
+			],
+			"number": "840",
+			"price": "9900",
+			"count": "65"
+		}
+	]
 }

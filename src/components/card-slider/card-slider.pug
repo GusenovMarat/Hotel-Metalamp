@@ -1,6 +1,6 @@
 include ../rate-button/rate-button
 
-mixin card-slider({links, number, price, isLuxe = "false"})
+mixin card-slider({links, number, price, isLuxe = "false", count})
 	.card-slider
 		.card-slider__gallery.js-card-slider__gallery
 			+swiperSlider(links)
@@ -8,8 +8,8 @@ mixin card-slider({links, number, price, isLuxe = "false"})
 			.card-slider__room-info
 				.card-slider__room-title 
 					span.card-slider__number-prefix №&nbsp;
-					span.card-slider__room-number number
-					span.card-slider__room-type &nbsp;люкс
+					span.card-slider__room-number=number
+					span.card-slider__room-type= isLuxe === true ? " люкс" : ""
 				.card-slider__price-per-night
 					span.card-slider__price=`${price}₽`
 					span.card-slider__price-context &nbsp;в сутки
@@ -17,5 +17,5 @@ mixin card-slider({links, number, price, isLuxe = "false"})
 			.card-slider__rating 
 				+rateButton
 				.card-slider__reviews
-					span.card-slider__reviews-count 145
+					span.card-slider__reviews-count=count
 					span.card-slider__reviews-text &nbsp;отзывов
