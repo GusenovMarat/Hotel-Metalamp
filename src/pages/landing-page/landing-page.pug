@@ -1,17 +1,8 @@
-extends ../../layouts/main/main
-include ../../libs/swiper-slider/swiper-slider
-include ../../components/card-search/card-search
-include ../../components/card-booking/card-booking
-include ../../components/card-signup/card-signup
-include ../../components/card-signin/card-signin
-include ../../components/card-slider/card-slider
-include ../../components/calendar/calendar
-
+extends ../../layouts/landing/landing
 
 block variables 
 	- var title = "landing page";
 	- var discription = "main Toxin page";
 
 block content
-	- const { sliders } = require("./cards.json")
-	section.landing-pagh
+	section.landing-page

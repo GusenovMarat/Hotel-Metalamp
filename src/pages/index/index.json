@@ -16,6 +16,10 @@
 			{
         "link": "./cards.html",
         "title": "cards"
+      },
+			{
+        "link": "./landing-page.html",
+        "title": "landing-page"
       }
     ]
   }

@@ -1,0 +1,166 @@
+{
+  "header": {
+    "logo": {
+      "src": "logo-toxin.svg",
+      "href": "./index.html"
+		},
+		"nav": {
+			"items": [
+				{
+					"active": true,
+					"href": "./index.html",
+					"title": "о нас"
+				},
+				{
+					"href": "./index.html",
+					"title": "услуги"
+				},
+				{
+					"href":"./index.html",
+					"title": "вакансии"
+				},
+				{
+					"href":"./index.html",
+					"title": "новости"
+				},
+				{
+					"href":"./index.html",
+					"title": "соглашения",
+					"icon": true,
+					"sub": [
+						{
+							"subhref": "./index.html",
+							"subtitle": "константин константинопольский 1"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "константин константинопольский 2"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "константин константинопольский 3"
+						},
+						{
+							"subhref": "./index.html",
+							"subtitle": "константин константинопольский 4"
+						}
+					]
+				}
+			],
+			"auth": [
+				{
+					"border": "true",
+					"text": "войти",
+					"type": "button",
+					"small": true
+				},
+				{
+					"theme": "filled",
+					"text": "зарегистрироваться",
+					"long": true,
+					"small": true,
+					"href": "#"
+				}
+			]
+		}
+	},
+	"footer": {
+		"head": {
+			"info": {
+				"logo": {
+					"src": "logo-toxin.svg",
+					"href": "./index.html"
+				},
+				"description": "бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»"
+			},
+			"nav": [
+				{
+					"title": "навигация",
+					"list": [
+						{
+							"href": "./index.html",
+							"text": "о нас"
+						},
+						{
+							"href": "./index.html",
+							"text": "новости"
+						},
+						{
+							"href": "./index.html",
+							"text": "служба поддержки"
+						},
+						{
+							"href": "./index.html",
+							"text": "услуги"
+						}
+					] 
+				},
+				{
+					"title": "о нас",
+					"list": [
+						{
+							"href": "./index.html",
+							"text": "о сервисе"
+						},
+						{
+							"href": "./index.html",
+							"text": "наша компания"
+						},
+						{
+							"href": "./index.html",
+							"text": "вакансии"
+						},
+						{
+							"href": "./index.html",
+							"text": "инвесторы"
+						}
+					] 
+				},
+				{
+					"title": "служба поддержки",
+					"list": [
+						{
+							"href": "./index.html",
+							"text": "соглашения"
+						},
+						{
+							"href": "./index.html",
+							"text": "сообщества"
+						},
+						{
+							"href": "./index.html",
+							"text": "связь с нами"
+						}
+					] 
+				}
+			],
+			"newsletter": {
+				"title": "подписка",
+				"text": "получайте специальные предложения и новости сервиса",
+				"field": {
+					"form": true,
+					"type": "text",
+					"placeholder": "email",
+					"name": "sendmail"
+				}
+			}
+		},
+		"bottom": {
+      "text": "Copyright © 2018 Toxin отель. Все права защищены.",
+      "social": [
+        {
+          "name": "twit",
+          "ilnk": "https://x.com/twitter"
+        },
+        {
+          "name": "fb",
+          "ilnk": "https://facebook.com/"
+        },
+        {
+          "name": "inst",
+          "ilnk": "https://www.instagram.com/"
+        }
+      ]
+    }
+	}
+}

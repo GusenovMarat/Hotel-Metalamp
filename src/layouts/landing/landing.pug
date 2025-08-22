@@ -1,6 +1,7 @@
 include ../../components/header/header
 include ../../components/footer/footer
-include ../../pages/landing-page/landing-page
+
+- const { header , footer } = require('@/layouts/landing/landing.json')
 
 block variables
 
@@ -11,7 +12,6 @@ html(lang="ru")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(name="discription", content=discription)
 		title #{title}
-	
 	body.landing
 		+header(header)
 		block content
