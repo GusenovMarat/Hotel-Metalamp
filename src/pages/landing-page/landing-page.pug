@@ -1,8 +1,11 @@
 extends ../../layouts/landing/landing
+include ../../components/card-search/card-search
 
 block variables 
 	- var title = "landing page";
 	- var discription = "main Toxin page";
 
 block content
-	section.landing-page
+	.landing-page
+		
+		+card-search

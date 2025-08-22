@@ -14,5 +14,7 @@ html(lang="ru")
 		title #{title}
 	body.landing
 		+header(header)
-		block content
+		main.landing__main
+			section.landing__container
+				block content
 		+footer(footer)

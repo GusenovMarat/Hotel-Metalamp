@@ -18,6 +18,7 @@ class DropDown {
 			this.DropDownButtonReset = '.js-button__reset';
 			this.DropDownButtonSubmit = '.js-button__submit';
 			this.HideButton = 'button__hidden';
+			this.DropDownListActive = 'dropdown__list-active'
 			this.DropDownBlockActive = 'dropdown__block-active'
 	}
 
@@ -36,7 +37,8 @@ class DropDown {
 					const itemsData = new Map();
 
 					toggle.addEventListener('click', () => {
-							block.classList.toggle(this.DropDownBlockActive);
+							list.classList.toggle(this.DropDownListActive);
+							block.classList.toggle(this.DropDownBlockActive);		
 					});
 
 					items.forEach(item => {
