@@ -3,5 +3,20 @@
 @import "../../layouts/page/page.scss";
 
 .landing-page {
-	height: 100vh;
+	padding-top: 70px;
+	padding-bottom: 18px;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	gap: 320px;
+	.landing-page__text {
+		align-self: flex-end;
+		max-width: 300px;
+		font-size: $fs-normal;
+		color: $dark-shade-75;
+		text-align: right;
+		&::first-letter {
+			text-transform: uppercase
+		};
+	}
 }

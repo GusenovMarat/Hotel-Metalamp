@@ -12,9 +12,9 @@ html(lang="ru")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(name="discription", content=discription)
 		title #{title}
-	body.page
+	body.page(style=`background-image: url("/assets/img/background/${background}.jpg")`)
 		+header(header)
 		main.page__main
-			section.page__container
+			.page__container
 				block content
 		+footer(footer)
