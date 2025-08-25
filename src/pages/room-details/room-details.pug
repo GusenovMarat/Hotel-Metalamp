@@ -1,0 +1,15 @@
+extends ../../layouts/page/page
+include ../../components/card-booking/card-booking
+
+block variables 
+	- var title = "room details";
+	- var discription = "room details";
+	- var background = false
+
+block content
+	- const {  } = require('./room-details.json')
+	.room-details
+		.room-details__gallery
+		.room-details__content
+			.room-details__list 
+			+card-booking
