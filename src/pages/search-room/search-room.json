@@ -1,0 +1,111 @@
+{
+	"datepicker": {
+		"firstTitle": "filter date dropdown"
+	},
+	"dropdownGuests": {
+		"title": "dropdown",
+		"items": 
+		[
+			{
+				"caption": "спальни",
+				"declensions": "спальня, спальни, спален"
+			},
+			{
+				"caption": "кровати",
+				"declensions": "кровать, кровати, кроватей"
+			},
+			{
+				"caption": "ванные комнаты",
+				"declensions": "ванная комната, ванные комнаты, ванных комнат"
+			}
+		]
+	},
+	"rangeSlider": {
+		"title": "range-slider",
+		"defaultPrice": "5000₽ - 10000₽"
+	},
+  "checkbox": {
+    "title": "checkbox buttons",
+    "checkboxInput": [
+      {
+        "name": "checkbox1",
+        "text": "можно курить"
+      },
+      {
+        "name": "checkbox2",
+        "text": "можно с питомцами"
+      },
+      {
+        "name": "checkbox3",
+        "text": "можно пригласить гостей (до 10 человек)"
+      }
+    ]
+  },
+	"checkboxRich": {
+    "rich": true,
+    "title": "rich сheckbox buttons",
+    "checkboxInput": [
+      {
+        "name": "checkbox1",
+        "caption": "широкий коридор",
+        "text": "ширина коридоров в номере не менее 91 см."
+      },
+      {
+        "name": "checkbox2",
+        "caption": "помощник для инвалидов",
+        "text": "на 1 этаже вас встретит специалист  и проводит до номера."
+      }
+    ]
+  },
+	"dropdownFurniture": {
+		"title": "dropdown",
+    "wide": true,
+		"items": 
+		[
+			{
+				"caption": "взрослые",
+				"declensions": "гость, гостя, гостей"
+			},
+			{
+				"caption": "дети",
+				"declensions": "гость, гостя, гостей"
+			},
+			{
+				"caption": "младенцы",
+				"declensions": "ребёнок, детей, детей"
+			}
+		],
+    "buttons": [
+      {
+        "text": "очистить",
+        "type": "button",
+        "theme": "no-bg",
+        "selector": "reset"
+      },
+      {
+        "text": "применить",
+        "type": "button",
+        "theme": "no-bg",
+        "selector": "submit"
+      }
+    ]
+	},
+	"checkboxExpand": {
+    "expand": true,
+    "title": "expandable checkbox list",
+    "checkboxInput": [
+      {
+        "name": "checkbox1",
+        "text": "можно курить"
+      },
+      {
+        "name": "checkbox2",
+        "text": "можно с питомцами"
+      },
+      {
+        "name": "checkbox3",
+        "text": "можно пригласить гостей (до 10 человек)"
+      }
+    ]
+  }
+}

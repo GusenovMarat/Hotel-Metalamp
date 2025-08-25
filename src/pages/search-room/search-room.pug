@@ -1,4 +1,10 @@
 extends ../../layouts/page/page
+include ../../components/date-field/date-field
+include ../../components/dropdown/dropdown
+include ../../components/range-slider/range-slider
+include ../../components/checkbox/checkbox
+include ../../components/card-slider/card-slider
+
 
 block variables 
 	- var title = "search room";
@@ -6,4 +12,17 @@ block variables
 	- var background = false
 
 block content
+	- const { datepicker, dropdownGuests, rangeSlider, checkbox, checkboxRich, dropdownFurniture, checkboxExpand } = require("./search-room.json")
 	.search-room
+		.search-room__sidebar
+			+date-field(datepicker)
+			+dropdown(dropdownGuests)
+			+rangeSlider(rangeSlider)
+			+checkbox(checkbox)
+			+checkbox(checkboxRich)
+			+dropdown(dropdownFurniture)
+			+checkbox(checkboxExpand)
+		.search-room__content
+			.search-room__content-title 
+			.search-room__grid-sliders 
+			.search-rorom__pagination
