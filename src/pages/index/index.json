@@ -20,6 +20,10 @@
 			{
         "link": "./landing-page.html",
         "title": "landing-page"
+      },
+			{
+        "link": "./search-room.html",
+        "title": "search-room"
       }
     ]
   }
