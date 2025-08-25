@@ -66,4 +66,13 @@
 			cursor: pointer;
 		}
 	}
+	&__description {
+		margin-top: 10px;
+		font-size: 12px;
+		line-height: 14px;
+		color: $dark-shade-50;
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
 }

@@ -5,3 +5,34 @@
 @import '../../components/range-slider/range-slider.scss';
 @import '../../components/checkbox/checkbox.scss';
 @import '../../components/card-slider/card-slider.scss';
+
+.search-room {
+	margin-top: 30px;
+	margin-bottom: 70px;
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+	&__sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	&__content-title {
+		@include font-bold(24px, $dark-shade-100, 30px);
+		margin-bottom: 20px;
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+	&__grid-sliders {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: flex-end;
+		gap: 20px 12px;
+	}
+}

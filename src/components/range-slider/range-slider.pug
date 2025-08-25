@@ -1,4 +1,4 @@
-mixin rangeSlider({title, defaultPrice, discription= false})
+mixin rangeSlider({title, defaultPrice, description= false})
 	.range-slider.js-range-slider
 		.range-slider__header
 			.range-slider__title= title
@@ -23,6 +23,6 @@ mixin rangeSlider({title, defaultPrice, discription= false})
 				step = "100"
 				data-value = "max"
 			).js-range-slider__value
-		if discription
-			.range-slider__discription= discription
+		if description
+			.range-slider__description= description
 

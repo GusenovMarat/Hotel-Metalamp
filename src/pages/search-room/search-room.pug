@@ -23,8 +23,9 @@ block content
 			+dropdown(dropdownFurniture)
 			+checkbox(checkboxExpand)
 		.search-room__content
-			.search-room__content-title 
+			.search-room__content-title номера, которые мы для вас подобрали
 			.search-room__grid-sliders
-				each slider in sliders
-					+card-slider(slider)
+				- for (let i = 0; i < 6; i++)
+					each slider in sliders
+						+card-slider(slider)
 			.search-rorom__pagination
