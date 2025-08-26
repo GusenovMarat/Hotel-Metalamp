@@ -31,8 +31,8 @@
 	}
 	&__grid-sliders {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		justify-content: flex-start;
+		grid-template-columns: repeat(3, auto);
+		justify-content: space-between;
 		gap: 20px 12px;
 	}
 }

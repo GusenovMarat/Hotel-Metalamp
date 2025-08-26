@@ -6,6 +6,9 @@
 @import '../../components/review/review.scss';
 
 .room-details {
+	display: flex;
+	flex-direction: column;
+	
 	&__grid-gallery {
 		display: grid;
   	grid-template-columns: repeat(3, 1fr);
@@ -21,11 +24,50 @@
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 2;
 	}
+	&__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 70px;
+		padding: 70px 140px;
+	}
+	&__grid-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
+		gap: 30px 70px;
+	}
+	&__reviews {
+		grid-column: 1 / span 2;
+		max-width: fit-content;
+		&-header {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&-content {
+			display: flex;
+			flex-direction: column;
+			gap: 22px;
+		}
+	}
 	&__title {
 		@include font-bold(19px, $dark-shade-100, 100%);
 		min-height: 24px;
+		margin-bottom: 20px;
 		&::first-letter {
 			text-transform: uppercase;
 		}
+	}
+	&__text {
+		max-width: 341px;
+	}
+	&__rules {
+		max-height: 100%;
+	}
+	&__chart {
+		width: 311px;
+		height: 126px;
+		background-color: grey;
 	}
 }

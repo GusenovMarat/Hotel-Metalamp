@@ -23,6 +23,7 @@ block content
 					+features(features)
 				.room-details__feedback
 					.room-details__title впечатления от номера
+					.room-details__chart
 				.room-details__reviews
 					.room-details__reviews-header
 						.room-details__title отзывы посетителей номера
@@ -31,6 +32,7 @@ block content
 						each review in reviews
 							+review(review)
 				.room-details__rules
+					.room-details__title правила
 					+bulletList(rules)
 				.room-details__cancel
 					.room-details__title отмена
