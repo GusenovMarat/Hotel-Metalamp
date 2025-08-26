@@ -7,7 +7,7 @@ mixin review({src, alt, name, date, text})
 				img.review__user-img(src="assets/img/users/"+ src alt=alt || "user")
 			.review__user-meta
 				.review__user-name= name
-				.review__user-viewdate #{date} дней назад
+				.review__user-viewdate #{date} назад
 		.review__main
 			+likeButton({
 				name: "like-button",

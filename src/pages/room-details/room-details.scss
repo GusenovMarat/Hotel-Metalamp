@@ -1,6 +1,7 @@
 @import "../../styles/global.scss";
 @import "../../layouts/page/page.scss";
 @import '../../components/features/features.scss';
+@import '../../components/bullet-list/bullet-list.scss';
 @import '../../components/card-booking/card-booking.scss';
 @import '../../components/review/review.scss';
 
@@ -19,5 +20,12 @@
 	&__img-main {
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 2;
+	}
+	&__title {
+		@include font-bold(19px, $dark-shade-100, 100%);
+		min-height: 24px;
+		&::first-letter {
+			text-transform: uppercase;
+		}
 	}
 }

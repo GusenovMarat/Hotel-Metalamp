@@ -12,10 +12,11 @@
   }
   &__user {
     &-avatar {
-
+			
     }
     &-img {
       height: 48px;
+			border-radius: 50%;
     }
     &-meta {
       display: flex;
@@ -29,6 +30,9 @@
     &-viewdate {
       font-size: $fs-normal;
       color: $dark-shade-75;
+			&::first-letter {
+				text-transform: uppercase;
+			}
     }
   }
   &__main {

@@ -1,6 +1,8 @@
 extends ../../layouts/page/page
 include ../../components/card-booking/card-booking
 include ../../components/features/features
+include ../../components/review/review
+include ../../components/bullet-list/bullet-list
 
 block variables 
 	- var title = "room details";
@@ -8,18 +10,30 @@ block variables
 	- var background = false
 
 block content
-	- const { img } = require('./room-details.json')
+	- const { img, features, reviews, rules, cancelText  } = require('./room-details.json')
 	.room-details
 		.room-details__grid-gallery
 			each item in img
 				- const { src, alt, main } = item
 					img.room-details__img(class=main ? "room-details__img-main" : "", src=src, alt=alt)
 		.room-details__content
-			.room-details__grid-list 
-				//- +features(features)
-				.room-details__feedback 
-				.room-details__reviews 
-				.room-details__rules 
-				.room-details__cancel 
+			.room-details__grid-list
+				.room-details__features
+					.room-details__title сведения о номере
+					+features(features)
+				.room-details__feedback
+					.room-details__title впечатления от номера
+				.room-details__reviews
+					.room-details__reviews-header
+						.room-details__title отзывы посетителей номера
+						.room-deatils__review-count 2 отзыва
+					.room-details__reviews-content
+						each review in reviews
+							+review(review)
+				.room-details__rules
+					+bulletList(rules)
+				.room-details__cancel
+					.room-details__title отмена
+					.room-details__text=cancelText
 			.room-details__booking
-				//- +card-booking
+				+card-booking
