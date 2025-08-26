@@ -1,5 +1,6 @@
 extends ../../layouts/page/page
 include ../../components/card-booking/card-booking
+include ../../components/features/features
 
 block variables 
 	- var title = "room details";
@@ -7,9 +8,18 @@ block variables
 	- var background = false
 
 block content
-	- const {  } = require('./room-details.json')
+	- const { img } = require('./room-details.json')
 	.room-details
-		.room-details__gallery
+		.room-details__grid-gallery
+			each item in img
+				- const { src, alt, main } = item
+					img.room-details__img(class=main ? "room-details__img-main" : "", src=src, alt=alt)
 		.room-details__content
-			.room-details__list 
-			+card-booking
+			.room-details__grid-list 
+				//- +features(features)
+				.room-details__feedback 
+				.room-details__reviews 
+				.room-details__rules 
+				.room-details__cancel 
+			.room-details__booking
+				//- +card-booking

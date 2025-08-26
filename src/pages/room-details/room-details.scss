@@ -1,0 +1,23 @@
+@import "../../styles/global.scss";
+@import "../../layouts/page/page.scss";
+@import '../../components/features/features.scss';
+@import '../../components/card-booking/card-booking.scss';
+@import '../../components/review/review.scss';
+
+.room-details {
+	&__grid-gallery {
+		display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 0;
+	}
+	&__img {
+		height: 100%;
+		width: 100%;
+    object-fit: cover;
+	}
+	&__img-main {
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 2;
+	}
+}
