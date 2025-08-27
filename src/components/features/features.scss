@@ -31,6 +31,7 @@
   }
   &__text {
     color: $dark-shade-75;
+		white-space: nowrap;
     &:first-letter {
       text-transform: uppercase;
     }
@@ -47,4 +48,5 @@
     filter:
       drop-shadow(0 0 1px $dark-shade-10 );
   }
+	
 }
