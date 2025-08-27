@@ -1,24 +1,25 @@
 mixin chart({great, good, norm, bad })
 	-
 		const votes = great + good + norm + bad;
+		const arrayVotes = [great, good, norm, bad];
 		const gradients = [
-			{ name: "great", from: "#FFE39C", to: "#FFBA9C" },
-			{ name: "good", from: "#6FCF97", to: "#66D2EA" },
-			{ name: "norm", from: "#BC9CFF", to: "#8BA4F9" },
-			{ name: "bad", from: "#909090", to: "#3D4975" },
+			{ id: "gradient-great", from: "#FFE39C", to: "#FFBA9C" },
+			{ id: "gradient-good", from: "#6FCF97", to: "#66D2EA" },
+			{ id: "gradient-norm", from: "#BC9CFF", to: "#8BA4F9" },
+			{ id: "gradient-bad", from: "#909090", to: "#3D4975" },
 		]
-
+		
 	.chart
 		.chart__container
 			.chart__canvas
 				svg.chart__diagram(width="120" height="120" viewBox="0 0 33 33")
-					each item in gradients
-						- const { name, from, to } = item 
-							defs 
-								linearGradient(id= `gradient-${name}` x1="0%", y1="0%", x2="0%", y2="100%")
-									stop(offset="0%", stop-color=`${from}`)
-									stop(offset="100%", stop-color=`${to}`)
-					circle.chart__unit(r="15.91549430918954" cx="50%" cy="50%")
+					defs 
+						each gradient in gradients
+							linearGradient(id=gradient.id x1="0%", y1="0%", x2="0%", y2="100%")
+								stop(offset="0%", stop-color=`${gradient.from}`)
+								stop(offset="100%", stop-color=`${gradient.to}`)
+					each gradient in gradients
+						circle.chart__unit(r="15.91549430918954" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradient.id})` )
 			.chart__legend 
 				ul.chart__caption-list 
 					li.chart__caption-item великолепно
