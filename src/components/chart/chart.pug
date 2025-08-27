@@ -1,0 +1,18 @@
+//- mixin chart({great, good, norm, bad })
+//- - const votes = great + good + norm + bad
+
+mixin chart
+	.chart
+		.chart__container
+			.chart__canvas
+				svg.chart__diagram(width="120", height="120", viewBox="0 0 33 33")
+					circle.chart__unit(r="15.9", cx="50%", cy="50%")
+					circle.chart__unit(r="15.9", cx="50%", cy="50%")
+					circle.chart__unit(r="15.9", cx="50%", cy="50%")
+					circle.chart__unit(r="15.9", cx="50%", cy="50%")
+			.chart__legend 
+				ul.chart__list 
+					li.chart__item-caption
+					li.chart__item-caption 
+					li.chart__item-caption 
+					li.chart__item-caption

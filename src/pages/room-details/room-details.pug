@@ -3,6 +3,7 @@ include ../../components/card-booking/card-booking
 include ../../components/features/features
 include ../../components/review/review
 include ../../components/bullet-list/bullet-list
+include ../../components/chart/chart
 
 block variables 
 	- var title = "room details";
@@ -24,6 +25,7 @@ block content
 				.room-details__feedback
 					.room-details__title впечатления от номера
 					.room-details__chart
+						+chart
 				.room-details__reviews
 					.room-details__reviews-header
 						.room-details__title отзывы посетителей номера

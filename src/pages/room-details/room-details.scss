@@ -2,6 +2,7 @@
 @import "../../layouts/page/page.scss";
 @import '../../components/features/features.scss';
 @import '../../components/bullet-list/bullet-list.scss';
+@import '../../components/chart/chart.scss';
 @import '../../components/card-booking/card-booking.scss';
 @import '../../components/review/review.scss';
 
@@ -72,7 +73,6 @@
 	&__chart {
 		width: 311px;
 		height: 126px;
-		background-color: grey;
 	}
 	&__booking {
 		position: sticky;
