@@ -11,7 +11,7 @@ block variables
 	- var background = false
 
 block content
-	- const { img, features, reviews, rules, cancelText  } = require('./room-details.json')
+	- const { img, features, chart, reviews, rules, cancelText  } = require('./room-details.json')
 	.room-details
 		.room-details__grid-gallery
 			each item in img
@@ -25,7 +25,7 @@ block content
 				.room-details__feedback
 					.room-details__title впечатления от номера
 					.room-details__chart
-						+chart
+						+chart(chart)
 				.room-details__reviews
 					.room-details__reviews-header
 						.room-details__title отзывы посетителей номера

@@ -1,7 +1,71 @@
 @import "../../styles/global.scss";
 
+
+:root {
+	--gradient-great: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+	--gradient-good: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	--gradient-norm: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	--gradient-bad: linear-gradient(180deg, #909090 0%, #3D4975 100%);
+}
 .chart {
 	width: 311px;
 	height: 126px;
 	border: 1px solid black;
+	&__container {
+		display: flex;
+		flex-direction: row;
+	}
+	&__caption {
+		&-list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		&-item {
+			@include font-normal($fs-normal, $dark-shade-75, 24px);
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+	}
+	@keyframes render {
+		0% {
+			stroke-dasharray: 0 100;
+		}
+	}
+	&__unit {
+		fill: none;
+  	stroke-width: 1;
+   	transition-property: all;
+  	transition-duration: 0.5s;
+		animation-name: render;
+  	animation-duration: 1.5s;
+	}
+	&__unit:nth-child(1) {
+		stroke: pink;
+		stroke-dasharray: 8 100;
+		}
+
+	&__unit:nth-child(2) {
+		stroke: blue;
+		stroke-dasharray: 11 100;
+  	stroke-dashoffset: -8;
+		
+	}
+
+	&__unit:nth-child(3) {
+		stroke: red;
+		stroke-dasharray: 11 100;
+  	stroke-dashoffset: -19;
+	}
+
+	&__unit:nth-child(4) {
+		stroke: black;
+		stroke-dasharray: 70 100;
+  	stroke-dashoffset: -30;
+	}
+}
+
+.unit:hover {
+  stroke-width: 2;
 }
