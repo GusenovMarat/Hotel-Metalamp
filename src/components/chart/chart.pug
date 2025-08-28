@@ -24,9 +24,12 @@ mixin chart({great, good, norm, bad })
 
 		function dashJoin(startDashes, dashOffset) {
 			const array = [];
+			const gap = 1;
 			for (let i = 0; i < startDashes.length; i++) {
+				const dashValue = Math.max(0, startDashes[i] - gap);
+				const gapValue = 100 - startDashes[i] + gap;
 				array.push({
-					dasharray: startDashes[i], 
+					dasharray: `${dashValue} ${gapValue}`, 
 					dashoffset: dashOffset[i]  
 				});
 			}
@@ -37,7 +40,6 @@ mixin chart({great, good, norm, bad })
 		const offset = dashOffsetArray(start);
 
 		const dashes = dashJoin(start, offset);
-		const string = JSON.stringify(dashes);
 
 	.chart
 		.chart__container
@@ -49,7 +51,7 @@ mixin chart({great, good, norm, bad })
 								stop(offset="0%", stop-color=`${gradient.from}`)
 								stop(offset="100%", stop-color=`${gradient.to}`)
 					each dash, key in dashes
-						circle.chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= `${dash.dasharray} 100` stroke-dashoffset= dash.dashoffset )
+						circle.chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= dash.dasharray stroke-dashoffset= dash.dashoffset )
 			.chart__legend 
 				ul.chart__caption-list 
 					li.chart__caption-item великолепно
