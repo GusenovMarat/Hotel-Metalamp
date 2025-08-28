@@ -8,7 +8,21 @@ mixin chart({great, good, norm, bad })
 			{ id: "gradient-norm", from: "#BC9CFF", to: "#8BA4F9" },
 			{ id: "gradient-bad", from: "#909090", to: "#3D4975" },
 		]
+
+		function dashStartArray(array) {
+			const summArray = array.reduce((sum, item) => item+sum, 0 )
+			const arrayPercent = array.map(item => item === 0 ? 0 : (item / summArray)*100);
+			return arrayPercent;
+		}
 		
+		function dashOffsetArray(dashValues) {
+			return dashValues.reduce((acc, _, index) => {   
+				const previousSum = dashValues.slice(0, index).reduce((sum, val) => sum + val, 0);
+				acc.push(-previousSum);
+				return acc;
+			}, []);
+		}
+
 	.chart
 		.chart__container
 			.chart__canvas
