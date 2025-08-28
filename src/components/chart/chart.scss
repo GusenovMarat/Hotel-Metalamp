@@ -16,6 +16,9 @@
 		flex-direction: row;
 		gap: 20px;
 	}
+	&__diagram {
+		transform: rotate(90deg);
+	}
 	&__caption {
 		&-list {
 			margin: 0;
@@ -41,32 +44,11 @@
   	transition-duration: 0.5s;
 		animation-name: render;
   	animation-duration: 1.5s;
-	}
-	&__unit:nth-child(1) {
-		stroke: pink;
-		stroke-dasharray: 8 100;
-		}
-
-	&__unit:nth-child(2) {
-		stroke: blue;
-		stroke-dasharray: 11 100;
-  	stroke-dashoffset: -8;
-		
+		cursor: pointer;
 	}
 
-	&__unit:nth-child(3) {
-		stroke: red;
-		stroke-dasharray: 11 100;
-  	stroke-dashoffset: -19;
-	}
-
-	&__unit:nth-child(4) {
-		stroke: black;
-		stroke-dasharray: 70 100;
-  	stroke-dashoffset: -30;
-	}
 }
 
-.unit:hover {
+.chart__unit:hover {
   stroke-width: 2;
 }

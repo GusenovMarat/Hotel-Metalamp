@@ -1,6 +1,5 @@
 mixin chart({great, good, norm, bad })
 	-
-		const votes = great + good + norm + bad;
 		const arrayVotes = [great, good, norm, bad];
 		const gradients = [
 			{ id: "gradient-great", from: "#FFE39C", to: "#FFBA9C" },
@@ -8,9 +7,9 @@ mixin chart({great, good, norm, bad })
 			{ id: "gradient-norm", from: "#BC9CFF", to: "#8BA4F9" },
 			{ id: "gradient-bad", from: "#909090", to: "#3D4975" },
 		]
-
+		
 		function dashStartArray(array) {
-			const summArray = array.reduce((sum, item) => item+sum, 0 )
+			const summArray = array.reduce((sum, item) => Number(item)+sum, 0 );
 			const arrayPercent = array.map(item => item === 0 ? 0 : (item / summArray)*100);
 			return arrayPercent;
 		}
@@ -23,17 +22,34 @@ mixin chart({great, good, norm, bad })
 			}, []);
 		}
 
+		function dashJoin(startDashes, dashOffset) {
+			const array = [];
+			for (let i = 0; i < startDashes.length; i++) {
+				array.push({
+					dasharray: startDashes[i], 
+					dashoffset: dashOffset[i]  
+				});
+			}
+			return array;
+		}
+
+		const start = dashStartArray(arrayVotes);
+		const offset = dashOffsetArray(start);
+
+		const dashes = dashJoin(start, offset);
+		const string = JSON.stringify(dashes);
+
 	.chart
 		.chart__container
 			.chart__canvas
-				svg.chart__diagram(width="120" height="120" viewBox="0 0 33 33")
+				svg.chart__diagram(width="120" height="120" viewBox="0 0 34 34")
 					defs 
 						each gradient in gradients
-							linearGradient(id=gradient.id x1="0%", y1="0%", x2="0%", y2="100%")
+							linearGradient(id=gradient.id x1="0%", y1="50%", x2="50%", y2="100%")
 								stop(offset="0%", stop-color=`${gradient.from}`)
 								stop(offset="100%", stop-color=`${gradient.to}`)
-					each gradient in gradients
-						circle.chart__unit(r="15.91549430918954" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradient.id})` )
+					each dash, key in dashes
+						circle.chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= `${dash.dasharray} 100` stroke-dashoffset= dash.dashoffset )
 			.chart__legend 
 				ul.chart__caption-list 
 					li.chart__caption-item великолепно
