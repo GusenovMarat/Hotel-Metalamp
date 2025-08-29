@@ -58,7 +58,6 @@
 	}
 	&__title {
 		@include font-bold(19px, $dark-shade-100, 100%);
-		min-height: 24px;
 		margin-bottom: 20px;
 		&::first-letter {
 			text-transform: uppercase;

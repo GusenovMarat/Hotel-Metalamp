@@ -2,9 +2,9 @@ mixin chart({great, good, norm, bad })
 	-
 		const arrayVotes = [great, good, norm, bad];
 		const gradients = [
-			{ id: "gradient-great", from: "#FFE39C", to: "#FFBA9C" },
-			{ id: "gradient-good", from: "#6FCF97", to: "#66D2EA" },
-			{ id: "gradient-norm", from: "#BC9CFF", to: "#8BA4F9" },
+			{ id: "gradient-great", from: "#FFBA9C", to: "#FFE39C" },
+			{ id: "gradient-good", from: "#66D2EA", to: "#6FCF97" },
+			{ id: "gradient-norm", from: "#8BA4F9", to: "#BC9CFF" },
 			{ id: "gradient-bad", from: "#909090", to: "#3D4975" },
 		]
 		
@@ -17,14 +17,14 @@ mixin chart({great, good, norm, bad })
 		function dashOffsetArray(dashValues) {
 			return dashValues.reduce((acc, _, index) => {   
 				const previousSum = dashValues.slice(0, index).reduce((sum, val) => sum + val, 0);
-				acc.push(-previousSum);
+				acc.push(-(previousSum+25));
 				return acc;
 			}, []);
 		}
 
 		function dashJoin(startDashes, dashOffset) {
 			const array = [];
-			const gap = 1;
+			const gap = 0.7;
 			for (let i = 0; i < startDashes.length; i++) {
 				const dashValue = Math.max(0, startDashes[i] - gap);
 				const gapValue = 100 - startDashes[i] + gap;
@@ -44,17 +44,18 @@ mixin chart({great, good, norm, bad })
 	.chart
 		.chart__container
 			.chart__canvas
-				svg.chart__diagram(width="120" height="120" viewBox="0 0 34 34")
+				svg.chart__diagram(width="130" height="130" viewBox="0 0 34.5 34.5")
 					defs 
 						each gradient in gradients
-							linearGradient(id=gradient.id x1="0%", y1="50%", x2="50%", y2="100%")
+							linearGradient(id=gradient.id x1="0%", y1="100%", x2="50%", y2="100%")
 								stop(offset="0%", stop-color=`${gradient.from}`)
 								stop(offset="100%", stop-color=`${gradient.to}`)
 					each dash, key in dashes
-						circle.chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= dash.dasharray stroke-dashoffset= dash.dashoffset )
-			.chart__legend 
-				ul.chart__caption-list 
-					li.chart__caption-item великолепно
-					li.chart__caption-item хорошо
-					li.chart__caption-item удовлетворительно
-					li.chart__caption-item разочарован
+						if (Number(arrayVotes[key] > 0))	
+							circle.chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= dash.dasharray stroke-dashoffset= dash.dashoffset )
+						text.chart__text( x="50%" y="50%" text-anchor="middle" dy="0.3em" fill=`url(#${gradients[key].id})` )= arrayVotes[key]
+			ul.chart__legend 
+				li.chart__caption-item великолепно
+				li.chart__caption-item хорошо
+				li.chart__caption-item удовлетворительно
+				li.chart__caption-item разочарован
