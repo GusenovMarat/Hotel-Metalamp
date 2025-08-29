@@ -20,37 +20,37 @@
 		list-style: none;
 		margin-top: 30px;
 		margin-left: 30px;
+		&-item {
+			position: relative;
+			@include font-normal($fs-normal, $dark-shade-75, 24px);
+			cursor: pointer;
+			&::first-letter {
+				text-transform: uppercase;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				height: 10px;
+				width: 10px;
+				border-radius: 50%;
+				left: -15px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			&:nth-child(1)::before {
+				background-image: var(--gradient-great);
+			}
+			&:nth-child(2)::before {
+				background-image: var(--gradient-good);
+			}
+			&:nth-child(3)::before {
+				background-image: var(--gradient-norm);
+			}
+			&:nth-child(4)::before {
+				background-image: var(--gradient-bad);
+			}
+		}
 	}
-	&__caption-item {
-		position: relative;
-		@include font-normal($fs-normal, $dark-shade-75, 24px);
-		&::first-letter {
-			text-transform: uppercase;
-		}
-		&::before {
-			content: '';
-			position: absolute;
-			height: 10px;
-			width: 10px;
-			border-radius: 50%;
-			left: -15px;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-		&:nth-child(1)::before {
-			background-image: var(--gradient-great);
-		}
-		&:nth-child(2)::before {
-			background-image: var(--gradient-good);
-		}
-		&:nth-child(3)::before {
-			background-image: var(--gradient-norm);
-		}
-		&:nth-child(4)::before {
-			background-image: var(--gradient-bad);
-		}
-	}
-	
 	@keyframes render {
 		0% {
 			stroke-dasharray: 0 100;
@@ -65,17 +65,18 @@
   	animation-duration: 1.5s;
 		cursor: pointer;
 	}
-	&__text {
-		font-size: 6px;
-		font-weight: bold;
-		line-height: 24px;
-		min-height: 30px;
+	&__group-caption {
+		@include font-bold(6px);
+		&-hidden {
+			display: none;
+		}
 	}
 	&__label {
-		font-size: 6px;
-		line-height: 24px;
-		min-height: 30px;
+		font-size: 3px;
 		text-transform: uppercase;
+	}
+	&__hovered {
+		stroke-width: 2;
 	}
 }
 
