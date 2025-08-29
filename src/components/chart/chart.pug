@@ -42,20 +42,18 @@ mixin chart({great, good, norm, bad })
 		const dashes = dashJoin(start, offset);
 
 	.chart
-		.chart__container
-			.chart__canvas
-				svg.chart__diagram(width="130" height="130" viewBox="0 0 34.5 34.5")
-					defs 
-						each gradient in gradients
-							linearGradient(id=gradient.id x1="0%", y1="100%", x2="50%", y2="100%")
-								stop(offset="0%", stop-color=`${gradient.from}`)
-								stop(offset="100%", stop-color=`${gradient.to}`)
-					each dash, key in dashes
-						if (Number(arrayVotes[key] > 0))	
-							circle.chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= dash.dasharray stroke-dashoffset= dash.dashoffset )
-						text.chart__text( x="50%" y="50%" text-anchor="middle" dy="0.3em" fill=`url(#${gradients[key].id})` )= arrayVotes[key]
-			ul.chart__legend 
-				li.chart__caption-item великолепно
-				li.chart__caption-item хорошо
-				li.chart__caption-item удовлетворительно
-				li.chart__caption-item разочарован
+		svg.chart__diagram(width="130" height="130" viewBox="0 0 34.5 34.5")
+			defs 
+				each gradient in gradients
+					linearGradient(id=gradient.id x1="0%", y1="100%", x2="50%", y2="100%")
+						stop(offset="0%", stop-color=`${gradient.from}`)
+						stop(offset="100%", stop-color=`${gradient.to}`)
+			each dash, key in dashes
+				if (Number(arrayVotes[key] > 0))	
+					circle.chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= dash.dasharray stroke-dashoffset= dash.dashoffset )
+				text.chart__text( x="50%" y="50%" text-anchor="middle" dy="0.3em" fill=`url(#${gradients[key].id})` )= arrayVotes[key]
+		ul.chart__legend 
+			li.chart__caption-item великолепно
+			li.chart__caption-item хорошо
+			li.chart__caption-item удовлетворительно
+			li.chart__caption-item разочарован

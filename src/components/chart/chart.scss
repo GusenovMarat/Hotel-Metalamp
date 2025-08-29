@@ -8,18 +8,16 @@
 	--gradient-bad: linear-gradient(180deg, #909090 0%, #3D4975 100%);
 }
 .chart {
-	&__container {
-		display: flex;
-		flex-direction: row;
-		gap: 10px;
-		justify-content: flex-start;
-		align-items: center;
-	}
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	
 	&__legend {
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		margin-top: 20px;
+		margin-top: 30px;
 		margin-left: 30px;
 	}
 	&__caption-item {
