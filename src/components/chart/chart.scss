@@ -11,6 +11,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	width: fit-content;
 	gap: 10px;
 	
 	&__legend {
@@ -69,6 +70,12 @@
 		font-weight: bold;
 		line-height: 24px;
 		min-height: 30px;
+	}
+	&__label {
+		font-size: 6px;
+		line-height: 24px;
+		min-height: 30px;
+		text-transform: uppercase;
 	}
 }
 

@@ -51,7 +51,9 @@ mixin chart({great, good, norm, bad })
 			each dash, key in dashes
 				if (Number(arrayVotes[key] > 0))	
 					circle.chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= dash.dasharray stroke-dashoffset= dash.dashoffset )
-				text.chart__text( x="50%" y="50%" text-anchor="middle" dy="0.3em" fill=`url(#${gradients[key].id})` )= arrayVotes[key]
+				g.chart__group-text(fill=`url(#${gradients[key].id})` dy="0.3em") 	
+					text.chart__text( x="50%" y="50%" text-anchor="middle")= arrayVotes[key]
+					text.chart__label(x="50%" y="50%" text-anchor="middle") голосов
 		ul.chart__legend 
 			li.chart__caption-item великолепно
 			li.chart__caption-item хорошо
