@@ -20,28 +20,35 @@ class Chart {
   }
 
   init() {
-    this.chart.forEach(item => {
-      let unitsList = item.querySelectorAll(this.chartUnit);
-      let captionsList = item.querySelectorAll(this.chartCaption);
-      let legendList = item.querySelectorAll(this.chartLegendItem);
-      let sumVotes = item.querySelector(this.captionVotes);
-      legendList.forEach((item, index) => {
-      
-        item.addEventListener('mouseover', () => {
-          captionsList.forEach((caption) => {
-            caption.classList.add(this.chartCaptionHidden)
-          })
-          captionsList[index].classList.remove(this.chartCaptionHidden);
-          unitsList[index]?.classList.add(this.legendHovered);
-        });
-        item.addEventListener('mouseout', () => {
-          captionsList[index].classList.toggle(this.chartCaptionHidden);
-          unitsList[index]?.classList.remove(this.legendHovered);
-          sumVotes.classList.remove(this.chartCaptionHidden)
-        });
+    this.chart.forEach(chartItem => {
+      let legendsList = chartItem.querySelectorAll(this.chartLegendItem);
+			let unitsList = chartItem.querySelectorAll(this.chartUnit)
+      legendsList.forEach((item, index) => {
+				this.handleMouse(item, index, chartItem);
+      });
+			unitsList.forEach((item, index) => {
+				this.handleMouse(item, index, chartItem);
       });
     })
   }
+
+	handleMouse = (item, index, chart) => {
+		let unitsList = chart.querySelectorAll(this.chartUnit);
+    let captionsList = chart.querySelectorAll(this.chartCaption);
+    let sumVotes = chart.querySelector(this.captionVotes);
+		item.addEventListener('mouseover', () => {
+			captionsList.forEach((caption) => {
+				caption.classList.add(this.chartCaptionHidden)
+			})
+			captionsList[index].classList.remove(this.chartCaptionHidden);
+			unitsList[index]?.classList.add(this.legendHovered);
+		});
+		item.addEventListener('mouseout', () => {
+			captionsList[index].classList.toggle(this.chartCaptionHidden);
+			unitsList[index]?.classList.remove(this.legendHovered);
+			sumVotes.classList.remove(this.chartCaptionHidden)
+		});
+	}
 }
 
 export default Chart
