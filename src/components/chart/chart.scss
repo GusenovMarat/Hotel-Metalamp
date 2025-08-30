@@ -62,7 +62,7 @@
    	transition-property: all;
   	transition-duration: 0.5s;
 		animation-name: render;
-  	animation-duration: 1.5s;
+  	animation-duration: 0.5s;
 		cursor: pointer;
 	}
 	&__group-caption {
@@ -76,10 +76,10 @@
 		text-transform: uppercase;
 	}
 	&__hovered {
-		stroke-width: 2;
+		stroke-width: 2.5;
 	}
 }
 
 .chart__unit:hover {
-  stroke-width: 2;
+  stroke-width: 2.5;
 }

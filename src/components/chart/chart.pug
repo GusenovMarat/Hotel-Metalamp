@@ -53,11 +53,11 @@ mixin chart({great, good, norm, bad })
 				if (Number(arrayVotes[key] > 0))	
 					circle.chart__unit.js-chart__unit(r="15.91549" cx="50%" cy="50%" fill= "none" stroke=`url(#${gradients[key].id})` stroke-dasharray= dash.dasharray stroke-dashoffset= dash.dashoffset )
 				g.chart__group-caption.chart__group-caption-hidden.js-chart__group-caption(fill=`url(#${gradients[key].id})` text-anchor="middle") 	
-					text.chart__caption( x="50%" y="45%")= arrayVotes[key]
-					text.chart__label(x="50%" y="55%") голосов
+					text.chart__caption( x="50%" y="50%")= arrayVotes[key]
+					text.chart__label(x="50%" y="65%") голосов
 			g.chart__group-caption.js-chart__group-caption.js-sum-votes(fill="#1F2041" text-anchor="middle") 	
-					text.chart__caption( x="50%" y="45%")= votesSumm
-					text.chart__label(x="50%" y="55%") голосов
+					text.chart__caption( x="50%" y="50%")= votesSumm
+					text.chart__label(x="50%" y="65%") голосов
 		ul.chart__legend 
 			li.chart__legend-item.js-chart__legend-item великолепно
 			li.chart__legend-item.js-chart__legend-item хорошо
