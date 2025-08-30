@@ -15,5 +15,8 @@
 		&::first-letter{
 			text-transform: uppercase;
 		}
+		@include media-sm {
+			display: none;
+		}
 	}
 }

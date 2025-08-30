@@ -16,4 +16,8 @@
 		place-items: start center;
 		gap: 70px 20px;
 	}
+	@include media-sm {
+		display: flex;
+		justify-content: center;
+	}
 }

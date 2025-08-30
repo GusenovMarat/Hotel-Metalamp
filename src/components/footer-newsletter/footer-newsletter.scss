@@ -12,6 +12,9 @@
 		grid-column: span 3;
 		grid-row: 2;
 	}
+	@include media-sm {
+		display: none;
+	}
 
 	&__title {
 		@include font-bold($fs-minimum, $dark-shade-100);

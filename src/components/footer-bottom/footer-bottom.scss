@@ -10,7 +10,11 @@
   // max-width: 1440px;
   width: 100%;
   list-style-type: none;
-
+  @include media-sm {
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 25px;
+  }
   &__social {
     display: flex;
     background-image: $purple-gradient;
