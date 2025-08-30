@@ -2,15 +2,15 @@
 @import "../field/field.scss";
 
 .footer-newsletter {
+	margin-top: 5px;
 	display: flex;
 	justify-content: left;
 	flex-direction: column;
 	max-width: 260px;
-	padding-left: 10px;
 	gap: 20px;
 
 	&__title {
-		@include font-bold($fs-normal, $dark-shade-100);
+		@include font-bold($fs-minimum, $dark-shade-100);
 		text-transform: uppercase;
 		white-space: nowrap;
 	}

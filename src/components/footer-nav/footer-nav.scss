@@ -3,9 +3,12 @@
 .footer-nav {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	line-height: normal;
+	min-width: 160px;
+	margin-top: 5px;
 	&__title {
-		@include font-bold($fs-normal, $dark-shade-100);
+		@include font-bold($fs-minimum, $dark-shade-100);
 		text-transform: uppercase;
 		white-space: nowrap;
 		padding-bottom: 21px;
