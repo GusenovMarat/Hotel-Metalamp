@@ -28,6 +28,14 @@
 			{
         "link": "./room-details.html",
         "title": "room-details"
+      },
+			{
+        "link": "./sign-in.html",
+        "title": "sign-in"
+      },
+			{
+        "link": "./sign-up.html",
+        "title": "sign-up"
       }
     ]
   }

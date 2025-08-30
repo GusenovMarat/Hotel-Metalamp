@@ -1,0 +1,12 @@
+@import "../../styles/global.scss";
+@import "../../layouts/page/page.scss";
+@import "../../components/card-signin/card-signin.scss";
+
+
+.sign-in {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	min-height: 580px;
+}

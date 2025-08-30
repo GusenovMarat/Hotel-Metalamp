@@ -1,0 +1,12 @@
+extends ../../layouts/page/page
+include ../../components/card-signin/card-signin
+
+block variables 
+	- var title = "sign-in";
+	- var discription = "sign-in page";
+	- var background = 'sign'
+
+block content
+	.sign-in
+		+card-signin
+		

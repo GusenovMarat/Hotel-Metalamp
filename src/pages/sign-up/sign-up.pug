@@ -1,0 +1,12 @@
+extends ../../layouts/page/page
+include ../../components/card-signup/card-signup
+
+block variables 
+	- var title = "sign-up";
+	- var discription = "sign-up page";
+	- var background = 'sign'
+
+block content
+	.sign-up
+		+card-signup
+		
