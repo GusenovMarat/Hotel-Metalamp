@@ -1,11 +1,35 @@
-@mixin media-xxl {
-  @media (max-width: 1420px) {
+@mixin media-xl {
+  @media (max-width: 1399px) {
     @content;
   }
 }
 
 @mixin media-lg {
-  @media (max-width: 932px) {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin media-sm{
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin media-xxs {
+  @media (max-width: 361px) {
     @content;
   }
 }

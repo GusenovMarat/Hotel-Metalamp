@@ -38,6 +38,7 @@
 	&__block {
 		display: flex;
 		flex-direction: row;
+		min-width: 260px
 	}
 	&__submit {
 		display: inline-block;
