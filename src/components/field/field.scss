@@ -20,7 +20,7 @@
 		border: 1px solid $dark-shade-25;
 		border-radius: 4px;
 		padding-left: 15px;
-		width: 100%;
+		max-width: 320px;
 		&:hover {
 			border-color: $dark-shade-50;
 		}
