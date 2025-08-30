@@ -7,6 +7,7 @@
 	line-height: normal;
 	min-width: 160px;
 	margin-top: 5px;
+	grid-row: 1;
 	&__title {
 		@include font-bold($fs-minimum, $dark-shade-100);
 		text-transform: uppercase;
@@ -33,6 +34,11 @@
 		text-decoration: none;
 		&:hover {
 			color: $dark-shade-100;
+		}
+	}
+	&__hidden-lg {
+		@include media-lg {
+			display: none;
 		}
 	}
 }

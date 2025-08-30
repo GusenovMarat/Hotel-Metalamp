@@ -4,10 +4,13 @@
 .footer-newsletter {
 	margin-top: 5px;
 	display: flex;
-	justify-content: left;
 	flex-direction: column;
 	max-width: 260px;
 	gap: 20px;
+	grid-row: 2;
+	@include media-lg {
+		margin-top: 15px;
+	}
 
 	&__title {
 		@include font-bold($fs-minimum, $dark-shade-100);

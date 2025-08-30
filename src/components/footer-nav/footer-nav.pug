@@ -1,5 +1,5 @@
-mixin footer-nav({title, list})
-	.footer-nav
+mixin footer-nav({title, list, hidden=false})
+	.footer-nav(class= hidden ? "footer-nav__hidden-lg" : "")
 		span.footer-nav__title=title
 		ul.footer-nav__list
 			each item in list
