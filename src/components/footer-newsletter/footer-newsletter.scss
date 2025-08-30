@@ -7,9 +7,10 @@
 	flex-direction: column;
 	max-width: 260px;
 	gap: 20px;
-	grid-row: 2;
 	@include media-lg {
 		margin-top: 15px;
+		grid-column: span 3;
+		grid-row: 2;
 	}
 
 	&__title {

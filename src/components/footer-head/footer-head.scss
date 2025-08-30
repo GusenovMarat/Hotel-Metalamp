@@ -11,9 +11,9 @@
 	width: 100%;
 	@include media-lg {
 		display: grid;
-		grid-template-columns: repeat(2, fit-content);
-		grid-template-rows: 1fr 1fr;
-		justify-content: space-between;
-		gap: 40px;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(6, 1fr);
+		place-items: start center;
+		gap: 70px 20px;
 	}
 }

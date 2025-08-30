@@ -6,10 +6,10 @@
 	flex-direction: column;
 	gap: 20px;
 	max-width: 260px;
-	grid-row: 2;
 	@include media-lg {
-			gap: 10px;
-		}
+		grid-column: span 3;
+		grid-row: 2;
+	}
 	.footer-info__text {
 		color: $dark-shade-75;
 		&::first-letter{
