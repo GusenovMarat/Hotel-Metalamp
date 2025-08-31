@@ -5,3 +5,5 @@ import '@/components/card-booking';
 import '@/components/review';
 
 import '@/components/chart';
+
+import '@/components/header';

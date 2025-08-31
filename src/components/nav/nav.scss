@@ -1,6 +1,15 @@
 @import "../../styles/global.scss";
 @import "../button/button.scss";
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .nav {
 	
 	display: flex;
@@ -18,28 +27,39 @@
 			display: none;
 		}
 		&-active {
-			display: flex;
-			position: fixed;
-			flex-direction: column;
-			align-items: flex-end;
-			justify-content: flex-start;
-			top: 0;
-			right: 0;
-			box-shadow: $shadow-light;
-			padding: 30px;
-			background-color: white;
-			z-index: 500;
-			width: 40vw;
+			@include media-md {
+				display: flex;
+				position: fixed;
+				flex-direction: column;
+				align-items: flex-end;
+				justify-content: flex-start;
+				top: 0;
+				right: 0;
+				box-shadow: $shadow-light;
+				padding: 30px;
+				background-color: white;
+				z-index: 500;
+				width: 40vw;
+			}
 		}	
 	}
-	&__close {
+	&__item-close {
 		display: none;
 		@include media-md {
 			display: flex;
-			position: relative;
 		}
+	}
+	&__close {	
+		background: none;
+		border: none;
+		cursor: pointer;	
 		&-icon {
 			@include material-icon(24px, $dark-shade-75)
+		}
+		&-spin {
+			animation-name: spin;
+			transform-origin: center;
+			animation-duration: 1s;
 		}
 	}
 	&__item {

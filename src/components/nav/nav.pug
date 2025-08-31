@@ -3,8 +3,9 @@ include ../button/button
 mixin nav({items, auth, account})
 	nav.nav.js-nav
 		ul.nav__list.js-nav__list
-			li.nav__close
-				i.nav__close-icon close
+			li.nav__item-close
+				button.nav__close.js-nav__close(type = "button")
+					span.nav__close-icon close
 			if items
 				each item in items
 					- const {	active, href, title, icon, sub } = item
@@ -27,4 +28,4 @@ mixin nav({items, auth, account})
 			.nav__acc
 				a.nav__link(href=account.href || "./index.html")=account.name	
 		button.nav__burger.js-nav__burger
-			.nav__burger-icon menu
+			span.nav__burger-icon menu
