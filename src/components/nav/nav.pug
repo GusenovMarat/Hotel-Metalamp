@@ -1,8 +1,10 @@
 include ../button/button
 
 mixin nav({items, auth, account})
-	nav.nav
-		ul.nav__list
+	nav.nav.js-nav
+		ul.nav__list.js-nav__list
+			li.nav__close
+				i.nav__close-icon close
 			if items
 				each item in items
 					- const {	active, href, title, icon, sub } = item
@@ -21,7 +23,8 @@ mixin nav({items, auth, account})
 				each button in auth 
 					li.nav__item 
 						+button(button)
-			if account
-				li.nav__acc
-					a.nav__link(href=account.href || "./index.html")=account.name	
-
+		if account
+			.nav__acc
+				a.nav__link(href=account.href || "./index.html")=account.name	
+		button.nav__burger.js-nav__burger
+			.nav__burger-icon menu
