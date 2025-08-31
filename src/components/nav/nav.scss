@@ -41,12 +41,21 @@
 				z-index: 500;
 				width: 40vw;
 			}
+			@include media-xs {
+				width: 100vw;
+				align-items: center;
+				height: 100vh;
+				overflow-y: auto;
+			}
 		}	
 	}
 	&__item-close {
 		display: none;
 		@include media-md {
 			display: flex;
+		}
+		@include media-xs {
+			align-self: flex-end;
 		}
 	}
 	&__close {	
