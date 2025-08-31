@@ -74,7 +74,6 @@
   },
 	"dropdownFurniture": {
 		"title": "удобства номера",
-    "wide": true,
 		"items": 
 		[
 			{
