@@ -11,6 +11,8 @@
 	padding: 40px 30px 30px;
 	background-color: white;
 	max-width: 380px;
+	border: 1px solid $dark-shade-10;
+	border-radius: 4px;
 	&__submit {
 		margin-top: 10px;
 	}

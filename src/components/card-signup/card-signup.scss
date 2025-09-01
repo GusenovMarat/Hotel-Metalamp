@@ -12,6 +12,8 @@
 	background-color: white;
 	box-shadow: $shadow-dark;
 	padding: 40px 30px 30px;
+	border: 1px solid $dark-shade-10;
+	border-radius: 4px;
 	line-height: 100%;
 	&__title {
 		@include font-bold(24px, $dark-shade-100, 30px)
