@@ -2,16 +2,16 @@ include ../like-button/like-button
 
 mixin review({src, alt, name, date, text})
 	.review
-		.review__user-info
+		.review__left
 			a.review__user-avatar
 				img.review__user-img(src="assets/img/users/"+ src alt=alt || "user")
-			.review__user-meta
-				.review__user-name= name
-				.review__user-viewdate #{date} назад
-		.review__main
 			+likeButton({
 				name: "like-button",
 				count: "12"
 			})
+		.review__right
+			.review__user-meta
+				.review__user-name= name
+				.review__user-viewdate #{date} назад
 			.review__text= text
 		

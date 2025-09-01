@@ -14,7 +14,8 @@
 		display: grid;
   	grid-template-columns: 68% 32%;
 		grid-template-rows: repeat(2, 1fr);
-		gap: 0;
+		align-items: start;
+		justify-content: start;
 	}
 	&__img {
 		height: 100%;
@@ -49,7 +50,8 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, auto);
-		gap: 30px 70px;
+		align-items: start;
+		gap: 35px 0;
 	}
 	&__reviews {
 		grid-column: 1 / span 2;
@@ -58,16 +60,20 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
+			
 		}
 		&-content {
 			display: flex;
 			flex-direction: column;
 			gap: 22px;
 		}
+		&-count {
+			padding-bottom: 20px;
+		}
 	}
 	&__title {
-		@include font-bold(19px, $dark-shade-100, 100%);
-		margin-bottom: 20px;
+		@include font-bold(19px, $dark-shade-100, 24px);
+		padding-bottom: 20px;
 		&::first-letter {
 			text-transform: uppercase;
 		}
