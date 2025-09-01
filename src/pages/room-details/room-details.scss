@@ -11,12 +11,13 @@
 	flex-direction: column;
 	
 	&__grid-gallery {
+		width: 100%;
 		display: grid;
   	grid-template-columns: 68% 32%;
 		grid-template-rows: repeat(2, 1fr);
 		align-items: start;
 		justify-content: start;
-	}
+	}	
 	&__img {
 		height: 100%;
 		width: 100%;
@@ -45,6 +46,13 @@
 		max-width: 1920px;
 		margin: 0 auto;
 		width: 100%;
+		@include media-xl {
+			padding: 70px 60px;
+		}
+		@include media-lg {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
 	}
 	&__grid-list {
 		display: grid;
@@ -92,5 +100,8 @@
 	&__booking {
 		position: sticky;
 		top: 100px;
+		@include media-lg {
+			position: inherit;
+		}
 	}
 }
