@@ -60,6 +60,10 @@
 		grid-template-rows: repeat(3, auto);
 		align-items: start;
 		gap: 33px 90px;
+		@include media-sm {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	&__reviews {
 		grid-column: 1 / span 2;
@@ -77,6 +81,7 @@
 		}
 		&-count {
 			padding-bottom: 20px;
+			white-space: nowrap;
 		}
 	}
 	&__title {
@@ -102,6 +107,51 @@
 		top: 100px;
 		@include media-lg {
 			position: inherit;
+		}
+		&-card {
+			@include media-lg {
+				max-height: 0; 
+				overflow: hidden;
+				visibility: hidden;
+				transition: all 0.3s ease;
+			}
+		}
+		&-expanded {
+			max-height: 1000px;
+      visibility: visible;
+		}
+		&-toggle {
+			display: none;
+			@include media-lg {
+				display: inline-flex;
+				color: $dark-shade-50;
+				min-width: 380px;
+				min-height: 44px;
+				border: 1px solid $dark-shade-25;
+				border-radius: 4px;
+				align-items: center;
+				background: white;
+				cursor: pointer;
+				&:hover {
+					color: $dark-shade-100;
+					background: $dark-shade-10;
+				}
+				
+			}
+		}
+		&-text {
+			width: 100%;
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+		&-icon {
+			@include material-icon(24px, inherit);
+			min-width: 44px;
+			transition: all 0.3s ease;
+			&-active {
+				transform: rotate(180deg)
+			}
 		}
 	}
 }

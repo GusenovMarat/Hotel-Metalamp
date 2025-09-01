@@ -29,7 +29,7 @@ block content
 				.room-details__reviews
 					.room-details__reviews-header
 						.room-details__title отзывы посетителей номера
-						.room-deatils__review-count 2 отзыва
+						.room-deatils__reviews-count 2 отзыва
 					.room-details__reviews-content
 						each review in reviews
 							+review(review)
@@ -38,5 +38,9 @@ block content
 				.room-details__cancel
 					.room-details__title отмена
 					.room-details__text=cancelText
-			.room-details__booking
-				+card-booking
+			.room-details__booking.js-room-details__booking 
+				button.room-details__booking-toggle.js-booking-toggle
+					span.room-details__booking-text.js-booking-text раскрыть бронирование
+					span.room-details__booking-icon.js-booking-icon expand_more
+				.room-details__booking-card.js-booking-card
+					+card-booking
