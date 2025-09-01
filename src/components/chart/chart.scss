@@ -11,15 +11,17 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	width: fit-content;
-	gap: 10px;
-	
+	width: fit-content;	
+	gap: 20px;
+	&__diagram {
+		overflow: visible;
+	}
 	&__legend {
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		margin-top: 30px;
-		margin-left: 30px;
+		margin-top: 25px;
+		margin-left: 25px;
 		&-item {
 			position: relative;
 			@include font-normal($fs-normal, $dark-shade-75, 24px);
@@ -76,10 +78,10 @@
 		text-transform: uppercase;
 	}
 	&__hovered {
-		stroke-width: 2.5;
+		stroke-width: 4;
 	}
 }
 
 .chart__unit:hover {
-  stroke-width: 2.5;
+  stroke-width: 4;
 }

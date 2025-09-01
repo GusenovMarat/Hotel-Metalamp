@@ -48,10 +48,10 @@
 	}
 	&__grid-list {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, auto);
 		grid-template-rows: repeat(3, auto);
 		align-items: start;
-		gap: 35px 0;
+		gap: 33px 90px;
 	}
 	&__reviews {
 		grid-column: 1 / span 2;
@@ -77,6 +77,11 @@
 		&::first-letter {
 			text-transform: uppercase;
 		}
+	}
+	&_cancel {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 	&__text {
 		max-width: 341px;

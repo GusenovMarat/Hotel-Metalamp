@@ -5,10 +5,12 @@
   flex-direction: column;
   max-width: 260px;
   &__title {
-  @include font-bold($fs-minimum, $dark-shade-100, 100% );
-    margin-bottom: 15px;
-    cursor: pointer;
-    text-transform: uppercase;
+  @include font-bold(19px, $dark-shade-100, 24px);
+		padding-left: 20px;
+		padding-bottom: 15px;
+		&::first-letter {
+			text-transform: uppercase;
+		}
   }
   &__list {
     display: flex;
