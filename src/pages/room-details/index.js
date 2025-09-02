@@ -8,9 +8,9 @@ import '@/components/chart';
 
 import '@/components/header';
 
-import BookingController from "./BookingController";
+import BookingDrop from "./BookingDrop";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const Controller = new BookingController();
-  Controller.init();
+  const dropBooking = new BookingDrop();
+  dropBooking.init();
 })

@@ -11,11 +11,11 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 	}
 	&__title {
 		text-transform: uppercase;
-		@include font-bold(12px, $dark-shade-100, 100%)
+		@include font-bold(12px, $dark-shade-100, 15px)
 	}
 	&__prices {
 		display: flex;
@@ -67,7 +67,7 @@
 		}
 	}
 	&__description {
-		margin-top: 10px;
+		margin-top: 15px;
 		font-size: 12px;
 		line-height: 14px;
 		color: $dark-shade-50;

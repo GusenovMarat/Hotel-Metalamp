@@ -1,7 +1,7 @@
-class BookingController {
+class BookingDrop {
   constructor() {
     this.setClasses();
-    this.findController();
+    this.findDrop();
   }
 
   setClasses() {
@@ -14,7 +14,7 @@ class BookingController {
     this.IconActive = 'room-details__booking-icon-active'
 
   }
-  findController() {
+  findDrop() {
     this.Card = document.querySelector(this.BookingContainer);
   }
   init() {
@@ -40,4 +40,4 @@ class BookingController {
   }
 }
 
-export default BookingController;
+export default BookingDrop;
