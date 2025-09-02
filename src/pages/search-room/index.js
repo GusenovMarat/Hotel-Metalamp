@@ -12,9 +12,9 @@ import '@/components/card-slider';
 
 import '@/components/header';
 
-import FilterDrop from './FilterDrop';
+import SidebarDrop from './SidebarDrop';
 
 document.addEventListener("DOMContentLoaded", () => {
-  const dropFilter = new FilterDrop();
-  dropFilter.init();
+  const dropSidebar = new SidebarDrop();
+  dropSidebar.init();
 })

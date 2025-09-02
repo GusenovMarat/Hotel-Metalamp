@@ -14,19 +14,23 @@ block variables
 block content
 	- const { datepicker, dropdownGuests, rangeSlider, checkbox, checkboxRich, dropdownFurniture, checkboxExpand, sliders } = require("./search-room.json")
 	.search-room
-		.search-room__sidebar
-			.search-room__sidebar-block
-				+date-field(datepicker)
-				+dropdown(dropdownGuests)
-			+rangeSlider(rangeSlider)
-			+checkbox(checkbox)
-			+checkbox(checkboxRich)
-			+dropdown(dropdownFurniture)
-			+checkbox(checkboxExpand)
+		.search-room__sidebar.js-search-room__sidebar
+			button.search-room__sidebar-toggle.js-sidebar-toggle
+				span.search-room__sidebar-icon.js-sidebar-icon expand_more
+				span.search-room__sidebar-text.js-sidebar-text показать фильтры
+			.search-room__sidebar-content.js-sidebar-content
+				.search-room__sidebar-item
+					+date-field(datepicker)
+					+dropdown(dropdownGuests)
+				+rangeSlider(rangeSlider)
+				+checkbox(checkbox)
+				+checkbox(checkboxRich)
+				+dropdown(dropdownFurniture)
+				+checkbox(checkboxExpand)
 		.search-room__content
 			.search-room__content-title номера, которые мы для вас подобрали
 			.search-room__grid-sliders
 				- for (let i = 0; i < 5; i++)
 					each slider in sliders
 						+card-slider(slider)
-			.search-rorom__pagination
+			.search-room__pagination

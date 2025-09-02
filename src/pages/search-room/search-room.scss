@@ -15,17 +15,66 @@
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1980px;
-	
 	gap: 60px;
-	&__sidebar {
-		display: flex;
+	@include media-md{
 		flex-direction: column;
-		gap: 30px;
-		flex-shrink: 0;
-		&-block {
+		align-items: center;
+		padding: 30px 30px 70px 30px;
+	}
+	&__sidebar{
+
+		&-content {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			flex-shrink: 0;
+			@include media-md {
+				max-height: 0;
+				overflow: hidden;
+				visibility: hidden;
+				transition: all 0.3s ease;
+			}
+		}
+		&-expanded {
+			max-height: 1000px;
+      visibility: visible;
+		}
+		&-item {
 			display: flex;
 			flex-direction: column;
 			gap: 19px;
+		}
+		&-toggle {
+			display: none;
+			@include media-md {
+				display: inline-flex;
+				color: $dark-shade-50;
+				min-width: 320px;
+				min-height: 34px;
+				border: 1px solid $dark-shade-25;
+				border-radius: 4px;
+				align-items: center;
+				background: white;
+				cursor: pointer;
+				&:hover {
+					color: $dark-shade-100;
+					background: $dark-shade-10;
+				}
+			}
+		}
+		&-text {
+			width: 100%;
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+		&-icon {
+			@include material-icon(24px, inherit);
+			min-width: 44px;
+			transition: all 0.3s ease;
+			&-active {
+				transform: rotate(180deg)
+			}
 		}
 	}
 	&__content {
@@ -36,6 +85,10 @@
 	&__content-title {
 		@include font-bold(24px, $dark-shade-100, 30px);
 		margin-bottom: 20px;
+		@include media-lg {
+			align-self: center;
+			text-align: center;
+		}
 		&::first-letter {
 			text-transform: uppercase;
 		}
