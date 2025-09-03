@@ -1,11 +1,24 @@
 export function countLikeButtons() {
-  document.querySelectorAll('.like-button').forEach(likeButton => {
-    const checkbox = likeButton.querySelector('.like-button__fake');
-    const counter = likeButton.querySelector('.like-button__count');
+  document.querySelectorAll('.js-like-button').forEach((likeButton) => {
+    const Active = {
+      button: 'like-button-active',
+      icon: 'like-button__icon-active',
+      count: 'like-button__count-active'
+    }
+    const icon = likeButton.querySelector('.js-like-button__icon');
+    const counter = likeButton.querySelector('.js-like-button__count');
     
-    checkbox.addEventListener('change', () => {
+    likeButton.addEventListener('click', () => {
       let count = parseInt(counter.textContent) || 0;
-      counter.textContent = checkbox.checked ? count + 1 : count - 1;
+      const isActive = likeButton.classList.contains(Active.button);
+
+      likeButton.classList.toggle(Active.button)
+      icon.classList.toggle(Active.icon);
+      counter.classList.toggle(Active.count);
+
+      counter.textContent = isActive ? 
+      Math.max(0, count - 1) 
+      : count + 1;
     });
   });
 }

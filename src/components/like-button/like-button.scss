@@ -2,53 +2,35 @@
 
 .like-button {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	width: fit-content;
-	&__title {
-		padding-bottom: 15px;
-		@include font-bold($fs-minimum, $dark-shade-100);
-		text-transform: uppercase;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 20px;
+	width: 40px;
+	border: 1px solid $dark-shade-25;
+	border-radius: 10px;
+	padding: 0 4px;
+	user-select: none;
+	background: white;
+	cursor: pointer;
+	&-active {
+		border-color: $purple;
 	}
-	&__label {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: flex-start;
-		min-height: 20px;
-		min-width: 40px;
-		border: 1px solid $dark-shade-25;
-		border-radius: 10px;
-		padding: 0 4px;
-		user-select: none;
-		cursor: pointer;
-		&:has(> .like-button__fake:checked) {
-      border-color: $purple;
-		}
-	}
-	&__fake {
-		appearance: none;
-		&:checked + .like-button__real::before {
-			content: "favorite";
-			background: $purple-gradient;
-			background-clip: text;
-			transition: none;
-			
-		}
-		&:checked ~ .like-button__count {
-			color: $purple;
-			transition: none;
-		}
-	}
-	&__real {
+	&__icon {
 		@include material-icon(10px, transparent, 85%);
 		&::before {
-			content: "favorite_border";
-			background: $dark-shade-25;
+			content: var(--icon-content, "favorite_border");
+      background: $dark-shade-25;
 			background-clip: text;
 			transition: all 0.3s ease;
 		}
+		&-active {
+		&::before {
+			--icon-content: "favorite";
+			background-image: $purple-gradient;
+			background-clip: text;
+		}			
+	}
 	}
 	&__count {
 		display: inline-block;
@@ -58,5 +40,8 @@
 		line-height: 100%;
 		color: $dark-shade-25;
 		transition: all 0.3s ease;
+		&-active {
+			color: $purple;
+		}
 	}
 }

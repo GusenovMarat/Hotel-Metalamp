@@ -1,6 +1,4 @@
-mixin likeButton({name, count=0})
-	.like-button
-		label.like-button__label
-			input.like-button__fake(type="checkbox" name= "like-button")
-			i.like-button__real 
-			span.like-button__count= count
+mixin likeButton({count=0})
+	button.like-button.js-like-button
+		i.like-button__icon.js-like-button__icon
+		span.like-button__count.js-like-button__count= count
