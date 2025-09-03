@@ -37,6 +37,13 @@ class BookingDrop {
         }, 100);
       }
     })
+    document.addEventListener('click', (event)=> {
+      if (!event.target.closest(this.BookingContainer)) {
+        card.classList.remove(this.Expand);
+        icon.classList.remove(this.IconActive);
+        text.textContent = 'раскрыть бронирование'
+      } 
+    })
   }
 }
 
