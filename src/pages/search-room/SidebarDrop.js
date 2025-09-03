@@ -9,6 +9,7 @@ class SidebarDrop {
     this.sidebarContainer = '.js-search-room__sidebar'
     this.sidebarOpen= '.js-sidebar-open'
 		this.sidebarClose = '.js-sidebar-close'
+		this.sidebarCloseBottom = '.js-sidebar-close--bottom'
     this.sidebarContent = '.js-sidebar-content'
     this.Expand = 'search-room__sidebar-expanded'
 		this.Close = '.js-sidebar-close'
@@ -20,11 +21,15 @@ class SidebarDrop {
 		const container = this.Page.querySelector(this.sidebarContainer)
     const open = this.Page.querySelector(this.sidebarOpen);
 		const close = this.Page.querySelector(this.sidebarClose);
+		const closeBottom = this.Page.querySelector(this.sidebarCloseBottom)
 
     open.addEventListener('click', () => {
       container.classList.toggle(this.Expand);
     })
 		close.addEventListener('click', () => {
+      container.classList.remove(this.Expand);
+    })
+		closeBottom.addEventListener('click', () => {
       container.classList.remove(this.Expand);
     })
   }

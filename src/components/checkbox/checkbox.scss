@@ -35,16 +35,17 @@
     width: 100%;
     gap: 10px;
     transform-origin: top;
-    
     padding: 0;
 		overflow: hidden;
-		transition: transform 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
     &-hide {
       transform-origin: top;
       transform: scaleY(0);
+			max-height: 0;
     }
     &-active {
       transform: scaleY(1);
+			max-height: 1000px;
     }
   }
 
