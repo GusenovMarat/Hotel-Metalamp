@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 70px;
-  // max-width: 1440px;
+
   width: 100%;
   list-style-type: none;
   @include media-sm {
@@ -15,6 +15,9 @@
     flex-direction: column;
     gap: 25px;
   }
+  &__credits {
+    text-align: center;
+	}
   &__social {
     display: flex;
     background-image: $purple-gradient;

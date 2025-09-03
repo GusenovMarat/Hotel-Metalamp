@@ -70,7 +70,7 @@
 				{
 					"border": "true",
 					"text": "войти",
-					"type": "button",
+					"href": "/sign-in.html",
 					"small": true
 				},
 				{
@@ -78,7 +78,7 @@
 					"text": "зарегистрироваться",
 					"long": true,
 					"small": true,
-					"href": "#"
+					"href": "./sign-up.html"
 				}
 			]
 		}

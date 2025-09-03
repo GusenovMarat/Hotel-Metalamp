@@ -8,12 +8,25 @@
 	flex-direction: column;
 	flex-shrink: 0;
 	gap: 320px;
+	@include media-lg {
+		padding: 30px 30px;
+		align-items: center;
+		gap: 60px;
+	}
+	@include media-xs {
+		padding: 10px 0;
+	}
+
 	.landing-page__text {
 		align-self: flex-end;
 		max-width: 300px;
 		font-size: $fs-normal;
 		color: $dark-shade-75;
 		text-align: right;
+		@include media-lg {
+			align-self: center;
+			text-align: left;
+		}
 		&::first-letter {
 			text-transform: uppercase;
 		};
