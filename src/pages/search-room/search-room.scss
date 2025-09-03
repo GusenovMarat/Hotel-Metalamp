@@ -22,7 +22,13 @@
 		padding: 30px 30px 70px 30px;
 	}
 	&__sidebar{
-
+		display: flex;
+		flex-direction: column;
+		
+		@include media-md {
+			position: relative;
+			align-self: flex-end;
+		}
 		&-content {
 			display: flex;
 			flex-direction: column;
@@ -36,6 +42,7 @@
 			}
 		}
 		&-expanded {
+			position: fixed;
 			max-height: 1000px;
       visibility: visible;
 		}
@@ -47,35 +54,38 @@
 		&-toggle {
 			display: none;
 			@include media-md {
-				display: inline-flex;
+				align-self: flex-end;
+				display: flex;
 				color: $dark-shade-50;
-				min-width: 320px;
+				width: fit-content;
 				min-height: 34px;
 				border: 1px solid $dark-shade-25;
 				border-radius: 4px;
 				align-items: center;
 				background: white;
+				padding: 5px;
+				padding-right: 10px;
 				cursor: pointer;
 				&:hover {
-					color: $dark-shade-100;
-					background: $dark-shade-10;
+					background: $dark-shade-05;
 				}
 			}
 		}
 		&-text {
+			color: $dark-shade-75;
 			width: 100%;
 			&::first-letter {
 				text-transform: uppercase;
 			}
 		}
 		&-icon {
-			@include material-icon(24px, inherit);
-			min-width: 44px;
-			transition: all 0.3s ease;
-			&-active {
-				transform: rotate(180deg)
-			}
+			width: 24px;
+			height: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
+
 	}
 	&__content {
 		display: flex;

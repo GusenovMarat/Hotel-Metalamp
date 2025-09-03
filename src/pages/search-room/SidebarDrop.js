@@ -9,7 +9,6 @@ class SidebarDrop {
     this.sidebarToggle = '.js-sidebar-toggle'
     this.sidebarContent = '.js-sidebar-content'
     this.sidebarIcon = '.js-sidebar-icon'
-    this.sidebarText = '.js-sidebar-text'
     this.Expand = 'search-room__sidebar-expanded'
 		this.IconActive = 'search-room__sidebar-icon-active'
   }
@@ -20,13 +19,10 @@ class SidebarDrop {
     const toggle = this.Sidebar.querySelector(this.sidebarToggle);
     const sidebar = this.Sidebar.querySelector(this.sidebarContent);
     const icon = this.Sidebar.querySelector(this.sidebarIcon);
-    const text = this.Sidebar.querySelector(this.sidebarText);
 
     toggle.addEventListener('click', () => {
       const isExpanded = sidebar.classList.toggle(this.Expand);
       icon.classList.toggle(this.IconActive);
-      text.textContent = isExpanded ? 'скрыть фильтры' 
-      : 'показать фильтры';
       if (isExpanded) {
         setTimeout(() => {
           this.Sidebar.scrollIntoView({ 

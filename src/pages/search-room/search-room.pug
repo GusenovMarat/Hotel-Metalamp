@@ -16,8 +16,12 @@ block content
 	.search-room
 		.search-room__sidebar.js-search-room__sidebar
 			button.search-room__sidebar-toggle.js-sidebar-toggle
-				span.search-room__sidebar-icon.js-sidebar-icon expand_more
-				span.search-room__sidebar-text.js-sidebar-text показать фильтры
+				span.search-room__sidebar-icon.js-sidebar-icon
+					img.searchroom__sidebar-img(src = '/assets/img/general/controls-adjust.svg'
+					alt = 'filter icon'
+					height = '12'
+					width = '12')
+				span.search-room__sidebar-text фильтры
 			.search-room__sidebar-content.js-sidebar-content
 				.search-room__sidebar-item
 					+date-field(datepicker)
