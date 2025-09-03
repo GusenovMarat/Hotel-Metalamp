@@ -32,7 +32,7 @@ class Nav {
         list.classList.remove(this.listActive)
       })
 
-      document.addEventListener('click', (event)=> {
+      document.addEventListener('click', (event) => {
       if (!event.target.closest(this.navSelector)) {
         list.classList.remove(this.listActive)
         close.classList.remove(this.iconSpin)
