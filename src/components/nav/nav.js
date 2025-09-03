@@ -31,6 +31,13 @@ class Nav {
       close.addEventListener('click', () => {
         list.classList.remove(this.listActive)
       })
+
+      document.addEventListener('click', (event)=> {
+      if (!event.target.closest(this.navSelector)) {
+        list.classList.remove(this.listActive)
+        close.classList.remove(this.iconSpin)
+      } 
+    })
     });
   }
 }
