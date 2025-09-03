@@ -27,18 +27,29 @@ class DropDown {
 	}
 
 	init() {
-			this.DropDown.forEach(item => {
+			this.DropDown.forEach((item, index) => {
 					const list = item.querySelector(this.DropDownList);
 					const block = item.querySelector(this.DropDownBlock);
 					const toggle = item.querySelector(this.DropDownCurrent);
 					const items = list.querySelectorAll(this.DropDownItem);
 					const currentText = item.querySelector(this.DropDownCurrentText);
 					const buttonReset = item.querySelector(this.DropDownButtonReset);
+					const dropIndex = `js-dropdown-num-${index}`;		
 					const itemsData = new Map();
+					console.log(list)
 
 					toggle.addEventListener('click', () => {
 							list.classList.toggle(this.DropDownListActive);
-							block.classList.toggle(this.DropDownBlockActive);		
+							block.classList.toggle(this.DropDownBlockActive);
+							item.classList.add(dropIndex);	
+					});
+
+					document.addEventListener('click', (event) => {
+						if (!event.target.closest(`.${dropIndex}`)) {
+								list.classList.remove(this.DropDownListActive);
+								block.classList.remove(this.DropDownBlockActive);
+								console.log(event.target)
+						}
 					});
 
 					items.forEach(item => {
