@@ -12,6 +12,8 @@ import '@/components/card-slider';
 
 import '@/components/header';
 
+import '@/components/date-field';
+
 import SidebarDrop from './SidebarDrop';
 
 document.addEventListener("DOMContentLoaded", () => {
