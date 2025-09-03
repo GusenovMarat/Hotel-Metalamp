@@ -169,15 +169,15 @@
       "social": [
         {
           "name": "twit",
-          "ilnk": "https://x.com/twitter"
+          "link": "https://x.com/twitter"
         },
         {
           "name": "fb",
-          "ilnk": "https://facebook.com/"
+          "link": "https://facebook.com/"
         },
         {
           "name": "inst",
-          "ilnk": "https://www.instagram.com/"
+          "link": "https://www.instagram.com/"
         }
       ]
     }
