@@ -5,32 +5,27 @@ class SidebarDrop {
   }
 
   setClasses() {
+		this.SearchRoomPage = '.js-search-room'
     this.sidebarContainer = '.js-search-room__sidebar'
-    this.sidebarToggle = '.js-sidebar-toggle'
+    this.sidebarOpen= '.js-sidebar-open'
+		this.sidebarClose = '.js-sidebar-close'
     this.sidebarContent = '.js-sidebar-content'
-    this.sidebarIcon = '.js-sidebar-icon'
     this.Expand = 'search-room__sidebar-expanded'
-		this.IconActive = 'search-room__sidebar-icon-active'
+		this.Close = '.js-sidebar-close'
   }
   findDrop() {
-    this.Sidebar = document.querySelector(this.sidebarContainer);
+    this.Page = document.querySelector(this.SearchRoomPage);
   }
   init() {
-    const toggle = this.Sidebar.querySelector(this.sidebarToggle);
-    const sidebar = this.Sidebar.querySelector(this.sidebarContent);
-    const icon = this.Sidebar.querySelector(this.sidebarIcon);
+		const container = this.Page.querySelector(this.sidebarContainer)
+    const open = this.Page.querySelector(this.sidebarOpen);
+		const close = this.Page.querySelector(this.sidebarClose);
 
-    toggle.addEventListener('click', () => {
-      const isExpanded = sidebar.classList.toggle(this.Expand);
-      icon.classList.toggle(this.IconActive);
-      if (isExpanded) {
-        setTimeout(() => {
-          this.Sidebar.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'start' 
-          });
-        }, 100);
-      }
+    open.addEventListener('click', () => {
+      container.classList.toggle(this.Expand);
+    })
+		close.addEventListener('click', () => {
+      container.classList.remove(this.Expand);
     })
   }
 }

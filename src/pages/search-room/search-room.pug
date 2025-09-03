@@ -13,16 +13,18 @@ block variables
 
 block content
 	- const { datepicker, dropdownGuests, rangeSlider, checkbox, checkboxRich, dropdownFurniture, checkboxExpand, sliders } = require("./search-room.json")
-	.search-room
-		.search-room__sidebar.js-search-room__sidebar
-			button.search-room__sidebar-toggle.js-sidebar-toggle
-				span.search-room__sidebar-icon.js-sidebar-icon
+	.search-room.js-search-room
+		button.search-room__sidebar-open.js-sidebar-open
+				span.search-room__sidebar-icon
 					img.searchroom__sidebar-img(src = '/assets/img/general/controls-adjust.svg'
 					alt = 'filter icon'
 					height = '12'
 					width = '12')
 				span.search-room__sidebar-text фильтры
+		.search-room__sidebar.js-search-room__sidebar
 			.search-room__sidebar-content.js-sidebar-content
+				button.search-room__sidebar-close.js-sidebar-close
+					span.search-room__sidebar-icon arrow_back
 				.search-room__sidebar-item
 					+date-field(datepicker)
 					+dropdown(dropdownGuests)

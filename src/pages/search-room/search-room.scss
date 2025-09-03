@@ -19,39 +19,53 @@
 	@include media-md{
 		flex-direction: column;
 		align-items: center;
+		gap: 20px;
 		padding: 30px 30px 70px 30px;
 	}
 	&__sidebar{
 		display: flex;
 		flex-direction: column;
-		
 		@include media-md {
-			position: relative;
-			align-self: flex-end;
+			position: fixed;
+			left: 0;
+			top: 0;
+			transform: translateX(-100%);
+			overflow: hidden;
+			background: white;
+			border: 2px solid $dark-shade-10;
+			border-radius: 4px;
+			padding: 40px 40px;
+			z-index: 1000;
+			transition: transform 1s ease;
+			@include media-xs {
+				width: 100vw;
+			}
+		}
+		@include media-xs {
+			align-items: center;
 		}
 		&-content {
 			display: flex;
 			flex-direction: column;
 			gap: 30px;
-			flex-shrink: 0;
-			@include media-md {
-				max-height: 0;
-				overflow: hidden;
-				visibility: hidden;
-				transition: all 0.3s ease;
+			@include media-xs {
+				align-self: center;
 			}
 		}
 		&-expanded {
-			position: fixed;
-			max-height: 1000px;
-      visibility: visible;
+			display: flex;
+			height: 100vh;
+			transform: translateX(0);
+			&:hover {
+				overflow-y: auto;
+			}
 		}
 		&-item {
 			display: flex;
 			flex-direction: column;
 			gap: 19px;
 		}
-		&-toggle {
+		&-open {
 			display: none;
 			@include media-md {
 				align-self: flex-end;
@@ -78,12 +92,24 @@
 				text-transform: uppercase;
 			}
 		}
+		&-close {
+			display: none;
+			@include media-md {
+				display: flex;
+				align-self: flex-end;
+				align-items: center;
+				justify-content: center;
+				background: none;
+			}
+		}
 		&-icon {
+			@include material-icon(24px, $dark-shade-75, 100%);
 			width: 24px;
 			height: 24px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			cursor: pointer;
 		}
 
 	}
