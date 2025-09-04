@@ -1,16 +1,16 @@
 {
 	"img": [
 		{
-			"src": "/assets/img/background/gallery-main.jpg",
+			"src": "assets/img/background/gallery-main.jpg",
 			"alt": "main-img",
 			"main": true
 		},
 		{
-			"src": "/assets/img/background/gallery-minor-1.jpg",
+			"src": "assets/img/background/gallery-minor-1.jpg",
 			"alt": "minor-img"
 		},
 		{
-			"src": "/assets/img/background/gallery-minor-2.jpg",
+			"src": "assets/img/background/gallery-minor-2.jpg",
 			"alt": "minor-img"
 		}
 	],

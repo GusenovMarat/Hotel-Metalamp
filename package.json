@@ -1,11 +1,14 @@
 {
+	"homepage": "https://github.com/GusenovMarat/Hotel-Metalamp",
   "name": "my-web",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "set NODE_ENV=development&&webpack serve --open",
     "dev": "set NODE_ENV=development&&webpack",
-    "build": "set NODE_ENV=production&&webpack"
+    "build": "set NODE_ENV=production&&webpack",
+		"predeploy" : "npm run build",
+		"deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "last 2 versions",
@@ -14,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/GusenovMarat/webpack.git"
+    "url": "https://github.com/GusenovMarat/Hotel-Metalamp.git"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +30,7 @@
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.9.0",
