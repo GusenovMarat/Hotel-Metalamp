@@ -1,0 +1,303 @@
+<!DOCTYPE html >
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="discription" content="room details"/>
+    <title>room details</title>
+  <script defer src="vendors-node_modules_css-loader_dist_cjs_js_node_modules_normalize_css_normalize_css-node_mod-d8dc5b.js"></script><script defer src="vendors-node_modules_air-datepicker_index_es_js-node_modules_air-datepicker_air-datepicker_css.js"></script><script defer src="components_date-field_index_js-components_dropdown_index_js.js"></script><script defer src="room-details.js"></script></head>
+  <body class="page">
+    <div class="header">
+      <div class="header__container">
+        <div class="logo"><a class="logo__link" href="./index.html"><img class="logo__img" src="assets/img/general/logo-toxin.svg" alt="logo"></a></div>
+        <nav class="nav js-nav">
+          <ul class="nav__list js-nav__list">
+            <li class="nav__item-close">
+              <button class="nav__close js-nav__close" type="button"><span class="nav__close-icon">close</span></button>
+            </li>
+            <li class="nav__item"><a class="nav__link nav__link_active" href="./index.html">о нас</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="./index.html">услуги</a><span class="nav__icon">expand_more</span>
+              <ul class="nav__sub">
+                <li class="nav__sub-item"><a class="nav__sub-link" href="./index.html">константин константинопольский 1</a></li>
+                <li class="nav__sub-item"><a class="nav__sub-link" href="./index.html">константин константинопольский 2</a></li>
+                <li class="nav__sub-item"><a class="nav__sub-link" href="./index.html">константин константинопольский 3</a></li>
+                <li class="nav__sub-item"><a class="nav__sub-link" href="./index.html">константин константинопольский 4</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="./index.html">вакансии</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="./index.html">новости</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="./index.html">соглашения</a><span class="nav__icon">expand_more</span>
+              <ul class="nav__sub">
+                <li class="nav__sub-item"><a class="nav__sub-link" href="./index.html">константин константинопольский 1</a></li>
+                <li class="nav__sub-item"><a class="nav__sub-link" href="./index.html">константин константинопольский 2</a></li>
+                <li class="nav__sub-item"><a class="nav__sub-link" href="./index.html">константин константинопольский 3</a></li>
+                <li class="nav__sub-item"><a class="nav__sub-link" href="./index.html">константин константинопольский 4</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"> <a class="button button__size-small button__bordered" href="/sign-in.html"><span class="button__text">войти</span></a>
+            </li>
+            <li class="nav__item"> <a class="button button__theme_filled button__size-long button__size-small" href="./sign-up.html"><span class="button__text">зарегистрироваться</span></a>
+            </li>
+          </ul>
+          <button class="nav__burger js-nav__burger"><span class="nav__burger-icon">menu</span></button>
+        </nav>
+      </div>
+    </div>
+    <main class="page__main">
+      <div class="room-details">
+        <div class="room-details__grid-gallery"><img class="room-details__img room-details__img-main" src="/assets/img/background/gallery-main.jpg" alt="main-img"/><img class="room-details__img" src="/assets/img/background/gallery-minor-1.jpg" alt="minor-img"/><img class="room-details__img" src="/assets/img/background/gallery-minor-2.jpg" alt="minor-img"/>
+        </div>
+        <div class="room-details__content">
+          <div class="room-details__grid-list">
+            <div class="room-details__features">
+              <div class="room-details__title">сведения о номере</div>
+              <div class="features">
+                <div class="features__item"><i class="features__icon">insert_emoticon</i>
+                  <div class="features__info"><span class="features__caption">комфорт</span><span class="features__text">шумопоглощающие стены</span></div>
+                </div>
+                <div class="features__item"><i class="features__icon">location_city</i>
+                  <div class="features__info"><span class="features__caption">удобство</span><span class="features__text">окно в каждой из спален</span></div>
+                </div>
+                <div class="features__item"><i class="features__icon">whatshot</i>
+                  <div class="features__info"><span class="features__caption">уют</span><span class="features__text">номер оснащён камином</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="room-details__feedback">
+              <div class="room-details__title">впечатления от номера</div>
+              <div class="room-details__chart">
+                <div class="chart js-chart">
+                  <svg class="chart__diagram" width="120" height="120" viewBox="0 0 33 33">
+                    <defs> 
+                      <linearGradient id="gradient-great" x1="0%" y1="100%" x2="50%" y2="100%">
+                        <stop offset="0%" stop-color="#FFBA9C"></stop>
+                        <stop offset="100%" stop-color="#FFE39C"></stop>
+                      </linearGradient>
+                      <linearGradient id="gradient-good" x1="0%" y1="100%" x2="50%" y2="100%">
+                        <stop offset="0%" stop-color="#66D2EA"></stop>
+                        <stop offset="100%" stop-color="#6FCF97"></stop>
+                      </linearGradient>
+                      <linearGradient id="gradient-norm" x1="0%" y1="100%" x2="50%" y2="100%">
+                        <stop offset="0%" stop-color="#8BA4F9"></stop>
+                        <stop offset="100%" stop-color="#BC9CFF"></stop>
+                      </linearGradient>
+                      <linearGradient id="gradient-bad" x1="0%" y1="100%" x2="50%" y2="100%">
+                        <stop offset="0%" stop-color="#909090"></stop>
+                        <stop offset="100%" stop-color="#3D4975"></stop>
+                      </linearGradient>
+                    </defs>
+                    <circle class="chart__unit js-chart__unit" r="15.91549" cx="50%" cy="50%" fill="none" stroke="url(#gradient-great)" stroke-dasharray="49.3 50.7" stroke-dashoffset="-25"></circle>
+                    <g class="chart__group-caption chart__group-caption-hidden js-chart__group-caption" fill="url(#gradient-great)" text-anchor="middle">	
+                      <text class="chart__caption" x="50%" y="50%">520</text>
+                      <text class="chart__label" x="50%" y="65%">голосов</text>
+                    </g>
+                    <circle class="chart__unit js-chart__unit" r="15.91549" cx="50%" cy="50%" fill="none" stroke="url(#gradient-good)" stroke-dasharray="24.3 75.7" stroke-dashoffset="-75"></circle>
+                    <g class="chart__group-caption chart__group-caption-hidden js-chart__group-caption" fill="url(#gradient-good)" text-anchor="middle">	
+                      <text class="chart__caption" x="50%" y="50%">260</text>
+                      <text class="chart__label" x="50%" y="65%">голосов</text>
+                    </g>
+                    <circle class="chart__unit js-chart__unit" r="15.91549" cx="50%" cy="50%" fill="none" stroke="url(#gradient-norm)" stroke-dasharray="24.3 75.7" stroke-dashoffset="-100"></circle>
+                    <g class="chart__group-caption chart__group-caption-hidden js-chart__group-caption" fill="url(#gradient-norm)" text-anchor="middle">	
+                      <text class="chart__caption" x="50%" y="50%">260</text>
+                      <text class="chart__label" x="50%" y="65%">голосов</text>
+                    </g>
+                    <g class="chart__group-caption chart__group-caption-hidden js-chart__group-caption" fill="url(#gradient-bad)" text-anchor="middle">	
+                      <text class="chart__caption" x="50%" y="50%">0</text>
+                      <text class="chart__label" x="50%" y="65%">голосов</text>
+                    </g>
+                    <g class="chart__group-caption js-chart__group-caption js-sum-votes" fill="#1F2041" text-anchor="middle">	
+                      <text class="chart__caption" x="50%" y="50%">1040</text>
+                      <text class="chart__label" x="50%" y="65%">голосов</text>
+                    </g>
+                  </svg>
+                  <ul class="chart__legend"> 
+                    <li class="chart__legend-item js-chart__legend-item">великолепно</li>
+                    <li class="chart__legend-item js-chart__legend-item">хорошо</li>
+                    <li class="chart__legend-item js-chart__legend-item">удовлетворительно</li>
+                    <li class="chart__legend-item js-chart__legend-item">разочарован</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="room-details__reviews">
+              <div class="room-details__reviews-header">
+                <div class="room-details__title">отзывы посетителей номера</div>
+                <div class="room-deatils__reviews-count">2 отзыва</div>
+              </div>
+              <div class="room-details__reviews-content">
+                <div class="review">
+                  <div class="review__left"><a class="review__user-avatar"><img class="review__user-img" src="assets/img/users/userMuradSarafanov.png" alt="user"></a>
+                    <button class="like-button js-like-button"><i class="like-button__icon js-like-button__icon"></i><span class="like-button__count js-like-button__count">12</span></button>
+                  </div>
+                  <div class="review__right">
+                    <div class="review__user-meta">
+                      <div class="review__user-name">мурад сарафанов</div>
+                      <div class="review__user-viewdate">5 дней назад</div>
+                    </div>
+                    <div class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="review__left"><a class="review__user-avatar"><img class="review__user-img" src="assets/img/users/userPatrisiyaSteklishkova.png" alt="user"></a>
+                    <button class="like-button js-like-button"><i class="like-button__icon js-like-button__icon"></i><span class="like-button__count js-like-button__count">12</span></button>
+                  </div>
+                  <div class="review__right">
+                    <div class="review__user-meta">
+                      <div class="review__user-name">патрисия стёклышкова</div>
+                      <div class="review__user-viewdate">неделю назад</div>
+                    </div>
+                    <div class="review__text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="room-details__rules">
+              <div class="bullet-list">
+                <div class="bullet-list__title">правила</div>
+                <ul class="bullet-list__list">
+                  <li class="bullet-list__item">Нельзя с питомцами</li>
+                  <li class="bullet-list__item">Без вечеринок и мероприятий</li>
+                  <li class="bullet-list__item">Время прибытия — после 13:00, а выезд до 12:00</li>
+                </ul>
+              </div>
+            </div>
+            <div class="room-details__cancel">
+              <div class="room-details__title">отмена</div>
+              <div class="room-details__text">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</div>
+            </div>
+          </div>
+          <div class="room-details__booking js-room-details__booking"> 
+            <button class="room-details__booking-toggle js-booking-toggle"><span class="room-details__booking-text js-booking-text">раскрыть бронирование</span><span class="room-details__booking-icon js-booking-icon">expand_more</span></button>
+            <div class="room-details__booking-card js-booking-card">
+              <div class="card-booking">
+                <div class="card-booking__header">
+                  <div class="card-booking__room-title"> <span class="card-booking__number-prefix">№&nbsp;</span><span class="card-booking__room-number">888</span><span class="card-booking__room-type">&nbsp;люкс</span></div>
+                  <div class="card-booking__price-per-night"><span class="card-booking__price">9 990₽</span><span class="card-booking__price-context">&nbsp;в сутки</span></div>
+                </div>
+                <div class="card-booking__date-picker">
+                  <div class="date-field js-date-field">
+                    <label class="date-field__label"><span class="date-field__title">прибытие</span>
+                      <div class="date-field__input-container">
+                        <input class="date-field__input js-date-picker" type="text" placeholder="дд.мм.гггг" data-pos="first"><span class="date-field__icon">expand_more</span>
+                      </div>
+                    </label>
+                    <label class="date-field__label"><span class="date-field__title">выезд</span>
+                      <div class="date-field__input-container">
+                        <input class="date-field__input" type="text" placeholder="дд.мм.гггг" data-pos="second"><span class="date-field__icon">expand_more</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="card-booking__guests">
+                  <div class="dropdown js-dropdown dropdown__wide">
+                    <div class="dropdown__title">dropdown</div>
+                    <div class="dropdown__block js-dropdown__block">
+                      <div class="dropdown__current js-dropdown__current">
+                        <div class="dropdown__current-text js-dropdown__current-text"></div>
+                        <div class="dropdown__toggle js-dropdown__toggle">expand_more</div>
+                      </div>
+                      <div class="dropdown__list js-dropdown__list">
+                        <div class="dropdown__item js-dropdown__item"><span class="dropdown__caption js-dropdown__caption" data-declensions="гость, гостя, гостей">взрослые</span>
+                          <div class="dropdown__controls js-dropdown__controls">
+                            <button class="dropdown__counter-button js-dropdown__counter-button" data-action="decrement">-</button><span class="dropdown__counter js-dropdown__counter">0</span>
+                            <button class="dropdown__counter-button js-dropdown__counter-button" data-action="increment">+</button>
+                          </div>
+                        </div>
+                        <div class="dropdown__item js-dropdown__item"><span class="dropdown__caption js-dropdown__caption" data-declensions="гость, гостя, гостей">дети</span>
+                          <div class="dropdown__controls js-dropdown__controls">
+                            <button class="dropdown__counter-button js-dropdown__counter-button" data-action="decrement">-</button><span class="dropdown__counter js-dropdown__counter">0</span>
+                            <button class="dropdown__counter-button js-dropdown__counter-button" data-action="increment">+</button>
+                          </div>
+                        </div>
+                        <div class="dropdown__item js-dropdown__item"><span class="dropdown__caption js-dropdown__caption" data-declensions="ребёнок, детей, детей">младенцы</span>
+                          <div class="dropdown__controls js-dropdown__controls">
+                            <button class="dropdown__counter-button js-dropdown__counter-button" data-action="decrement">-</button><span class="dropdown__counter js-dropdown__counter">0</span>
+                            <button class="dropdown__counter-button js-dropdown__counter-button" data-action="increment">+</button>
+                          </div>
+                        </div>
+                        <div class="dropdown__buttons js-dropdown__buttons">
+                          <button class="button button__theme_no-bg js-button__reset" type="button"><span class="button__text">очистить</span>
+                          </button>
+                          <button class="button button__theme_no-bg js-button__submit" type="button"><span class="button__text">применить</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-booking__details">
+                  <div class="card-booking__details-item">
+                    <div class="card-booking__details-info"><span class="card-booking__details-price">9 990₽ х&nbsp;</span><span class="card-booking__details-days">4 суток</span></div><span class="card-booking__details-amount">39 960₽</span>
+                  </div>
+                  <div class="card-booking__details-item">
+                    <div class="card-booking__details-info"><span class="card-booking__details-text">Сбор за услуги: скидка 2 179₽</span><i class="card-booking__details-icon" data-description="Сервисный сбор отеля"></i></div><span class="card-booking__details-amount">0₽</span>
+                  </div>
+                  <div class="card-booking__details-item"><span class="card-booking__details-info"><span class="card-booking__details-text card-booking__details-text--narrow">Сбор за дополнительные услуги</span><i class="card-booking__details-icon" data-description="Инфраструктура, питание, транспорт и пр."></i></span><span class="card-booking__details-amount">300₽</span></div>
+                </div>
+                <div class="card-booking__summary"> 
+                  <div class="card-booking__summary-text">Итого</div>
+                  <div class="card-booking__summary-amount">38 081₽</div>
+                </div>
+                <div class="card-booking__submit">
+                  <button class="button button__theme_filled button__size-long" type="button"><span class="button__text">забронировать</span><span class="button__icon-arrow">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer-head">
+          <div class="footer-info">
+            <div class="logo"><a class="logo__link" href="./index.html"><img class="logo__img" src="assets/img/general/logo-toxin.svg" alt="logo"></a></div>
+            <div class="footer-info__text">бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+          </div>
+          <div class="footer-nav"><span class="footer-nav__title">навигация</span>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">о нас</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">новости</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">служба поддержки</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">услуги</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav"><span class="footer-nav__title">о нас</span>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">о сервисе</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">наша компания</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">вакансии</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">инвесторы</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav"><span class="footer-nav__title">служба поддержки</span>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">соглашения</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">сообщества</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="./index.html">связь с нами</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter"><span class="footer-newsletter__title">подписка</span>
+            <div class="footer-newsletter__text">получайте специальные предложения и новости сервиса</div>
+            <form class="field">
+              <div class="field__block">
+                <input class="field__input-form" type="text" placeholder="email" name="sendmail">
+                <button class="field__submit" type="submit" name="sendmail"><span class="field__icon-arrow">arrow_forward</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom__credits">Copyright © 2018 Toxin отель. Все права защищены.</div>
+          <div class="footer-bottom__social"><a class="footer-bottom__social_twit" href="https://x.com/twitter"></a><a class="footer-bottom__social_fb" href="https://facebook.com/"></a><a class="footer-bottom__social_inst" href="https://www.instagram.com/"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
