@@ -74,6 +74,7 @@ module.exports = {
   output: {
     filename: filename("js"),
     path: PATHS.dist,
+		publicPath: '',
     assetModuleFilename: "assets/[hash][ext][query]",
 		clean: true,
   },
