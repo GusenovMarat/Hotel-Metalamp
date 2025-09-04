@@ -1,0 +1,1051 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}.button{font-family:"Montserrat","Arial",sans-serif;font-size:12px;line-height:100%;color:rgba(0,0,0,0);font-style:normal;font-weight:bold;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-decoration:none;text-wrap:nowrap;border-radius:22px;cursor:pointer;background-color:#fff;color:#bc9cff;border:none;max-width:99px;max-height:44px;-webkit-transition:all .3s ease;transition:all .3s ease}.button__text{text-transform:uppercase}.button__bordered,.button__theme_filled{padding:16px 20px}.button__theme_filled{color:#fff}.button__theme_no-bg{-ms-flex-item-align:start;align-self:flex-start;background:none}.button__theme_no-bg:hover{color:rgba(31,32,65,.5)}.button__bordered{position:relative}.button__bordered:before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;-webkit-mask:-webkit-gradient(linear, left top, left bottom, from(white), to(white)) content-box,-webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box;-webkit-mask:linear-gradient(white, white) content-box,linear-gradient(white, white) padding-box;mask:-webkit-gradient(linear, left top, left bottom, from(white), to(white)) content-box,-webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box;mask:linear-gradient(white, white) content-box,linear-gradient(white, white) padding-box;-webkit-mask-composite:xor;mask-composite:exclude;padding:2px;border-radius:22px;background:-webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)}.button__bordered:hover:before{opacity:0.5}.button__theme_filled{background-image:-webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));background-image:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)}.button__theme_filled:hover{opacity:0.5}.button__size-long{max-width:320px;width:100%}.button__size-small{max-height:34px}.button__icon-arrow{position:absolute;display:inline-block;font-family:"Material-icons","Arial",sans-serif;speak:never;color:#fff;font-style:normal;font-size:24px;line-height:normal;font-weight:normal;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:"liga";font-feature-settings:"liga";right:10px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.button__hidden{opacity:0;visibility:hidden}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;gap:20px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;white-space:nowrap;gap:20px}@media(max-width: 992px){.nav__list{display:none}}@media(max-width: 992px){.nav__list-active{display:-webkit-box;display:-ms-flexbox;display:flex;position:fixed;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;top:0;right:0;-webkit-box-shadow:0px 10px 20px rgba(31,32,65,.05);box-shadow:0px 10px 20px rgba(31,32,65,.05);padding:30px;background-color:#fff;z-index:500;width:40vw}}@media(max-width: 576px){.nav__list-active{width:100vw;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100vh;overflow-y:auto}}.nav__item-close{display:none}@media(max-width: 992px){.nav__item-close{display:-webkit-box;display:-ms-flexbox;display:flex}}@media(max-width: 576px){.nav__item-close{-ms-flex-item-align:end;align-self:flex-end}}.nav__close{background:none;border:none;cursor:pointer}.nav__close-icon{display:inline-block;font-family:"Material-icons","Arial",sans-serif;speak:never;color:rgba(31,32,65,.75);font-style:normal;font-size:24px;line-height:normal;font-weight:normal;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:"liga";font-feature-settings:"liga"}.nav__close-spin{-webkit-animation-name:spin;animation-name:spin;-webkit-transform-origin:center;transform-origin:center;-webkit-animation-duration:1s;animation-duration:1s}.nav__item{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav__item:hover ul{top:100%;padding:10px 0;-webkit-transform:scaleY(1);transform:scaleY(1)}.nav__link{color:rgba(31,32,65,.5);text-decoration:none;line-height:18px}.nav__link_active{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:normal;color:rgba(31,32,65,.75);font-style:normal;font-weight:bold}.nav__link::first-letter{text-transform:uppercase}.nav__link:hover{color:#1f2041}.nav__sub{position:absolute;display:block;list-style-type:none;text-align:center;max-width:260px;outline:none;margin-top:10px;background:#fff;top:0;white-space:normal;right:0;border:1px solid rgba(31,32,65,.1);border-radius:4px;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;-webkit-transform-origin:top;transform-origin:top;-webkit-transform:scaleY(0);transform:scaleY(0);z-index:501}.nav__sub-item{cursor:pointer}.nav__sub-item::first-letter{text-transform:uppercase}.nav__sub-link{padding:0 10px;color:rgba(31,32,65,.5);text-decoration:none}.nav__sub-link:hover{color:#1f2041}.nav__icon{display:inline-block;font-family:"Material-icons","Arial",sans-serif;speak:never;color:inherit;font-style:normal;font-size:24px;line-height:normal;font-weight:normal;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:"liga";font-feature-settings:"liga";cursor:pointer}.nav__acc{display:-webkit-box;display:-ms-flexbox;display:flex;padding-left:20px;border-left:1px solid rgba(31,32,65,.1)}@media(max-width: 992px){.nav__acc{border-left:0;padding-left:0;padding-right:20px;border-right:1px solid rgba(31,32,65,.1)}}.nav__burger{display:none}@media(max-width: 992px){.nav__burger{display:-webkit-box;display:-ms-flexbox;display:flex;background:none;border:none;text-decoration:none;cursor:pointer}}.nav__burger-icon{display:inline-block;font-family:"Material-icons","Arial",sans-serif;speak:never;color:rgba(31,32,65,.75);font-style:normal;font-size:24px;line-height:normal;font-weight:normal;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:"liga";font-feature-settings:"liga"}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}.logo__link{max-height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.img{max-width:100%;max-height:100%}.header{padding:0 30px;background-color:#fff;min-width:100%;-webkit-box-shadow:0px 10px 20px rgba(31,32,65,.05);box-shadow:0px 10px 20px rgba(31,32,65,.05)}@media(max-width: 1230px){.header{padding:0}}.header__container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-height:70px;max-width:1920px;margin:0 auto;padding:0 110px}@media(max-width: 1400px){.header__container{padding:0 30px}}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}.logo__link{max-height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.img{max-width:100%;max-height:100%}.footer-info{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px;max-width:260px}@media(max-width: 1230px){.footer-info{grid-column:span 3;grid-row:2}}.footer-info .footer-info__text{color:rgba(31,32,65,.75)}.footer-info .footer-info__text::first-letter{text-transform:uppercase}@media(max-width: 768px){.footer-info .footer-info__text{display:none}}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}.footer-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;line-height:normal;min-width:160px;margin-top:5px}@media(max-width: 1230px){.footer-nav{grid-column:span 2;grid-row:1}}@media(max-width: 768px){.footer-nav{display:none}}.footer-nav__title{font-family:"Montserrat","Arial",sans-serif;font-size:12px;line-height:normal;color:#1f2041;font-style:normal;font-weight:bold;text-transform:uppercase;white-space:nowrap;padding-bottom:21px}.footer-nav__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;white-space:nowrap;gap:20px;padding:0;margin:0;list-style:none}.footer-nav__item::first-letter{text-transform:uppercase}.footer-nav__link{color:rgba(31,32,65,.5);text-decoration:none}.footer-nav__link:hover{color:#1f2041}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}.field{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:320px}.field__title{font-family:"Montserrat","Arial",sans-serif;font-size:12px;line-height:15px;color:#1f2041;font-style:normal;font-weight:bold;text-transform:uppercase;padding-bottom:5px;cursor:pointer}.field__block{max-width:260px}.field__block,.field__input{display:-webkit-box;display:-ms-flexbox;display:flex;min-height:44px;border:1px solid rgba(31,32,65,.25);border-radius:4px;padding-left:15px;max-width:320px}.field__block:hover,.field__input:hover{border-color:rgba(31,32,65,.5)}.field__input-form,.field__input{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.field__input-form::-webkit-input-placeholder, .field__input::-webkit-input-placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form::-moz-placeholder, .field__input::-moz-placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form:-ms-input-placeholder, .field__input:-ms-input-placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form::-ms-input-placeholder, .field__input::-ms-input-placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form::placeholder,.field__input::placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form:hover::-webkit-input-placeholder, .field__input:hover::-webkit-input-placeholder{color:rgba(31,32,65,.5)}.field__input-form:hover::-moz-placeholder, .field__input:hover::-moz-placeholder{color:rgba(31,32,65,.5)}.field__input-form:hover:-ms-input-placeholder, .field__input:hover:-ms-input-placeholder{color:rgba(31,32,65,.5)}.field__input-form:hover::-ms-input-placeholder, .field__input:hover::-ms-input-placeholder{color:rgba(31,32,65,.5)}.field__input-form:hover::placeholder,.field__input:hover::placeholder{color:rgba(31,32,65,.5)}.field__block{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;min-width:260px}.field__submit{display:inline-block;text-align:center;vertical-align:middle;min-width:44px;min-height:44px;cursor:pointer;background:-webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);-webkit-background-clip:text;background-clip:text;padding:0}.field__icon-arrow{display:inline-block;font-family:"Material-icons","Arial",sans-serif;speak:never;color:rgba(0,0,0,0);font-style:normal;font-size:24px;line-height:normal;font-weight:normal;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:"liga";font-feature-settings:"liga"}.footer-newsletter{margin-top:5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:260px;gap:20px}@media(max-width: 1230px){.footer-newsletter{margin-top:15px;grid-column:span 3;grid-row:2}}@media(max-width: 768px){.footer-newsletter{display:none}}.footer-newsletter__title{font-family:"Montserrat","Arial",sans-serif;font-size:12px;line-height:normal;color:#1f2041;font-style:normal;font-weight:bold;text-transform:uppercase;white-space:nowrap}.footer-newsletter__text{color:rgba(31,32,65,.75)}.footer-newsletter__text::first-letter{text-transform:uppercase}.footer-head{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:100%}@media(max-width: 1230px){.footer-head{display:grid;grid-template-rows:repeat(2, 1fr);grid-template-columns:repeat(6, 1fr);-webkit-box-align:start;-ms-flex-align:start;align-items:start;justify-items:center;place-items:start center;grid-gap:70px 20px;gap:70px 20px}}@media(max-width: 768px){.footer-head{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}.footer-bottom{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-height:70px;width:100%;list-style-type:none}@media(max-width: 768px){.footer-bottom{margin-top:25px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:25px}}.footer-bottom__credits{text-align:center}.footer-bottom__social{display:-webkit-box;display:-ms-flexbox;display:flex;background-image:-webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));background-image:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);-webkit-background-clip:text;background-clip:text;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:20px}.footer-bottom__social_twit{display:inline-block;font-family:"Font-awesome","Arial",sans-serif;speak:never;font-style:24px;color:rgba(0,0,0,0);font-size:24px;font-weight:normal;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;line-height:1;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.footer-bottom__social_twit:before{content:""}.footer-bottom__social_fb{display:inline-block;font-family:"Font-awesome","Arial",sans-serif;speak:never;font-style:24px;color:rgba(0,0,0,0);font-size:24px;font-weight:normal;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;line-height:1;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.footer-bottom__social_fb:before{content:""}.footer-bottom__social_inst{display:inline-block;font-family:"Font-awesome","Arial",sans-serif;speak:never;font-style:24px;color:rgba(0,0,0,0);font-size:24px;font-weight:normal;-webkit-font-feature-settings:normal;font-feature-settings:normal;font-variant:normal;line-height:1;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.footer-bottom__social_inst:before{content:""}.footer{-webkit-box-shadow:0px 10px 20px rgba(31,32,65,.05);box-shadow:0px 10px 20px rgba(31,32,65,.05);padding:100px 30px 0;background-color:#fff}@media(max-width: 1230px){.footer{padding:120px 0}}.footer__container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:1920px;margin:0 auto;padding:0 110px}@media(max-width: 1400px){.footer__container{padding:0 30px}}.footer__line{margin-top:100px;height:1px;width:100%;background-color:rgba(31,32,65,.05);-webkit-filter:drop-shadow(0 0 1px rgba(31, 32, 65, 0.05));filter:drop-shadow(0 0 1px rgba(31, 32, 65, 0.05))}@media(max-width: 768px){.footer__line{display:none}}.page{background-color:#fff;background-size:cover;background-position:top;background-repeat:no-repeat;background-attachment:fixed}.page__main{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto}.page__container{margin:0 auto}@media(max-width: 1400px){.page__container{padding:0 30px}}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}.field{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:320px}.field__title{font-family:"Montserrat","Arial",sans-serif;font-size:12px;line-height:15px;color:#1f2041;font-style:normal;font-weight:bold;text-transform:uppercase;padding-bottom:5px;cursor:pointer}.field__block{max-width:260px}.field__block,.field__input{display:-webkit-box;display:-ms-flexbox;display:flex;min-height:44px;border:1px solid rgba(31,32,65,.25);border-radius:4px;padding-left:15px;max-width:320px}.field__block:hover,.field__input:hover{border-color:rgba(31,32,65,.5)}.field__input-form,.field__input{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.field__input-form::-webkit-input-placeholder, .field__input::-webkit-input-placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form::-moz-placeholder, .field__input::-moz-placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form:-ms-input-placeholder, .field__input:-ms-input-placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form::-ms-input-placeholder, .field__input::-ms-input-placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form::placeholder,.field__input::placeholder{text-transform:capitalize;color:rgba(31,32,65,.25)}.field__input-form:hover::-webkit-input-placeholder, .field__input:hover::-webkit-input-placeholder{color:rgba(31,32,65,.5)}.field__input-form:hover::-moz-placeholder, .field__input:hover::-moz-placeholder{color:rgba(31,32,65,.5)}.field__input-form:hover:-ms-input-placeholder, .field__input:hover:-ms-input-placeholder{color:rgba(31,32,65,.5)}.field__input-form:hover::-ms-input-placeholder, .field__input:hover::-ms-input-placeholder{color:rgba(31,32,65,.5)}.field__input-form:hover::placeholder,.field__input:hover::placeholder{color:rgba(31,32,65,.5)}.field__block{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;min-width:260px}.field__submit{display:inline-block;text-align:center;vertical-align:middle;min-width:44px;min-height:44px;cursor:pointer;background:-webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);-webkit-background-clip:text;background-clip:text;padding:0}.field__icon-arrow{display:inline-block;font-family:"Material-icons","Arial",sans-serif;speak:never;color:rgba(0,0,0,0);font-style:normal;font-size:24px;line-height:normal;font-weight:normal;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:"liga";font-feature-settings:"liga"}@font-face{font-family:"Montserrat";src:url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"),url(assets/5d85c3eaeb186dc29136.woff) format("woff"),url(assets/487360cc1bf8659abf81.woff2) format("woff2"),url(assets/6b43ddbc2239f1434ec8.svg#Montserrat-regular) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Montserrat";src:url(assets/079ca05d3ded9bc107ab.ttf) format("truetype"),url(assets/864f1c2849410b94dd50.woff) format("woff"),url(assets/b21c8e371b7b93c69887.woff2) format("woff2"),url(assets/b8553b0a6b1b18b78fce.svg#Montserrat-bold) format("svg");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Material-icons";src:url(assets/5e7382c63da0098d634a.ttf) format("truetype"),url(assets/83bebaf37c09c7e1c3ee.woff) format("woff"),url(assets/cff684e59ffb052d72cb.woff2) format("woff2"),url(assets/da74ace1cb3e79354c59.svg#Material-icons) format("svg");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Font-awesome";src:url(assets/47fdd46081fbf02bb8c7.ttf) format("truetype"),url(assets/c19c264013e139324047.woff) format("woff"),url(assets/acc8bdf59cda8412585b.woff2) format("woff2"),url(assets/73d600ae59880a3ec551.svg#Font-awesome) format("svg");font-weight:normal;font-style:normal;font-display:swap}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:0;border:0}body{font-family:"Montserrat","Arial",sans-serif;font-size:14px;line-height:24px;color:rgba(31,32,65,.5);font-style:normal;font-weight:normal}html{color:#1f2041;background-color:#fff}.button{font-family:"Montserrat","Arial",sans-serif;font-size:12px;line-height:100%;color:rgba(0,0,0,0);font-style:normal;font-weight:bold;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-decoration:none;text-wrap:nowrap;border-radius:22px;cursor:pointer;background-color:#fff;color:#bc9cff;border:none;max-width:99px;max-height:44px;-webkit-transition:all .3s ease;transition:all .3s ease}.button__text{text-transform:uppercase}.button__bordered,.button__theme_filled{padding:16px 20px}.button__theme_filled{color:#fff}.button__theme_no-bg{-ms-flex-item-align:start;align-self:flex-start;background:none}.button__theme_no-bg:hover{color:rgba(31,32,65,.5)}.button__bordered{position:relative}.button__bordered:before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;-webkit-mask:-webkit-gradient(linear, left top, left bottom, from(white), to(white)) content-box,-webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box;-webkit-mask:linear-gradient(white, white) content-box,linear-gradient(white, white) padding-box;mask:-webkit-gradient(linear, left top, left bottom, from(white), to(white)) content-box,-webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box;mask:linear-gradient(white, white) content-box,linear-gradient(white, white) padding-box;-webkit-mask-composite:xor;mask-composite:exclude;padding:2px;border-radius:22px;background:-webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)}.button__bordered:hover:before{opacity:0.5}.button__theme_filled{background-image:-webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));background-image:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)}.button__theme_filled:hover{opacity:0.5}.button__size-long{max-width:320px;width:100%}.button__size-small{max-height:34px}.button__icon-arrow{position:absolute;display:inline-block;font-family:"Material-icons","Arial",sans-serif;speak:never;color:#fff;font-style:normal;font-size:24px;line-height:normal;font-weight:normal;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:"liga";font-feature-settings:"liga";right:10px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.button__hidden{opacity:0;visibility:hidden}.card-signin{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px;min-width:380px;width:100%;background-color:#fff;-webkit-box-shadow:0 0 25px rgba(0,0,0,.2);box-shadow:0 0 25px rgba(0,0,0,.2);padding:40px 30px 30px;border:1px solid rgba(31,32,65,.1);border-radius:4px;line-height:100%}.card-signin__title{font-family:"Montserrat","Arial",sans-serif;font-size:24px;line-height:30px;color:#1f2041;font-style:normal;font-weight:bold}.card-signin__form,.card-signin__data{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.card-signin__form{gap:20px}.card-signin__data{gap:10px}.card-signin__submit{gap:30px}.card-signin__signup{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:10px}.card-signin__correct-text{line-height:18px;font-size:14px;color:#1f2041}.card-signin__title::first-letter,.card-signin__correct-text::first-letter{text-transform:uppercase}.sign-in{padding:20px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto;min-height:580px}@media(max-width: 768px){.sign-in{min-height:100%}}
