@@ -48,7 +48,6 @@ class DropDown {
 						if (!event.target.closest(`.${dropIndex}`)) {
 								list.classList.remove(this.DropDownListActive);
 								block.classList.remove(this.DropDownBlockActive);
-								console.log(event.target)
 						}
 					});
 

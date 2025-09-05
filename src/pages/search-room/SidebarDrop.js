@@ -32,6 +32,14 @@ class SidebarDrop {
 		closeBottom.addEventListener('click', () => {
       container.classList.remove(this.Expand);
     })
+    document.addEventListener('click', (event) => {
+        const isContainer = event.target.closest(this.sidebarContainer);
+        const isOpenButton = event.target.closest(this.sidebarOpen);
+        
+        if (!isContainer && !isOpenButton) {
+            container.classList.remove(this.Expand);
+        }
+      });
   }
 }
 
