@@ -39,18 +39,11 @@
 			padding: 40px 40px;
 			z-index: 1000;
 			transition: transform 1s ease;
-			@include media-md {
-				height: 100vh;
-				&:hover {
-					overflow-y: auto;
-				}
-				
-			}
+			height: 100vh;
+			overflow-y: auto;
+			overscroll-behavior: contain;			
 			@include media-xs {
 				width: 100vw;
-				&::-webkit-scrollbar {
-					display: none;
-				}
 			}
 		}
 		@include media-xs {

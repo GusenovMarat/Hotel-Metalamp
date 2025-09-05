@@ -12,8 +12,8 @@ mixin nav({items, auth, account})
 						li.nav__item
 							a.nav__link(class=active ? "nav__link_active": "" 
 													href=href || "./index.html")=title
-							if icon 
-								span.nav__icon expand_more
+								if icon 
+									span.nav__icon expand_more
 							if sub
 								ul.nav__sub
 									each subitem in sub

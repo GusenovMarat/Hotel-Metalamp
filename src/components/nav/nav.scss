@@ -30,6 +30,8 @@
 			@include media-md {
 				display: flex;
 				position: fixed;
+				max-height: 100vh;
+				height: auto;
 				flex-direction: column;
 				align-items: flex-end;
 				justify-content: flex-start;
@@ -37,15 +39,19 @@
 				right: 0;
 				box-shadow: $shadow-light;
 				padding: 30px;
+				border: 1px solid $dark-shade-10;
+				border-radius: 4px;
 				background-color: white;
 				z-index: 500;
-				width: 40vw;
+				min-width: 40vw;
+				gap: 10px;
+				overflow-y: auto;
+				overflow-x: none;
+				overscroll-behavior: contain;
 			}
 			@include media-xs {
 				width: 100vw;
 				align-items: center;
-				height: 100vh;
-				overflow-y: auto;
 			}
 		}	
 	}
@@ -74,12 +80,20 @@
 	&__item {
 		position: relative;
     display: flex;
-		align-items: center;
-		
+		align-items: flex-end;
+		flex-direction: column;
+		@include media-xs {
+			align-items: center;
+		}
 		&:hover ul {
 			top: 100%;
 			padding: 10px 0;
 			transform: scaleY(1);
+			@include media-md {
+				position: inherit;
+				max-height: 1000px;
+				padding: 0px;
+			}
     }
 	}
 	&__link {
@@ -105,35 +119,49 @@
 		text-align: center;
 		max-width: 260px;
 		outline: none;
-		margin-top: 10px;
 		background: white;
     top: 0;
+		left: 0;
 		white-space: normal;
-    right: 0;
 		border: 1px solid $dark-shade-10;
     border-radius: 4px;
 		transition: all 0.3s ease-in-out;
 		transform-origin: top;
 		transform: scaleY(0);
 		z-index: 501;
+		@include media-md {
+			position: static;
+			max-height: 0;
+			padding: 0;
+			margin: 0;
+			text-align: right;
+			border: none;
+			overflow: hidden;
+			transition: all 0.3s ease;
+		}
+		@include media-xs {
+				text-align: center;
+				width: 100%;
+		}
 		&-item {
 			cursor: pointer;
+			&:hover {
+				background-color: $dark-shade-05;
+				color: $dark-shade-100;
+			}
 			&::first-letter{
 					text-transform: uppercase;
 			}		
 		}
 		&-link{
 			padding: 0 10px;
-			color: $dark-shade-50;
+			color: inherit;
 			text-decoration: none;
-			
-			&:hover {
-				color: $dark-shade-100;
-			}
 		}
 	}
 	&__icon {
-		@include material-icon(24px, inherit);
+		@include material-icon(24px, inherit, 15px);
+		vertical-align: middle;
     cursor: pointer;
 	}
 	&__acc {
