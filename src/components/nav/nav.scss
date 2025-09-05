@@ -86,11 +86,10 @@
 			align-items: center;
 		}
 		&:hover ul {
-			top: 100%;
 			padding: 10px 0;
 			transform: scaleY(1);
 			@include media-md {
-				position: inherit;
+				position: static;
 				max-height: 1000px;
 				padding: 0px;
 			}
@@ -120,7 +119,7 @@
 		max-width: 260px;
 		outline: none;
 		background: white;
-    top: 0;
+    top: 100%;
 		left: 0;
 		white-space: normal;
 		border: 1px solid $dark-shade-10;
