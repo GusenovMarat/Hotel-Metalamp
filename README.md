@@ -61,5 +61,3 @@ npm run deploy
 **`Javasrcipt` `PUG` `SCSS` `Webpack v5.90.0`**
 # Используемые библиотеки
 **`Air-datepicker` `Swiper-slider`**
-
-нормальный readme?
